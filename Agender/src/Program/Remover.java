@@ -18,7 +18,7 @@ public class Remover implements Runnable {
     public static MLQ MLQ;
     public static LinkedList<Solicitud> archivo;
     public static FCFSQueue<String> solicitudes = new FCFSQueue<>();
-    private final static Semaphore mutex = new Semaphore(1, true);
+    public final static Semaphore mutex = new Semaphore(0);
 
     public Remover(String name) {
         this.name = "R-" + name;
@@ -26,6 +26,7 @@ public class Remover implements Runnable {
     }
 
     public void start() {
+        mutex.release();
         thread.start();
     }
 
@@ -34,8 +35,13 @@ public class Remover implements Runnable {
         while (true) {
             try {
                 Solicitud solicitud = MLQ.removeNext();
+                mutex.acquire();
                 solicitudes.push(solicitud.toString());
-            } catch (Exception ex) {
+                mutex.release();
+            } catch(NullPointerException np){
+                System.out.println("NP: ");
+                np.printStackTrace();
+            }catch (Exception ex) {
                 System.out.println(ex);
             }
         }

@@ -1,8 +1,6 @@
 package Program;
 
 import Planificador.MLQ;
-import Planificador.Solicitud;
-import java.util.LinkedList;
 import Util.*;
 
 /**
@@ -10,44 +8,53 @@ import Util.*;
  * @author NicoPuig
  */
 public class Main {
-    
+
     private final static String TXT_SALIDA = "src/Archivos/salida.txt";
     private final static String TXT_ENTRADA = "src/Archivos/entrada.txt";
-    
+
     public static void main(String[] args) {
         // Boceto de funcionamiento
         // TODO: Emprolijar
-//        LinkedList<Solicitud> archivo = new LinkedList();
-//        MLQ mlq = new MLQ();
-//        Inserter.MLQ = mlq;
-//        Remover.MLQ = mlq;
-//        Remover.archivo = archivo;
-//
-//        Inserter.cantidadDeSolicitudes = 5;
-//        int cantidadInserters = 5;
-//        int cantidadRemovers = 5;
-//        mlq.agregarVacunas(75);
-//
-//        for (int i = 0; i < cantidadInserters; i++) {
-//            Inserter inserter = new Inserter(String.valueOf(i));
-//            inserter.start();
-//        }
-//
-//        System.out.println(archivo); // Brakepoint para chequear carga de solicitudes en MLQ
-//
-//        for (int i = 0; i < cantidadRemovers; i++) {
-//            Remover remover = new Remover(String.valueOf(i));
-//            remover.start();
-//        }
+        MLQ mlq = new MLQ();
+        Inserter.MLQ = mlq;
+        Remover.MLQ = mlq;
+        Inserter.lista = ManejadorArchivos.leerArchivo(TXT_ENTRADA, true);
+
+        Inserter.cantidadDeSolicitudes = 10;
+        int cantidadInserters = 5;
+        int cantidadRemovers = 5;
+        mlq.agregarVacunas(2000);
+
+        for (int i = 0; i < cantidadInserters; i++) {
+            Inserter inserter = new Inserter(String.valueOf(i));
+            inserter.start();
+        }
+
+        System.out.println(); // Brakepoint para chequear carga de solicitudes en MLQ
+
+        for (int i = 0; i < cantidadRemovers; i++) {
+            Remover remover = new Remover(String.valueOf(i));
+            remover.start();
+        }
 
         /*
-        Para chequear funcionamiento poner brakepoint en la proxima linea, y 'archivo' se ira llenando en paralelo
-        Sin el brakepoint no se imprimira nada porque cuando se llegue aca todavia no se habra cargado nada
-        TODO: Arreglar esto para que se espere a que se terminen de cargar solicitudes antes de imprimir
-        Posible solucion: Esperar a que no queden mas vacunas, despues imprimir
+            Para chequear funcionamiento poner brakepoint en la proxima linea, y 'archivo' se ira llenando en paralelo
+            Sin el brakepoint no se imprimira nada porque cuando se llegue aca todavia no se habra cargado nada
+            TODO: Arreglar esto para que se espere a que se terminen de cargar solicitudes antes de imprimir
+            Posible solucion: Esperar a que no queden mas vacunas, despues imprimir
          */
-//        archivo.forEach(N -> System.out.println(N.toString()));
-//        ManejadorArchivos.escribirArchivo(SALIDA, Remover.solicitudes, false);
+        try {
+            System.out.println("Dia en proceso...");
+            Thread.sleep(5000);
+            System.out.println("Termino el dia, Esperando a terminar agendado para obtener reporte...");
+            Remover.mutex.acquire(cantidadRemovers);
+            System.out.println("Comenzo escritura de reporte");
+            ManejadorArchivos.escribirArchivo(TXT_SALIDA, Remover.solicitudes, false);
+            System.out.println("Termino reporte");
+            Remover.mutex.release(cantidadRemovers);
+        } catch (InterruptedException ex) {
+            System.out.println(ex);
+        }
     }
 }
 

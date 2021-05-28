@@ -12,12 +12,17 @@ public class MLQ {
     private final FCFSQueue<Solicitud> lowRiskQ31_50 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> lowRiskQ51_65 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> highRiskQ = new FCFSQueue<>();
-    
+
     public final Semaphore solicitudes = new Semaphore(0, true);
     public final Semaphore vacunas = new Semaphore(0, true);
-    
-    public void agregarVacunas(int cantidad){
+
+    public void agregarVacunas(int cantidad) {
         vacunas.release(cantidad);
+    }
+
+    private void acquire() throws InterruptedException {
+        solicitudes.acquire();
+        vacunas.acquire(2);
     }
 
     public void insert(Solicitud solicitud) throws InterruptedException {
@@ -42,8 +47,7 @@ public class MLQ {
     }
 
     public Solicitud removeNext() throws InterruptedException, Exception {
-        vacunas.acquire(2);
-        solicitudes.acquire();
+        acquire();
         if (!highRiskQ.isEmpty()) {
             return highRiskQ.pop();
         }
