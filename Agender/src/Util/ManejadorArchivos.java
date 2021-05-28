@@ -10,14 +10,29 @@ import java.util.LinkedList;
 
 /**
  * TODO: Cheaquear que funcione
+ *
  * @author NicoPuig
  */
 public class ManejadorArchivos {
 
-    public static Collection<String> leerArchivo(String path) {
+    public static void generarArchivoEntrada(String path, int cantidad) {
+        String separator = ";";
+        int ci = 100000;
+        LinkedList<String> lineas = new LinkedList<>();
+        lineas.add("CI;edad;riesgo");
+        for (int i = ci; i < ci + cantidad; i++) {
+            int edad = (int) (Math.floor(Math.random() * (115 - 18)) + 18);
+            int riesgo = (edad > 65 || Math.random() > 0.8) ? (int) (Math.ceil(Math.random() * 5)) : 0;
+            String linea = String.join(separator, String.valueOf(i), String.valueOf(edad), String.valueOf(riesgo));
+            lineas.add(linea);
+        }
+        escribirArchivo(path, lineas, false);
+    }
+
+    public static Collection<String> leerArchivo(String path, boolean ignoreHeader) {
         Collection<String> lineas = new LinkedList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String linea = "";
+            String linea = ignoreHeader ? br.readLine() : "";
             while (linea != null) {
                 linea = br.readLine();
                 lineas.add(linea);
@@ -28,14 +43,25 @@ public class ManejadorArchivos {
         return lineas;
     }
 
-    public static void escribirArchivo(String nombreCompletoArchivo, String[] listaLineasArchivo, boolean append) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreCompletoArchivo, append))) {
-            for (String lineaActual : listaLineasArchivo) {
+    public static void escribirArchivo(String path, String[] lines, boolean append) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+            for (String lineaActual : lines) {
                 bw.write(lineaActual);
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + nombreCompletoArchivo);
+            System.out.println("Error al escribir el archivo " + path);
+        }
+    }
+
+    public static void escribirArchivo(String path, LinkedList lines, boolean append) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+            for (Object lineaActual : lines) {
+                bw.write(lineaActual.toString());
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error al escribir el archivo " + path);
         }
     }
 }

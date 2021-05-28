@@ -3,8 +3,6 @@ package Program;
 import Planificador.*;
 import java.util.LinkedList;
 import java.util.concurrent.Semaphore;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Clase prototipo de Archivador Hilo que retira solicitudes al MLQ La idea es
@@ -19,6 +17,7 @@ public class Remover implements Runnable {
     private final String name;
     public static MLQ MLQ;
     public static LinkedList<Solicitud> archivo;
+    public static FCFSQueue<String> solicitudes = new FCFSQueue<>();
     private final static Semaphore mutex = new Semaphore(1, true);
 
     public Remover(String name) {
@@ -35,9 +34,7 @@ public class Remover implements Runnable {
         while (true) {
             try {
                 Solicitud solicitud = MLQ.removeNext();
-                mutex.acquire();
-                archivo.add(solicitud);
-                mutex.release();
+                solicitudes.push(solicitud.toString());
             } catch (Exception ex) {
                 System.out.println(ex);
             }

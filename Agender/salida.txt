@@ -1,0 +1,5 @@
+CI: I-5-85 | Edad:85 | Riesgo: 5
+CI: I-5-111 | Edad:111 | Riesgo: 4
+CI: I-5-109 | Edad:109 | Riesgo: 3
+CI: I-3-57 | Edad:57 | Riesgo: 1
+CI: I-3-98 | Edad:98 | Riesgo: 1

@@ -6,6 +6,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  * Cola FCFS Generica sincronizada
+ *
  * @author NicoPuig
  * @param <T>
  */
@@ -36,7 +37,7 @@ public class FCFSQueue<T> {
         return null;
     }
 
-    public boolean isEmpty() {
+    public synchronized boolean isEmpty() {
         return queue.isEmpty();
     }
 }
