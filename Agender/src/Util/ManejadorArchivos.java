@@ -1,8 +1,8 @@
 package Util;
 
-import Planificador.FCFSQueue;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +10,6 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 /**
- * TODO: Cheaquear que funcione
  *
  * @author NicoPuig
  */
@@ -23,7 +22,7 @@ public class ManejadorArchivos {
         lineas.add("CI;edad;riesgo");
         for (int i = ci; i < ci + cantidad; i++) {
             int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
-            int riesgo = (edad > 65 || Math.random() > 0.8) ? (int) (Math.ceil(Math.random() * 5)) : 0;
+            int riesgo = (edad > 65 || Math.random() > 0.9) ? (int) (Math.ceil(Math.random() * 5)) : 0;
             String linea = String.join(separator, String.valueOf(i), String.valueOf(edad), String.valueOf(riesgo));
             lineas.add(linea);
         }
@@ -44,20 +43,17 @@ public class ManejadorArchivos {
         return lineas;
     }
 
-    public static void escribirArchivo(String path, String[] lines, boolean append) {
+    public static void escribirArchivo(String path, String texto, boolean append) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
-            for (String lineaActual : lines) {
-                bw.write(lineaActual);
-                bw.newLine();
-            }
+            bw.write(texto);
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo " + path);
         }
     }
 
-    public static <T> void escribirArchivo(String path, T[] lines, boolean append) {
+    public static void escribirArchivo(String path, Object[] lines, boolean append) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
-            for (T lineaActual : lines) {
+            for (Object lineaActual : lines) {
                 bw.write(lineaActual.toString());
                 bw.newLine();
             }
@@ -77,22 +73,18 @@ public class ManejadorArchivos {
         }
     }
 
-    public static void escribirArchivo(String path, FCFSQueue lines, boolean append) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
-            while (!lines.isEmpty()) {
-                bw.write(lines.pop().toString());
-                bw.newLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + path);
-        }
-    }
-
     public static void limpiarArchivo(String path) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, false))) {
             bw.newLine();
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo " + path);
+        }
+    }
+
+    public static void borrarArchivos() {
+        int i = 1;
+        while (new File("src/Archivos/dia_" + (i < 10 ? "0" : "") + i + ".txt").delete()) {
+            i++;
         }
     }
 }

@@ -15,9 +15,10 @@ public class Inserter implements Runnable {
 
     private final Thread thread;
     private final String name;
-    public static MLQ MLQ;
+    public static MLQ mlq = MLQ.MLQ;
     public static int cantidadDeSolicitudes = 1000;
     public static Collection<String> lista = new LinkedList<>();
+    private static final int CI = 1000000;
 
     public Inserter(String name) {
         this.name = "I-" + name;
@@ -30,17 +31,17 @@ public class Inserter implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < cantidadDeSolicitudes; i++) {
+        for (int i = CI; i < CI + cantidadDeSolicitudes; i++) {
             // Simulacion de Solicitud
             // Se genera edad random entre 18 y 115, si es mayor a 65 tiene riesgo mayor a 0
             // Si es menor a 65, hay 0.2 de posibilidad que salga con comorbilidad, y el riesgo sea mayor a 0
             // Riesgo es de 0 a 5
-            
+
             int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
             int riesgo = (edad > 65 || Math.random() > 0.8) ? (int) (Math.ceil(Math.random() * 5)) : 0;
-            Solicitud solicitud = new Solicitud(this.name + "-" + String.valueOf(edad), edad, riesgo);
+            Solicitud solicitud = new Solicitud(String.valueOf(i), edad, riesgo);
             try {
-                MLQ.insert(solicitud);
+                mlq.insert(solicitud);
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }

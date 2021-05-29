@@ -1,0 +1,5 @@
+--- REPORTE TOTAL ---
+ESTADISTICAS
+ - Cantidad Agendados:	10000
+ - Cantidad Solicitudes en espera:	0
+ - Vacunas disponibles:	1103125

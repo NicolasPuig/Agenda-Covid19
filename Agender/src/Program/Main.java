@@ -1,6 +1,7 @@
 package Program;
 
 import Planificador.MLQ;
+import Util.ManejadorArchivos;
 
 /**
  *
@@ -9,15 +10,19 @@ import Planificador.MLQ;
 public class Main {
 
     public static void main(String[] args) {
-        Inserter.MLQ = MLQ.MLQ;
-        Inserter.cantidadDeSolicitudes = 10000;
+        ManejadorArchivos.borrarArchivos();
+
+        // ---- Parametros Iniciales ----
+        Inserter.cantidadDeSolicitudes = 1000;
         int cantidadDeInserters = 10;
         int cantidadDeArchivadores = 10;
-        int cantidadDeVacunas = 100000;
-        long duracionDia_ms = 200;
+        int cantidadDeVacunas = 1123145;
+        long duracionDia_ms = 500;
+        boolean reportarListaAgendados = true;
+        // ------------------------------
 
         MLQ.MLQ.agregarVacunas(cantidadDeVacunas);
-        Ciclo ciclo = new Ciclo(duracionDia_ms);
+        Ciclo ciclo = new Ciclo(duracionDia_ms, reportarListaAgendados);
 
         for (int i = 0; i < cantidadDeInserters; i++) {
             new Inserter(String.valueOf(i)).start();

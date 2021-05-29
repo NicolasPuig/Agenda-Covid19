@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
  * @author NicoPuig
  */
 public class MLQ {
-    
+
     public final static MLQ MLQ = new MLQ();
 
     private final FCFSQueue<Solicitud> lowRiskQ18_30 = new FCFSQueue<>();
@@ -15,8 +15,8 @@ public class MLQ {
     private final FCFSQueue<Solicitud> lowRiskQ51_65 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> highRiskQ = new FCFSQueue<>();
 
-    private final Semaphore solicitudes = new Semaphore(0, true);
-    private final Semaphore vacunas = new Semaphore(0, true);
+    private final Semaphore solicitudes = new Semaphore(0);
+    private final Semaphore vacunas = new Semaphore(0);
 
     private MLQ() {
     }
@@ -33,9 +33,9 @@ public class MLQ {
         vacunas.release(cantidad);
     }
 
-    public void acquire() throws InterruptedException {
-        solicitudes.acquire();
+    public void acquireSolicitud() throws InterruptedException {
         vacunas.acquire(2);
+        solicitudes.acquire();
     }
 
     public void insert(Solicitud solicitud) throws InterruptedException {
@@ -51,9 +51,8 @@ public class MLQ {
             } else if (edad < 66) {
                 lowRiskQ51_65.push(solicitud);
             } else {
-                // No se deberia llegar nunca aca
-                // TODO: Emprolijar
-                throw new IllegalArgumentException("Error +66 con riesgo 0: " + edad);
+                // Se suponse que edad > 65 y riesgo = 0
+                highRiskQ.push(solicitud);
             }
         }
         solicitudes.release();

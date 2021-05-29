@@ -6,15 +6,19 @@ import java.util.LinkedList;
 import java.util.concurrent.Semaphore;
 
 /**
- * Hilo encargado de retirar solicitudes del MLQ
+ * Hilo encargado de retirar solicitudes del MLQ - //TODO: Cambiar nombre
+ *
  * @author NicoPuig
  */
 public class Archivador implements Runnable {
 
     private final static LinkedList<Solicitud> buffer = new LinkedList<>();
-    private final static Semaphore mutex = new Semaphore(1, true);
+    private final static Semaphore mlqMutex = new Semaphore(0);
+    private final static Semaphore bufferMutex = new Semaphore(1, true);
     private final static MLQ mlq = MLQ.MLQ;
-    
+
+    private static int cantidadArchivadores = 0;
+
     private final Thread thread;
     private final String name;
 
@@ -22,20 +26,23 @@ public class Archivador implements Runnable {
         this.name = "A-" + name;
         this.thread = new Thread(this, this.name);
         this.thread.setDaemon(true);
+        cantidadArchivadores++;
     }
 
     public void start() {
+        mlqMutex.release();
         thread.start();
     }
 
     public static Reporte getReporteDiario() {
         try {
-            mutex.acquire();
+            mlqMutex.acquire(cantidadArchivadores); // +cantidadProductores
             Solicitud[] solicitudes = buffer.toArray(new Solicitud[buffer.size()]);
             int vacunasDisponibles = mlq.getVacunasDisponibles();
             int personasEnEspera = mlq.getLargoColaEspera();
             buffer.clear();
-            mutex.release();
+            //mlqMutex.release(cantidadArchivadores + cantidadProductores);
+            // semafotoProductores.release(cantidadProductores)
             return new Reporte(solicitudes, vacunasDisponibles, personasEnEspera);
         } catch (InterruptedException ex) {
             System.out.println(ex);
@@ -47,11 +54,14 @@ public class Archivador implements Runnable {
     public void run() {
         while (true) {
             try {
-                mlq.acquire();
-                mutex.acquire();
+                mlq.acquireSolicitud();
+                mlqMutex.acquire();
                 Solicitud solicitud = mlq.removeNext();
+                solicitud.setHoraFinSolicitud(System.nanoTime());
+                bufferMutex.acquire();
                 buffer.add(solicitud);
-                mutex.release();
+                bufferMutex.release();
+                mlqMutex.release();
             } catch (Exception ex) {
                 System.out.println(ex);
             }
