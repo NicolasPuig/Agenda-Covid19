@@ -1,7 +1,10 @@
 package Planificador;
 
 /**
- *
+ * TODO: Agregar campos faltantes
+ * - Fecha de request de solicitud
+ * - Fecha de agendado final
+ * 
  * @author NicoPuig
  */
 public class Solicitud {

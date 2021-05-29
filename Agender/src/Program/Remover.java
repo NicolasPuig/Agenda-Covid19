@@ -5,9 +5,8 @@ import java.util.LinkedList;
 import java.util.concurrent.Semaphore;
 
 /**
- * Clase prototipo de Archivador Hilo que retira solicitudes al MLQ La idea es
- * tener varios de estos hilos retirando La sincronizacion ya esta resuelta en
- * el MLQ TODO: Agregar semaforo para control de cantidad de vacunas
+ * OBSOLETO: REEMPLAZADO POR ARCHIVADOR. Clase prototipo de Archivador Hilo que
+ * retira solicitudes al MLQ La idea es tener varios de estos hilos retirando.
  *
  * @author NicoPuig
  */
@@ -38,10 +37,10 @@ public class Remover implements Runnable {
                 mutex.acquire();
                 solicitudes.push(solicitud.toString());
                 mutex.release();
-            } catch(NullPointerException np){
+            } catch (NullPointerException np) {
                 System.out.println("NP: ");
                 np.printStackTrace();
-            }catch (Exception ex) {
+            } catch (Exception ex) {
                 System.out.println(ex);
             }
         }

@@ -7,20 +7,33 @@ import java.util.concurrent.Semaphore;
  * @author NicoPuig
  */
 public class MLQ {
+    
+    public final static MLQ MLQ = new MLQ();
 
     private final FCFSQueue<Solicitud> lowRiskQ18_30 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> lowRiskQ31_50 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> lowRiskQ51_65 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> highRiskQ = new FCFSQueue<>();
 
-    public final Semaphore solicitudes = new Semaphore(0, true);
-    public final Semaphore vacunas = new Semaphore(0, true);
+    private final Semaphore solicitudes = new Semaphore(0, true);
+    private final Semaphore vacunas = new Semaphore(0, true);
+
+    private MLQ() {
+    }
+
+    public int getVacunasDisponibles() {
+        return vacunas.availablePermits();
+    }
+
+    public int getLargoColaEspera() {
+        return solicitudes.availablePermits();
+    }
 
     public void agregarVacunas(int cantidad) {
         vacunas.release(cantidad);
     }
 
-    private void acquire() throws InterruptedException {
+    public void acquire() throws InterruptedException {
         solicitudes.acquire();
         vacunas.acquire(2);
     }
@@ -47,7 +60,6 @@ public class MLQ {
     }
 
     public Solicitud removeNext() throws InterruptedException, Exception {
-        acquire();
         if (!highRiskQ.isEmpty()) {
             return highRiskQ.pop();
         }
@@ -60,6 +72,6 @@ public class MLQ {
         if (!lowRiskQ51_65.isEmpty()) {
             return lowRiskQ51_65.pop();
         }
-        throw new Exception("ERROR: No se deberia llegar nunca aca"); // TODO: Emprolijar
+        throw new IllegalArgumentException("ERROR: No se deberia llegar nunca aca"); // TODO: Emprolijar
     }
 }

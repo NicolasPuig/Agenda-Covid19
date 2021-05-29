@@ -32,7 +32,7 @@ public class ManejadorArchivos {
 
     public static Collection<String> leerArchivo(String path, boolean ignoreHeader) {
         Collection<String> lineas = new LinkedList<>();
-        try ( BufferedReader br = new BufferedReader(new FileReader(path))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String linea = ignoreHeader ? br.readLine() : "";
             while (linea != null) {
                 lineas.add(linea);
@@ -45,7 +45,7 @@ public class ManejadorArchivos {
     }
 
     public static void escribirArchivo(String path, String[] lines, boolean append) {
-        try ( BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
             for (String lineaActual : lines) {
                 bw.write(lineaActual);
                 bw.newLine();
@@ -55,8 +55,19 @@ public class ManejadorArchivos {
         }
     }
 
+    public static <T> void escribirArchivo(String path, T[] lines, boolean append) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+            for (T lineaActual : lines) {
+                bw.write(lineaActual.toString());
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error al escribir el archivo " + path);
+        }
+    }
+
     public static void escribirArchivo(String path, LinkedList lines, boolean append) {
-        try ( BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
             for (Object lineaActual : lines) {
                 bw.write(lineaActual.toString());
                 bw.newLine();
@@ -67,11 +78,19 @@ public class ManejadorArchivos {
     }
 
     public static void escribirArchivo(String path, FCFSQueue lines, boolean append) {
-        try ( BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
             while (!lines.isEmpty()) {
                 bw.write(lines.pop().toString());
                 bw.newLine();
             }
+        } catch (IOException e) {
+            System.out.println("Error al escribir el archivo " + path);
+        }
+    }
+
+    public static void limpiarArchivo(String path) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, false))) {
+            bw.newLine();
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo " + path);
         }

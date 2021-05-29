@@ -37,7 +37,7 @@ public class FCFSQueue<T> {
         return null;
     }
 
-    public synchronized boolean isEmpty() {
+    public boolean isEmpty() {
         return queue.isEmpty();
     }
 }

@@ -1,7 +1,6 @@
 package Program;
 
 import Planificador.MLQ;
-import Util.*;
 
 /**
  *
@@ -9,52 +8,29 @@ import Util.*;
  */
 public class Main {
 
-    private final static String TXT_SALIDA = "src/Archivos/salida.txt";
-    private final static String TXT_ENTRADA = "src/Archivos/entrada.txt";
-
     public static void main(String[] args) {
-        // Boceto de funcionamiento
-        // TODO: Emprolijar
-        MLQ mlq = new MLQ();
-        Inserter.MLQ = mlq;
-        Remover.MLQ = mlq;
-        Inserter.lista = ManejadorArchivos.leerArchivo(TXT_ENTRADA, true);
+        Inserter.MLQ = MLQ.MLQ;
+        Inserter.cantidadDeSolicitudes = 10000;
+        int cantidadDeInserters = 10;
+        int cantidadDeArchivadores = 10;
+        int cantidadDeVacunas = 100000;
+        long duracionDia_ms = 200;
 
-        Inserter.cantidadDeSolicitudes = 10;
-        int cantidadInserters = 5;
-        int cantidadRemovers = 5;
-        mlq.agregarVacunas(2000);
+        MLQ.MLQ.agregarVacunas(cantidadDeVacunas);
+        Ciclo ciclo = new Ciclo(duracionDia_ms);
 
-        for (int i = 0; i < cantidadInserters; i++) {
-            Inserter inserter = new Inserter(String.valueOf(i));
-            inserter.start();
+        for (int i = 0; i < cantidadDeInserters; i++) {
+            new Inserter(String.valueOf(i)).start();
         }
 
-        System.out.println(); // Brakepoint para chequear carga de solicitudes en MLQ
+        System.out.println(""); // BrakePoint para chequear carga de solicitudes al MLQ
 
-        for (int i = 0; i < cantidadRemovers; i++) {
-            Remover remover = new Remover(String.valueOf(i));
-            remover.start();
+        for (int i = 0; i < cantidadDeArchivadores; i++) {
+            new Archivador(String.valueOf(i)).start();
         }
 
-        /*
-            Para chequear funcionamiento poner brakepoint en la proxima linea, y 'archivo' se ira llenando en paralelo
-            Sin el brakepoint no se imprimira nada porque cuando se llegue aca todavia no se habra cargado nada
-            TODO: Arreglar esto para que se espere a que se terminen de cargar solicitudes antes de imprimir
-            Posible solucion: Esperar a que no queden mas vacunas, despues imprimir
-         */
-        try {
-            System.out.println("Dia en proceso...");
-            Thread.sleep(5000);
-            System.out.println("Termino el dia, Esperando a terminar agendado para obtener reporte...");
-            Remover.mutex.acquire(cantidadRemovers);
-            System.out.println("Comenzo escritura de reporte");
-            ManejadorArchivos.escribirArchivo(TXT_SALIDA, Remover.solicitudes, false);
-            System.out.println("Termino reporte");
-            Remover.mutex.release(cantidadRemovers);
-        } catch (InterruptedException ex) {
-            System.out.println(ex);
-        }
+        System.out.println(""); // BrakePoint para chequear agendado
+        ciclo.start();
     }
 }
 
