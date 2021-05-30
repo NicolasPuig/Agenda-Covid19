@@ -14,12 +14,14 @@ public class Solicitud {
     private final long horaInicioSolicitud;
     private long horaFinSolicitud;
     private long tiempoDeEspera;
+    private final int in;
 
-    public Solicitud(String CI, int edad, int riesgo) {
+    public Solicitud(String CI, int edad, int riesgo, int in) {
         this.CI = CI;
         this.edad = edad;
         this.riesgo = riesgo;
         this.horaInicioSolicitud = System.nanoTime();
+        this.in = in;
         this.horaFinSolicitud = -1;
         this.tiempoDeEspera = -1;
     }
@@ -45,7 +47,7 @@ public class Solicitud {
     }
 
     private double nanoToSeconds(long nano) {
-        return Math.round(nano / 10000000) / 100D;
+        return Math.round(nano / 1000000) / 1000D;
     }
 
     public void setHoraFinSolicitud(long horaFinSolicitud) {

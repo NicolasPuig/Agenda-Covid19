@@ -14,7 +14,6 @@ public class MLQ {
     private final FCFSQueue<Solicitud> lowRiskQ31_50 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> lowRiskQ51_65 = new FCFSQueue<>();
     private final FCFSQueue<Solicitud> highRiskQ = new FCFSQueue<>();
-
     private final Semaphore solicitudes = new Semaphore(0);
     private final Semaphore vacunas = new Semaphore(0);
 
@@ -34,8 +33,8 @@ public class MLQ {
     }
 
     public void acquireSolicitud() throws InterruptedException {
-        vacunas.acquire(2);
         solicitudes.acquire();
+        vacunas.acquire(2);
     }
 
     public void insert(Solicitud solicitud) throws InterruptedException {
@@ -60,17 +59,25 @@ public class MLQ {
 
     public Solicitud removeNext() throws InterruptedException, Exception {
         if (!highRiskQ.isEmpty()) {
-            return highRiskQ.pop();
+            Solicitud solicitud = highRiskQ.pop();
+            solicitud.setHoraFinSolicitud(System.nanoTime());
+            return solicitud;
         }
         if (!lowRiskQ18_30.isEmpty()) {
-            return lowRiskQ18_30.pop();
-        }
-        if (!lowRiskQ31_50.isEmpty()) {
-            return lowRiskQ31_50.pop();
+            Solicitud solicitud = lowRiskQ18_30.pop();
+            solicitud.setHoraFinSolicitud(System.nanoTime());
+            return solicitud;
         }
         if (!lowRiskQ51_65.isEmpty()) {
-            return lowRiskQ51_65.pop();
+            Solicitud solicitud = lowRiskQ51_65.pop();
+            solicitud.setHoraFinSolicitud(System.nanoTime());
+            return solicitud;
         }
-        throw new IllegalArgumentException("ERROR: No se deberia llegar nunca aca"); // TODO: Emprolijar
+        if (!lowRiskQ31_50.isEmpty()) {
+            Solicitud solicitud = lowRiskQ31_50.pop();
+            solicitud.setHoraFinSolicitud(System.nanoTime());
+            return solicitud;
+        }
+        return null;
     }
 }

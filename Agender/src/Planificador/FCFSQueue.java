@@ -13,17 +13,25 @@ import java.util.concurrent.Semaphore;
 public class FCFSQueue<T> {
 
     private final Queue<T> queue = new LinkedList<>();
+    private final Semaphore mutex = new Semaphore(1);
 
-    public synchronized void push(T obj) {
+    public void push(T obj) throws InterruptedException {
+        mutex.acquire();
         queue.add(obj);
+        mutex.release();
     }
 
-    public synchronized T pop() {
-        return queue.poll();
+    public T pop() throws InterruptedException {
+        mutex.acquire();
+        T obj = queue.poll();
+        mutex.release();
+        return obj;
     }
 
-    public synchronized boolean isEmpty() {
-        return queue.isEmpty();
+    public boolean isEmpty() throws InterruptedException {
+        mutex.acquire();
+        boolean isEmpty = queue.isEmpty();
+        mutex.release();
+        return isEmpty;
     }
-    
 }

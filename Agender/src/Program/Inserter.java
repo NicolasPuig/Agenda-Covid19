@@ -3,6 +3,7 @@ package Program;
 import Planificador.*;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.concurrent.Semaphore;
 
 /**
  * Clase prototipo de Agendador Hilo que inserta solicitudes random al MLQ La
@@ -19,6 +20,8 @@ public class Inserter implements Runnable {
     public static int cantidadDeSolicitudes = 1000;
     public static Collection<String> lista = new LinkedList<>();
     private static final int CI = 1000000;
+    private static final Semaphore mutex = new Semaphore(1, true);
+    private static int counter = 0;
 
     public Inserter(String name) {
         this.name = "I-" + name;
@@ -39,9 +42,11 @@ public class Inserter implements Runnable {
 
             int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
             int riesgo = (edad > 65 || Math.random() > 0.8) ? (int) (Math.ceil(Math.random() * 5)) : 0;
-            Solicitud solicitud = new Solicitud(String.valueOf(i), edad, riesgo);
             try {
+                mutex.acquire();
+                Solicitud solicitud = new Solicitud(String.valueOf(i), edad, riesgo, counter++);
                 mlq.insert(solicitud);
+                mutex.release();
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }

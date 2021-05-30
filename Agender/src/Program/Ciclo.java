@@ -32,7 +32,7 @@ public class Ciclo {
                 System.out.println("Agendado dia " + dia + " en proceso...");
                 Thread.sleep(duracionDia_ms);   // TODO: Buscar alternativa al sleep
                 System.out.println("Fin del dia. Esperando terminar agendado para obtener reporte...");
-                Reporte reporte = Archivador.getReporteDiario();
+                Reporte reporte = Agendador.getReporteDiario();
                 analizarReporte(reporte);
                 if (reporte.esVacio()) {
                     System.out.println("Nada que reportar! se termina el programa");

@@ -13,11 +13,11 @@ public class Main {
         ManejadorArchivos.borrarArchivos();
 
         // ---- Parametros Iniciales ----
-        Inserter.cantidadDeSolicitudes = 1000;
+        Inserter.cantidadDeSolicitudes = 10000;
         int cantidadDeInserters = 10;
         int cantidadDeArchivadores = 10;
-        int cantidadDeVacunas = 1123145;
-        long duracionDia_ms = 500;
+        int cantidadDeVacunas = 1123011;
+        long duracionDia_ms = 20;
         boolean reportarListaAgendados = true;
         // ------------------------------
 
@@ -31,7 +31,7 @@ public class Main {
         System.out.println(""); // BrakePoint para chequear carga de solicitudes al MLQ
 
         for (int i = 0; i < cantidadDeArchivadores; i++) {
-            new Archivador(String.valueOf(i)).start();
+            new Agendador().start();
         }
 
         System.out.println(""); // BrakePoint para chequear agendado
@@ -51,7 +51,7 @@ Por ultimo los de la franja de 51 a 65
 Actualmente esta funcionando bien el MLQ, falta arreglar bocetos y prototipos de hilos
 
 TODO LIST:
-    - Agendador y Archivador
+    - Agendador y Agendador
     - Funcion que interprete los archivos de entrada
     - Funcion que cree los archivos de salida
     - Buscar la forma de identificar cuando no queden mas solicitudes o vacunas, y ahi crear el archivo de salida
