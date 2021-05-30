@@ -33,6 +33,10 @@ public class Archivador implements Runnable {
         mlqMutex.release();
         thread.start();
     }
+    
+    public static Semaphore getMlqMutex() {
+        return mlqMutex;
+    }
 
     public static Reporte getReporteDiario() {
         try {
@@ -42,7 +46,7 @@ public class Archivador implements Runnable {
             int personasEnEspera = mlq.getLargoColaEspera();
             buffer.clear();
             //mlqMutex.release(cantidadArchivadores + cantidadProductores);
-            // semafotoProductores.release(cantidadProductores)
+            // semaforoProductores.release(cantidadProductores)
             return new Reporte(solicitudes, vacunasDisponibles, personasEnEspera);
         } catch (InterruptedException ex) {
             System.out.println(ex);
