@@ -32,19 +32,24 @@ public class Agendador implements Runnable {
         thread.start();
     }
 
-    public static Reporte getReporteDiario() {
+    public static Solicitud[] getSolicitudesSalida() {
+        return buffer.toArray(new Solicitud[buffer.size()]);
+    }
+
+    public static void limpiarBufferSalida() {
+        buffer.clear();
+    }
+
+    public static void acquireAll() {
         try {
-            semAgendador.acquire(cantidadAgendadores); // +cantidadProductores
-            Solicitud[] solicitudes = buffer.toArray(new Solicitud[buffer.size()]);
-            int vacunasDisponibles = mlq.getVacunasDisponibles();
-            int personasEnEspera = mlq.getLargoColaEspera();
-            buffer.clear();
-            semAgendador.release(cantidadAgendadores); // +cantidaProductores
-            return new Reporte(solicitudes, vacunasDisponibles, personasEnEspera);
-        } catch (InterruptedException ex) {
-            System.out.println(ex);
+            semAgendador.acquire(cantidadAgendadores);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
         }
-        return null;
+    }
+
+    public static void releaseAll() {
+        semAgendador.release(cantidadAgendadores);
     }
 
     private void acquireArchivador() throws InterruptedException {

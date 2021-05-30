@@ -13,19 +13,13 @@ public class Main {
         ManejadorArchivos.borrarArchivos();
 
         // ---- Parametros Iniciales ----
-        Inserter.cantidadDeSolicitudes = 10000;
-        int cantidadDeInserters = 10;
+        int cantidadDeProductores = 10;
         int cantidadDeArchivadores = 10;
-        int cantidadDeVacunas = 1123011;
-        long duracionDia_ms = 20;
         boolean reportarListaAgendados = true;
         // ------------------------------
 
-        MLQ.MLQ.agregarVacunas(cantidadDeVacunas);
-        Ciclo ciclo = new Ciclo(duracionDia_ms, reportarListaAgendados);
-
-        for (int i = 0; i < cantidadDeInserters; i++) {
-            new Inserter(String.valueOf(i)).start();
+        for (int i = 0; i < cantidadDeProductores; i++) {
+//            new Productor(archEntrada, semaforoProductores)
         }
 
         System.out.println(""); // BrakePoint para chequear carga de solicitudes al MLQ
@@ -35,7 +29,6 @@ public class Main {
         }
 
         System.out.println(""); // BrakePoint para chequear agendado
-        ciclo.start();
     }
 }
 

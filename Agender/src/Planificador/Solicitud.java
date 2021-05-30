@@ -1,8 +1,6 @@
 package Planificador;
 
 /**
- * TODO: Agregar campos faltantes - Fecha de request de solicitud - Fecha de
- * agendado final
  *
  * @author NicoPuig
  */
@@ -14,14 +12,12 @@ public class Solicitud {
     private final long horaInicioSolicitud;
     private long horaFinSolicitud;
     private long tiempoDeEspera;
-    private final int in;
 
-    public Solicitud(String CI, int edad, int riesgo, int in) {
+    public Solicitud(String CI, int edad, int riesgo) {
         this.CI = CI;
         this.edad = edad;
         this.riesgo = riesgo;
         this.horaInicioSolicitud = System.nanoTime();
-        this.in = in;
         this.horaFinSolicitud = -1;
         this.tiempoDeEspera = -1;
     }
