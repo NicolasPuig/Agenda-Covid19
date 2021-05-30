@@ -37,9 +37,19 @@ public class Archivador implements Runnable {
     public static Semaphore getMlqMutex() {
         return mlqMutex;
     }
+    
+    public static Solicitud[] getSolicitudesSalida() {
+        return buffer.toArray(new Solicitud[buffer.size()]);
+    }
+    
+    public static void limpiarBufferSalida() {
+        buffer.clear();
+    }
 
     public static Reporte getReporteDiario() {
         try {
+            // semaforoPepito.acquire(cantidadProductores);
+            // espera a que se quede sin vacunas o sin personas el mlq
             mlqMutex.acquire(cantidadArchivadores); // +cantidadProductores
             Solicitud[] solicitudes = buffer.toArray(new Solicitud[buffer.size()]);
             int vacunasDisponibles = mlq.getVacunasDisponibles();

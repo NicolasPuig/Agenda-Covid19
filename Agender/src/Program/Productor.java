@@ -48,7 +48,7 @@ public class Productor extends Thread{
             } else {
                 // Aviso que termine de procesar las solicitudes del dia
                 // semaforoPepito.release();
-                Archivador.getMlqMutex().release();
+                Reporte2.getSemReportes().release();
                 // Espero a que se emita el reporte y me avisen
                 semaforoProductores.acquireUninterruptibly();
                 momentoActual++;
