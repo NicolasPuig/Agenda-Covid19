@@ -15,16 +15,19 @@ import java.util.LinkedList;
  */
 public class ManejadorArchivos {
 
-    public static void generarArchivoEntrada(String path, int cantidad) {
+    public static void generarArchivoEntradaConMomentos(String path, int cantidadMomentos, int id) {
         String separator = ";";
-        int ci = 100000;
+        int ci = 100000 * id;
         LinkedList<String> lineas = new LinkedList<>();
-        lineas.add("CI;edad;riesgo");
-        for (int i = ci; i < ci + cantidad; i++) {
-            int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
-            int riesgo = (edad > 65 || Math.random() > 0.9) ? (int) (Math.ceil(Math.random() * 5)) : 0;
-            String linea = String.join(separator, String.valueOf(i), String.valueOf(edad), String.valueOf(riesgo));
-            lineas.add(linea);
+        lineas.add("Momento;CI;edad;riesgo");
+        for (int momento = 1; momento <= cantidadMomentos; momento++) {
+            int cantidadPorMomento = (int) (Math.random() * (250 - 100)) + 100;
+            for (int i = 0; i < cantidadPorMomento; i++) {
+                int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
+                int riesgo = (edad > 65 || Math.random() > 0.9) ? (int) (Math.ceil(Math.random() * 5)) : 0;
+                String linea = String.join(separator, String.valueOf(momento), String.valueOf(ci++), String.valueOf(edad), String.valueOf(riesgo));
+                lineas.add(linea);
+            }
         }
         escribirArchivo(path, lineas, false);
     }
@@ -32,7 +35,10 @@ public class ManejadorArchivos {
     public static Collection<String> leerArchivo(String path, boolean ignoreHeader) {
         Collection<String> lineas = new LinkedList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String linea = ignoreHeader ? br.readLine() : "";
+            String linea =  br.readLine();
+            if(ignoreHeader){
+                linea = br.readLine();
+            }
             while (linea != null) {
                 lineas.add(linea);
                 linea = br.readLine();

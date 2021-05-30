@@ -1,0 +1,7 @@
+--- REPORTE DIA 5 ---
+ESTADISTICAS
+ - Cantidad Agendados:	0
+ - Cantidad Solicitudes en espera:	1176
+ - Vacunas disponibles:	0
+
+LISTA DE AGENDADOS

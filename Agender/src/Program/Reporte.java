@@ -14,7 +14,8 @@ import java.util.concurrent.Semaphore;
  *
  * @author Seba Mazzey
  */
-public class Reporte2 extends Thread{
+public class Reporte extends Thread {
+
     private int cantProd;
     private int cantArch;
     private int diasTotales;
@@ -22,20 +23,21 @@ public class Reporte2 extends Thread{
     private Semaphore semProductores;
     private static Semaphore semReportes = new Semaphore(0);
     private int agendadosTotales;
-    
-    public Reporte2(int dTotales, int cantProd, int cantArch,
-            boolean imprimirListaAgendados, Semaphore semProductores) {
+
+    public Reporte(int dTotales, int cantProd, int cantArch,
+            boolean imprimirListaAgendados) {
+        super("Reporte");
         this.cantProd = cantProd;
         this.cantArch = cantArch;
         this.diasTotales = dTotales;
         this.imprimirListaAgendados = imprimirListaAgendados;
-        this.semProductores = semProductores;
+        this.semProductores = Productor.getSemaforoProductores();
     }
-    
+
     public static Semaphore getSemReportes() {
         return semReportes;
     }
-    
+
     public void generarArchivoReporteTotal(int vacDisp, int personasEnEspera) {
         String texto
                 = "--- REPORTE TOTAL ---"
@@ -66,7 +68,7 @@ public class Reporte2 extends Thread{
     private String getPath(int dia) {
         return "src/Archivos/dia_" + (dia < 10 ? "0" : "") + dia + ".txt";
     }
-    
+
     @Override
     public void run() {
         int vacDisp = 0;
@@ -85,7 +87,7 @@ public class Reporte2 extends Thread{
             this.agendadosTotales += agendados.length;
             // Creo el reporte diario
             System.out.println("Comenzo escritura de reporte");
-            this.generarArchivoReporteDiario(i, imprimirListaAgendados,
+            this.generarArchivoReporteDiario(i+1, imprimirListaAgendados,
                     agendados, personasEnEspera, vacDisp);
             System.out.println("Termino reporte para " + agendados.length + " solicitudes");
             // Despierto a los productores y archivadores

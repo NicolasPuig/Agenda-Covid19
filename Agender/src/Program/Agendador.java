@@ -22,7 +22,7 @@ public class Agendador implements Runnable {
     private final String nombre;
 
     public Agendador() {
-        this.nombre = "A-" + cantidadAgendadores++;
+        this.nombre = "Agendador-" + cantidadAgendadores++;
         this.thread = new Thread(this, this.nombre);
         this.thread.setDaemon(true);
     }
@@ -52,24 +52,24 @@ public class Agendador implements Runnable {
         semAgendador.release(cantidadAgendadores);
     }
 
-    private void acquireArchivador() throws InterruptedException {
+    private void acquireAgendador() throws InterruptedException {
         mlq.acquireSolicitud();     // Hay solicitudes y vacunas
-        semAgendador.acquire();  // Entrar a trabajar
-        mutexBuffer.acquire();      // Esperar su turno entre otros archivadores
+        semAgendador.acquire();     // Entrar a trabajar
+        mutexBuffer.acquire();      // Esperar su turno entre otros agendadores
     }
 
-    private void releaseArchivador() {
-        mutexBuffer.release();      // Terminar su turno entre archivadores
-        semAgendador.release();  // Salir de trabajar
+    private void releaseAgendador() {
+        mutexBuffer.release();      // Terminar su turno entre agendadores
+        semAgendador.release();     // Salir de trabajar
     }
 
     @Override
     public void run() {
         while (true) {
             try {
-                acquireArchivador();
+                acquireAgendador();
                 buffer.add(mlq.removeNext());
-                releaseArchivador();
+                releaseAgendador();
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }

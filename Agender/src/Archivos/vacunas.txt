@@ -1,21 +1,6 @@
 Vacunas Entrantes
-Dia 1: 1000
-Dia 2: 1000
-Dia 3: 1000
-Dia 4: 1000
-Dia 5: 1000
-Dia 6: 1000
-Dia 7: 1000
-Dia 8: 1000
-Dia 9: 1000
-Dia 10: 1000
-Dia 11: 1000
-Dia 12: 1000
-Dia 13: 1000
-Dia 14: 1000
-Dia 15: 1000
-Dia 16: 1000
-Dia 17: 1000
-Dia 18: 1000
-Dia 19: 1000
-Dia 20: 1000
+Dia 1: 1600
+Dia 2: 1200
+Dia 3: 1300
+Dia 4: 0
+Dia 5: 0

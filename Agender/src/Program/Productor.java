@@ -19,14 +19,17 @@ public class Productor extends Thread {
 
     private final String archEntrada;
     private static MLQ mlq = MLQ.MLQ;
-    private Semaphore semaforoProductores;
+    private static Semaphore semaforoProductores = new Semaphore(0, true);
 
     private static int cantidadProductores = 0;
 
-    public Productor(String archEntrada, Semaphore semaforoProductores) {
+    public Productor(String archEntrada) {
         super("P-" + cantidadProductores++);
         this.archEntrada = archEntrada;
-        this.semaforoProductores = semaforoProductores;
+    }
+
+    public static Semaphore getSemaforoProductores() {
+        return semaforoProductores;
     }
 
     @Override
@@ -50,7 +53,7 @@ public class Productor extends Thread {
             } else {
                 // Aviso que termine de procesar las solicitudes del dia
                 // semaforoPepito.release();
-                Reporte2.getSemReportes().release();
+                Reporte.getSemReportes().release();
                 // Espero a que se emita el reporte y me avisen
                 semaforoProductores.acquireUninterruptibly();
                 momentoActual++;
@@ -64,6 +67,7 @@ public class Productor extends Thread {
                 }
             }
         }
+        Reporte.getSemReportes().release();
         // Si llego aca deje de producir
     }
 }
