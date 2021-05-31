@@ -1,8 +1,8 @@
-package Planificador;
+package Modelado;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Solicitud {
 

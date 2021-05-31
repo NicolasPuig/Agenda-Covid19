@@ -1,13 +1,12 @@
-package Program;
+package Modelado;
 
 import Planificador.MLQ;
-import Planificador.Solicitud;
 import java.util.LinkedList;
 import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Agendador implements Runnable {
 
@@ -19,11 +18,9 @@ public class Agendador implements Runnable {
     private static int cantidadAgendadores = 0;
 
     private final Thread thread;
-    private final String nombre;
 
     public Agendador() {
-        this.nombre = "Agendador-" + cantidadAgendadores++;
-        this.thread = new Thread(this, this.nombre);
+        this.thread = new Thread(this, "Agendador-" + cantidadAgendadores++);
         this.thread.setDaemon(true);
     }
 
@@ -32,12 +29,10 @@ public class Agendador implements Runnable {
         thread.start();
     }
 
-    public static Solicitud[] getSolicitudesSalida() {
-        return buffer.toArray(new Solicitud[buffer.size()]);
-    }
-
-    public static void limpiarBufferSalida() {
+    public static Solicitud[] getSolicitudesAgendadas() {
+        Solicitud[] agendados = buffer.toArray(new Solicitud[buffer.size()]);
         buffer.clear();
+        return agendados;
     }
 
     public static void acquireAll() {
@@ -68,7 +63,7 @@ public class Agendador implements Runnable {
         while (true) {
             try {
                 acquireAgendador();
-                buffer.add(mlq.removeNext());
+                buffer.add(mlq.proximaSolicitud());
                 releaseAgendador();
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());

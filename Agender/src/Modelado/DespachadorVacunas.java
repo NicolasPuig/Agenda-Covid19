@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Program;
+package Modelado;
 
 import Planificador.MLQ;
 import java.util.concurrent.Semaphore;
@@ -12,17 +7,17 @@ import java.util.Collection;
 
 /**
  *
- * @author Seba Mazzey
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
-public class ProductorVacunas extends Thread {
+public class DespachadorVacunas extends Thread {
 
     private String archivoVacunas;
-    private Semaphore semProductores;
+    private Semaphore semDespachador;
 
-    public ProductorVacunas(String archivoVacunas) {
-        super("P-vacunas");
+    public DespachadorVacunas(String archivoVacunas) {
+        super("Despachador-vacunas");
         this.archivoVacunas = archivoVacunas;
-        this.semProductores = Productor.getSemaforoProductores();
+        this.semDespachador = Despachador.getSemaforoDespachadores();
     }
 
     @Override
@@ -37,7 +32,7 @@ public class ProductorVacunas extends Thread {
             int vacunasEntrantes = Integer.parseInt(datos[1].trim());
             MLQ.MLQ.agregarVacunas(vacunasEntrantes);
             Reporte.getSemReportes().release();
-            semProductores.acquireUninterruptibly();
+            semDespachador.acquireUninterruptibly();
         }
     }
 }

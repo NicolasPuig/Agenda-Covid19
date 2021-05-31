@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 /**
  * Cola FCFS Generica sincronizada
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  * @param <T>
  */
 public class FCFSQueue<T> {

@@ -11,7 +11,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class ManejadorArchivos {
 
@@ -35,8 +35,8 @@ public class ManejadorArchivos {
     public static Collection<String> leerArchivo(String path, boolean ignoreHeader) {
         Collection<String> lineas = new LinkedList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String linea =  br.readLine();
-            if(ignoreHeader){
+            String linea = br.readLine();
+            if (ignoreHeader) {
                 linea = br.readLine();
             }
             while (linea != null) {
@@ -87,9 +87,9 @@ public class ManejadorArchivos {
         }
     }
 
-    public static void borrarArchivos() {
+    public static void borrarArchivosSalida() {
         int i = 1;
-        while (new File("src/Archivos/dia_" + (i < 10 ? "0" : "") + i + ".txt").delete()) {
+        while (new File("src/Archivos/reporteDia_" + (i < 10 ? "0" : "") + i + ".txt").delete()) {
             i++;
         }
     }

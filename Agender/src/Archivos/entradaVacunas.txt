@@ -2,5 +2,5 @@ Vacunas Entrantes
 Dia 1: 1600
 Dia 2: 1200
 Dia 3: 1300
-Dia 4: 0
-Dia 5: 0
+Dia 4: 1200
+Dia 5: 100
