@@ -31,7 +31,7 @@ public class DespachadorVacunas extends Thread {
             }
             int vacunasEntrantes = Integer.parseInt(datos[1].trim());
             MLQ.MLQ.agregarVacunas(vacunasEntrantes);
-            Reporte.getSemReportes().release();
+            Reportador.getSemReportes().release();
             semDespachador.acquireUninterruptibly();
         }
     }

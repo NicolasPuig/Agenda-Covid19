@@ -9,17 +9,15 @@ public class Solicitud {
     private String CI;
     private int edad;
     private final int riesgo;
-    private final long horaInicioSolicitud;
-    private long horaFinSolicitud;
-    private long tiempoDeEspera;
+    private final long momentoInicioSolicitud;
+    private long momentoFinSolicitud;
 
-    public Solicitud(String CI, int edad, int riesgo) {
+    public Solicitud(String CI, int edad, int riesgo, int momentoInicial) {
         this.CI = CI;
         this.edad = edad;
         this.riesgo = riesgo;
-        this.horaInicioSolicitud = System.nanoTime();
-        this.horaFinSolicitud = -1;
-        this.tiempoDeEspera = -1;
+        this.momentoInicioSolicitud = momentoInicial;
+        this.momentoFinSolicitud = -1;
     }
 
     public int getRiesgo() {
@@ -42,19 +40,21 @@ public class Solicitud {
         this.edad = edad;
     }
 
-    private double nanoToSeconds(long nano) {
-        return Math.round(nano / 1000000) / 1000D;
+    public long getMomentoFinSolicitud() {
+        return momentoFinSolicitud;
     }
 
-    public void setHoraFinSolicitud(long horaFinSolicitud) {
-        this.horaFinSolicitud = horaFinSolicitud;
-        tiempoDeEspera = horaFinSolicitud - horaInicioSolicitud;
+    public long getMomentoInicioSolicitud() {
+        return momentoInicioSolicitud;
+    }
+
+    public void setMomentoFinSolicitud(long momentoFinSolicitud) {
+        this.momentoFinSolicitud = momentoFinSolicitud;
     }
 
     @Override
     public String toString() {
-        return String.format("CI:%s | Edad:%s | Riesgo:%s | Hora Inicio:%s | Hora Fin:%s | Tiempo Espera:%s",
-                CI, edad, riesgo, nanoToSeconds(horaInicioSolicitud),
-                nanoToSeconds(horaFinSolicitud), nanoToSeconds(tiempoDeEspera));
+        return String.format("CI:%s | Edad:%s | Riesgo:%s | Momento Inicio:%s | Momento Fin:%s",
+                CI, edad, riesgo, momentoInicioSolicitud, momentoFinSolicitud);
     }
 }

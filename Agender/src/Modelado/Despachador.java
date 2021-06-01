@@ -41,13 +41,13 @@ public class Despachador extends Thread {
                 int edad = Integer.parseInt(datos[2]);
                 int riesgo = Integer.parseInt(datos[3]);
                 try {
-                    mlq.insertar(new Solicitud(ci, edad, riesgo));
+                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual));
                 } catch (InterruptedException e) {
                     System.out.println(e);
                 }
             } else {
                 // Aviso que termine de procesar las solicitudes del dia
-                Reporte.getSemReportes().release();
+                Reportador.getSemReportes().release();
                 // Espero a que se emita el reporte y me avisen
                 semDespachador.acquireUninterruptibly();
                 momentoActual++;
@@ -56,13 +56,13 @@ public class Despachador extends Thread {
                 int edad = Integer.parseInt(datos[2]);
                 int riesgo = Integer.parseInt(datos[3]);
                 try {
-                    mlq.insertar(new Solicitud(ci, edad, riesgo));
+                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual));
                 } catch (InterruptedException e) {
                     System.out.println(e);
                 }
             }
         }
         // Si llego aca deje de producir
-        Reporte.getSemReportes().release();
+        Reportador.getSemReportes().release();
     }
 }

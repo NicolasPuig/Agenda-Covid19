@@ -8,23 +8,23 @@ import java.util.concurrent.Semaphore;
  *
  * @author PaoloMazza, SebaMazzey, NicoPuig
  */
-public class Reporte extends Thread {
+public class Reportador extends Thread {
 
     private static Semaphore semReportes = new Semaphore(0);
 
     private int cantidadDespachadores;
     private int cantidadAgendadores;
-    private int cantidadDias;
+    private int cantidadMomentos;
     private boolean imprimirListaAgendados;
     private Semaphore semDespachador;
     private int agendadosTotales;
 
-    public Reporte(int cantidadDias, int cantidadDespachadores, int cantidadAgenadores,
+    public Reportador(int cantidadMomentos, int cantidadDespachadores, int cantidadAgenadores,
             boolean imprimirListaAgendados) {
         super("Reporte");
         this.cantidadDespachadores = cantidadDespachadores;
         this.cantidadAgendadores = cantidadAgenadores;
-        this.cantidadDias = cantidadDias;
+        this.cantidadMomentos = cantidadMomentos;
         this.imprimirListaAgendados = imprimirListaAgendados;
         this.semDespachador = Despachador.getSemaforoDespachadores();
     }
@@ -43,10 +43,10 @@ public class Reporte extends Thread {
         ManejadorArchivos.escribirArchivo("src/Archivos/reporteTotal.txt", texto, false);
     }
 
-    public void generarArchivoReporteDiario(int dia,
+    public void generarArchivoReporteDiario(int momento,
             Solicitud[] solicitudes, int personasEnEspera, int vacunasDisponibles) {
         String texto
-                = "--- REPORTE DIA " + dia + " ---"
+                = "--- REPORTE DIA " + momento + " ---"
                 + "\nESTADISTICAS"
                 + "\n - Cantidad Agendados:\t" + solicitudes.length
                 + "\n - Cantidad Solicitudes en espera:\t" + personasEnEspera
@@ -54,10 +54,11 @@ public class Reporte extends Thread {
         if (imprimirListaAgendados) {
             texto += "\n\nLISTA DE AGENDADOS";
             for (int i = 0; i < solicitudes.length; i++) {
+                solicitudes[i].setMomentoFinSolicitud(momento);
                 texto += "\n" + i + ")\t" + solicitudes[i].toString();
             }
         }
-        ManejadorArchivos.escribirArchivo(getPath(dia), texto, false);
+        ManejadorArchivos.escribirArchivo(getPath(momento), texto, false);
     }
 
     private String getPath(int dia) {
@@ -68,8 +69,8 @@ public class Reporte extends Thread {
     public void run() {
         int vacunasDisponibles = 0;
         int personasEnEspera = 0;
-        for (int dia = 1; dia <= cantidadDias; dia++) {
-            System.out.println("Dia " + dia);
+        for (int momento = 1; momento <= cantidadMomentos; momento++) {
+            System.out.println("Dia " + momento);
             // Espero que los despachadores terminen de producir solicitudes
             semReportes.acquireUninterruptibly(cantidadDespachadores);
             // Espero a que se queden sin vacunas o sin personas para agendar
@@ -82,7 +83,7 @@ public class Reporte extends Thread {
             this.agendadosTotales += agendados.length;
             // Creo el reporte diario
             System.out.println("Fin del dia\nComienza escritura de reporte");
-            this.generarArchivoReporteDiario(dia, agendados,
+            this.generarArchivoReporteDiario(momento, agendados,
                     personasEnEspera, vacunasDisponibles);
             System.out.println("Termino reporte para " + agendados.length + " solicitudes\n");
             // Despierto a los despachadores y agendadores

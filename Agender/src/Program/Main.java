@@ -1,6 +1,6 @@
 package Program;
 
-import Modelado.Reporte;
+import Modelado.Reportador;
 import Modelado.Agendador;
 import Modelado.Despachador;
 import Modelado.DespachadorVacunas;
@@ -41,12 +41,8 @@ public class Main {
         // --------------------------------------------------------
 
         // ---- Modelado de lo dias y generador de reportes diarios ----
-        Reporte reporte = new Reporte(cantidadDias, cantidadDeProductores + 1, cantidadDeArchivadores, reportarListaAgendados);
-        reporte.start();
+        Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1, cantidadDeArchivadores, reportarListaAgendados);
+        reportador.start();
         // -------------------------------------------------------------
     }
 }
-
-/*
-::::::: COMPORTAMIENTO ESPERADO :::::::
- */

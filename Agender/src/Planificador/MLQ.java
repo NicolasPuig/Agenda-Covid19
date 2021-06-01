@@ -60,9 +60,7 @@ public class MLQ {
     public Solicitud proximaSolicitud() throws InterruptedException {
         for (FCFSQueue<Solicitud> queue : queues) {
             if (!queue.isEmpty()) {
-                Solicitud solicitud = queue.pop();
-                solicitud.setHoraFinSolicitud(System.nanoTime());
-                return solicitud;
+                return queue.pop();
             }
         }
         return null;
