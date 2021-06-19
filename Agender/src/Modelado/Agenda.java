@@ -18,15 +18,20 @@ public class Agenda {
     private HashMap<String, LinkedList<Vacunatorio>> vacunatoriosDpto;
     
     public Agenda(String archDepartamentos) {
-        cargarDepartamentos(archDepartamentos);
+        this.vacunatoriosDpto = new HashMap<>();
+        cargarVacunatorios(archDepartamentos);
     }
     
-    private void cargarDepartamentos(String archDepartamentos) {
-        Collection<String> departamentos = ManejadorArchivos.leerArchivo(archDepartamentos, true);
-        int tamanioHash = (int)Math.ceil(departamentos.size()/0.75);
-        this.vacunatoriosDpto = new HashMap<>(tamanioHash);
-        for (String departamento: departamentos) {
-            vacunatoriosDpto.put(departamento, new LinkedList<>());
+    private void cargarVacunatorios(String archDepartamentos) {
+        Collection<String> lineas = ManejadorArchivos.leerArchivo(archDepartamentos, true);
+        for (String linea: lineas) {
+            String[] datos = linea.split(",");
+            LinkedList<Vacunatorio> dptoActual = vacunatoriosDpto.get(datos[0]);
+            if (dptoActual == null) {
+                dptoActual = new LinkedList<>();
+                vacunatoriosDpto.put(datos[0],dptoActual);
+            }
+            dptoActual.add(new Vacunatorio(datos[1], Integer.parseInt(datos[2])));
         }
     }
     

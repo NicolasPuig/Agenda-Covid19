@@ -1,20 +1,20 @@
-Departamentos
-Artigas
-Canelones
-Cerro Largo
-Colonia
-Durazno
-Flores
-Florida
-Lavalleja
-Maldonado
-Montevideo
-Paysandú
-Río Negro
-Rivera
-Rocha
-Salto
-San José
-Soriano
-Tacuarembó
-Treinta y Tres
+Departamento,NombreVacunatorio,Capacidad
+Artigas,Vac1,100
+Canelones,Vac1,100
+Cerro Largo,Vac1,100
+Colonia,Vac1,100
+Durazno,Vac1,100
+Flores,Vac1,100
+Florida,Vac1,100
+Lavalleja,Vac1,100
+Maldonado,Vac1,100
+Montevideo,Vac1,100
+Paysandú,Vac1,100
+Río Negro,Vac1,100
+Rivera,Vac1,100
+Rocha,Vac1,100
+Salto,Vac1,100
+San José,Vac1,100
+Soriano,Vac1,100
+Tacuarembó,Vac1,100
+Treinta y Tres,Vac1,100

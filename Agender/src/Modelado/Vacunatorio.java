@@ -11,18 +11,18 @@ import java.util.concurrent.Semaphore;
  *
  * @author Seba Mazzey
  */
-public class Vacunatorio {
-        private String nombre;
-        // Una lista de dias con un array de solicitudes
-        // La posicion en el array determina a que turno pertenece
-        private HashMap<Integer,DiaAgenda> dias;
-        int capacidadTurno;
-        int capacidadDia;
-        private Semaphore lugaresDisp;
-        private Semaphore lugaresOcupados;
-        private int diaActual;
+    public class Vacunatorio {
+            private String nombre;
+            // Una lista de dias con un array de solicitudes
+            // La posicion en el array determina a que turno pertenece
+            private HashMap<Integer,DiaAgenda> dias;
+            int capacidadTurno;
+            int capacidadDia;
+            private Semaphore lugaresDisp;
+            private Semaphore lugaresOcupados;
+            private int diaActual;
 
-        public Vacunatorio (String nombre, int capacidadTurno) {
+            public Vacunatorio (String nombre, int capacidadTurno) {
             this.nombre = nombre;
             this.dias = new HashMap<>(50);
             this.diaActual = 1;
