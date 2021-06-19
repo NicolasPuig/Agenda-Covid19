@@ -49,4 +49,3 @@ public class Agenda {
         return vacunatoriosDpto.get(departamento).getFirst();
     }
 }
-    
