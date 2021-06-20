@@ -23,6 +23,10 @@ public class DiaAgenda {
         this.mutex = new Semaphore(1,true);
     }
     
+    public Queue<Solicitud> getPersonasAgendadas() {
+        return this.personasAgendadas;
+    }
+    
     public int getCantAgendados() {
         return this.cantAgendados;
     }
@@ -34,7 +38,6 @@ public class DiaAgenda {
     public void agendarPersona(Solicitud persona) {
         mutex.acquireUninterruptibly();
         personasAgendadas.add(persona);
-        this.cantAgendados++;
         mutex.release();
         // TODO: Hacer cosas de estadisticas
     }
