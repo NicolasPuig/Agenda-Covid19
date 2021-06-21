@@ -11,13 +11,17 @@ public class Solicitud {
     private final int riesgo;
     private final long momentoInicioSolicitud;
     private long momentoFinSolicitud;
+    private String departamento;
+    private String vacuna;
 
-    public Solicitud(String CI, int edad, int riesgo, int momentoInicial) {
+    public Solicitud(String CI, int edad, int riesgo, int momentoInicial, String departamento) {
         this.CI = CI;
         this.edad = edad;
         this.riesgo = riesgo;
         this.momentoInicioSolicitud = momentoInicial;
         this.momentoFinSolicitud = -1;
+        this.departamento = departamento;
+        this.vacuna = riesgo > 0 ? "Faiser" : "sinobak";
     }
 
     public int getRiesgo() {
@@ -49,7 +53,21 @@ public class Solicitud {
     }
 
     public void setMomentoFinSolicitud(long momentoFinSolicitud) {
-        this.momentoFinSolicitud = momentoFinSolicitud;
+        if (this.momentoFinSolicitud == -1) {
+            this.momentoFinSolicitud = momentoFinSolicitud;
+        }
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public long getTiempoEspera() {
+        return this.momentoFinSolicitud - this.momentoInicioSolicitud;
     }
 
     @Override

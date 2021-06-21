@@ -1,0 +1,6 @@
+Departamento,NombreVacunatorio,Capacidad
+MDEO,Vac1,1000
+TBO,Vac2,100
+SALTO,Vac3,750
+PDU,Vac4,50
+PDE,Vac5,1500

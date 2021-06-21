@@ -2,6 +2,7 @@ package Modelado;
 
 import Planificador.MLQ;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -25,22 +26,16 @@ public class Agendador implements Runnable {
     }
 
     public void start() {
-        semAgendador.release();
         thread.start();
     }
 
-    public static Solicitud[] getSolicitudesAgendadas() {
-        Solicitud[] agendados = buffer.toArray(new Solicitud[buffer.size()]);
-        buffer.clear();
-        return agendados;
+    public static Map<String, LinkedList<Vacunatorio>> getSolicitudesAgendadas() {
+        return Agenda.AGENDA.getVacunatoriosPorDepartamento();
     }
 
     public static void acquireAll() {
-        try {
-            semAgendador.acquire(cantidadAgendadores);
-        } catch (InterruptedException e) {
-            System.out.println(e.getMessage());
-        }
+        semAgendador.tryAcquire(cantidadAgendadores);
+//            semAgendador.acquire(cantidadAgendadores);
     }
 
     public static void releaseAll() {
@@ -50,23 +45,24 @@ public class Agendador implements Runnable {
     private void acquireAgendador() throws InterruptedException {
         mlq.acquireSolicitud();     // Hay solicitudes y vacunas
         semAgendador.acquire();     // Entrar a trabajar
-        mutexBuffer.acquire();      // Esperar su turno entre otros agendadores
+//        mutexBuffer.acquire();      // Esperar su turno entre otros agendadores
     }
 
-    private void releaseAgendador() {
-        mutexBuffer.release();      // Terminar su turno entre agendadores
-        semAgendador.release();     // Salir de trabajar
-    }
+//    private void releaseAgendador() {
+////        mutexBuffer.release();      // Terminar su turno entre agendadores
+//        semAgendador.release();     // Salir de trabajar
+//    }
 
     @Override
     public void run() {
+        semAgendador.release();
         while (true) {
             try {
                 acquireAgendador();
-                buffer.add(mlq.proximaSolicitud());
-                releaseAgendador();
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
+                Agenda.AGENDA.agendar(mlq.proximaSolicitud());
+                semAgendador.release();
+            } catch (InterruptedException ex) {
+                System.out.println(ex);
             }
         }
     }

@@ -1,5 +1,6 @@
 package Program;
 
+import Modelado.Agenda;
 import Modelado.Reportador;
 import Modelado.Agendador;
 import Modelado.Despachador;
@@ -16,8 +17,10 @@ public class Main {
     private final static String ARCHIVO_VACUNAS = "entradaVacunas.txt";
     private final static String PATH_ARCHIVOS = "src/Archivos/";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
+        Agenda ag = new Agenda("src/Archivos/vacunatoriosTest.txt");
+        Agenda.AGENDA = ag;
         // ---- Parametros Iniciales ----
         int cantidadDias = 5;
         int cantidadDeArchivadores = 10;
@@ -44,5 +47,12 @@ public class Main {
         Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1, cantidadDeArchivadores, reportarListaAgendados);
         reportador.start();
         // -------------------------------------------------------------
+    }
+
+    private static void generaArchivosEntrada() {
+        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaAPP.txt", 5, 1);
+        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaWSP.txt", 5, 2);
+        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaWEB.txt", 5, 3);
+        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaSMS.txt", 5, 4);
     }
 }

@@ -1,207 +1,59 @@
 --- REPORTE DIA 4 ---
-ESTADISTICAS
- - Cantidad Agendados:	200
- - Cantidad Solicitudes en espera:	781
- - Vacunas disponibles:	0
+ -Cantidad Total de Agendados:	200
+ -Cantidad Agendados de alto riesgo:	193 (96.5%)
+ -Cantidad Agendados de bajo riesgo:	7 (3.5%)
+ -Cantidad Agendados de 18 a 30 años:	7 (3.5%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	1.2754455E-7 dias
+-Solicitudes en espera:	809
+-Vacunas disponibles:	0
+	TBO
+		Vac2
+			 -Cantidad Total de Agendados:	32
+ -Cantidad Agendados de alto riesgo:	30 (93.75%)
+ -Cantidad Agendados de bajo riesgo:	2 (6.25%)
+ -Cantidad Agendados de 18 a 30 años:	2 (6.25%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	0.0010416666 dias
 
-LISTA DE AGENDADOS
-0)	CI:400449 | Edad:72 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-1)	CI:400452 | Edad:70 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-2)	CI:400454 | Edad:72 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-3)	CI:400455 | Edad:21 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-4)	CI:400457 | Edad:32 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-5)	CI:400458 | Edad:83 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-6)	CI:400463 | Edad:85 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-7)	CI:400466 | Edad:85 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-8)	CI:400469 | Edad:70 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-9)	CI:400470 | Edad:82 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-10)	CI:400474 | Edad:85 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-11)	CI:400476 | Edad:70 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-12)	CI:400480 | Edad:80 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-13)	CI:400481 | Edad:75 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-14)	CI:400482 | Edad:50 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-15)	CI:400485 | Edad:75 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-16)	CI:400486 | Edad:55 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-17)	CI:400487 | Edad:89 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-18)	CI:400491 | Edad:51 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-19)	CI:400494 | Edad:78 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-20)	CI:400497 | Edad:45 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-21)	CI:400498 | Edad:70 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-22)	CI:400502 | Edad:49 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-23)	CI:400503 | Edad:73 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-24)	CI:400504 | Edad:18 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-25)	CI:400508 | Edad:63 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-26)	CI:400509 | Edad:85 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-27)	CI:400512 | Edad:81 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-28)	CI:400514 | Edad:66 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-29)	CI:400516 | Edad:76 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-30)	CI:400522 | Edad:72 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-31)	CI:400525 | Edad:80 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-32)	CI:400526 | Edad:72 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-33)	CI:400527 | Edad:88 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-34)	CI:400532 | Edad:73 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-35)	CI:400535 | Edad:89 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-36)	CI:400537 | Edad:77 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-37)	CI:400541 | Edad:21 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-38)	CI:400542 | Edad:89 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-39)	CI:400549 | Edad:68 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-40)	CI:400550 | Edad:84 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-41)	CI:400564 | Edad:72 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-42)	CI:400565 | Edad:76 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-43)	CI:400566 | Edad:81 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-44)	CI:400569 | Edad:78 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-45)	CI:400570 | Edad:71 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-46)	CI:400572 | Edad:77 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-47)	CI:400578 | Edad:85 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-48)	CI:400579 | Edad:87 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-49)	CI:400583 | Edad:19 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-50)	CI:400591 | Edad:86 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-51)	CI:400593 | Edad:82 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-52)	CI:400597 | Edad:73 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-53)	CI:300463 | Edad:78 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-54)	CI:400599 | Edad:69 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-55)	CI:400601 | Edad:70 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-56)	CI:300466 | Edad:79 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-57)	CI:300467 | Edad:29 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-58)	CI:300470 | Edad:75 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-59)	CI:400605 | Edad:81 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-60)	CI:300476 | Edad:32 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-61)	CI:400609 | Edad:74 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-62)	CI:300477 | Edad:79 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-63)	CI:400610 | Edad:57 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-64)	CI:300478 | Edad:84 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-65)	CI:300479 | Edad:74 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-66)	CI:400613 | Edad:66 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-67)	CI:300480 | Edad:35 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-68)	CI:300481 | Edad:89 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-69)	CI:300482 | Edad:86 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-70)	CI:300484 | Edad:71 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-71)	CI:400618 | Edad:71 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-72)	CI:400620 | Edad:89 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-73)	CI:300490 | Edad:83 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-74)	CI:300491 | Edad:70 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-75)	CI:400629 | Edad:89 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-76)	CI:300497 | Edad:71 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-77)	CI:400632 | Edad:79 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-78)	CI:400633 | Edad:78 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-79)	CI:300501 | Edad:42 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-80)	CI:400635 | Edad:42 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-81)	CI:300502 | Edad:71 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-82)	CI:300507 | Edad:75 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-83)	CI:300511 | Edad:80 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-84)	CI:300512 | Edad:79 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-85)	CI:300513 | Edad:83 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-86)	CI:300514 | Edad:68 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-87)	CI:300515 | Edad:58 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-88)	CI:300517 | Edad:86 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-89)	CI:200413 | Edad:81 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-90)	CI:300521 | Edad:47 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-91)	CI:200416 | Edad:79 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-92)	CI:300522 | Edad:77 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-93)	CI:200419 | Edad:59 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-94)	CI:300526 | Edad:76 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-95)	CI:200422 | Edad:65 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-96)	CI:300528 | Edad:56 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-97)	CI:200423 | Edad:76 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-98)	CI:200425 | Edad:84 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-99)	CI:300531 | Edad:66 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-100)	CI:300532 | Edad:20 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-101)	CI:200427 | Edad:70 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-102)	CI:300533 | Edad:73 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-103)	CI:300534 | Edad:81 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-104)	CI:200429 | Edad:82 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-105)	CI:300535 | Edad:73 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-106)	CI:300537 | Edad:79 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-107)	CI:200433 | Edad:85 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-108)	CI:300540 | Edad:63 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-109)	CI:200435 | Edad:69 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-110)	CI:200436 | Edad:71 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-111)	CI:300543 | Edad:73 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-112)	CI:300544 | Edad:69 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-113)	CI:200438 | Edad:44 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-114)	CI:200439 | Edad:88 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-115)	CI:200441 | Edad:34 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-116)	CI:300551 | Edad:66 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-117)	CI:200447 | Edad:75 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-118)	CI:200450 | Edad:78 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-119)	CI:300556 | Edad:67 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-120)	CI:300557 | Edad:87 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-121)	CI:200452 | Edad:76 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-122)	CI:300558 | Edad:78 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-123)	CI:200453 | Edad:84 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-124)	CI:300560 | Edad:78 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-125)	CI:200456 | Edad:89 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-126)	CI:200457 | Edad:80 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-127)	CI:300562 | Edad:70 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-128)	CI:300564 | Edad:41 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-129)	CI:300565 | Edad:66 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-130)	CI:200461 | Edad:85 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-131)	CI:200464 | Edad:68 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-132)	CI:300570 | Edad:61 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-133)	CI:300571 | Edad:84 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-134)	CI:200466 | Edad:83 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-135)	CI:200467 | Edad:71 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-136)	CI:300573 | Edad:74 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-137)	CI:200469 | Edad:75 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-138)	CI:300574 | Edad:83 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-139)	CI:300576 | Edad:72 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-140)	CI:200472 | Edad:87 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-141)	CI:300577 | Edad:86 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-142)	CI:200473 | Edad:89 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-143)	CI:200474 | Edad:65 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-144)	CI:300579 | Edad:75 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-145)	CI:200475 | Edad:78 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-146)	CI:200477 | Edad:66 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-147)	CI:300586 | Edad:68 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-148)	CI:200482 | Edad:69 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-149)	CI:200483 | Edad:22 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-150)	CI:200484 | Edad:66 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-151)	CI:300590 | Edad:66 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-152)	CI:200485 | Edad:71 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-153)	CI:200486 | Edad:87 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-154)	CI:200487 | Edad:79 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-155)	CI:300595 | Edad:59 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-156)	CI:300598 | Edad:76 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-157)	CI:200495 | Edad:76 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-158)	CI:300602 | Edad:76 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-159)	CI:300607 | Edad:86 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-160)	CI:200503 | Edad:36 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-161)	CI:200504 | Edad:57 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-162)	CI:200505 | Edad:76 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-163)	CI:200506 | Edad:69 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-164)	CI:200508 | Edad:71 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-165)	CI:300613 | Edad:84 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-166)	CI:200510 | Edad:80 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-167)	CI:300617 | Edad:79 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-168)	CI:300619 | Edad:70 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-169)	CI:200514 | Edad:70 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-170)	CI:300621 | Edad:35 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-171)	CI:200519 | Edad:73 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-172)	CI:200521 | Edad:67 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-173)	CI:200522 | Edad:51 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-174)	CI:200527 | Edad:79 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-175)	CI:200530 | Edad:85 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-176)	CI:200532 | Edad:84 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-177)	CI:200537 | Edad:81 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-178)	CI:200540 | Edad:67 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-179)	CI:300629 | Edad:34 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-180)	CI:300632 | Edad:84 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-181)	CI:300635 | Edad:22 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-182)	CI:300637 | Edad:36 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-183)	CI:300639 | Edad:83 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-184)	CI:100548 | Edad:39 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-185)	CI:100549 | Edad:76 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-186)	CI:100551 | Edad:73 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-187)	CI:100554 | Edad:86 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-188)	CI:100555 | Edad:84 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-189)	CI:100556 | Edad:74 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-190)	CI:100560 | Edad:67 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
-191)	CI:100561 | Edad:72 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-192)	CI:100566 | Edad:66 | Riesgo:1 | Momento Inicio:4 | Momento Fin:4
-193)	CI:100567 | Edad:87 | Riesgo:2 | Momento Inicio:4 | Momento Fin:4
-194)	CI:100570 | Edad:83 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-195)	CI:100571 | Edad:81 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-196)	CI:100572 | Edad:68 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-197)	CI:100573 | Edad:87 | Riesgo:4 | Momento Inicio:4 | Momento Fin:4
-198)	CI:100576 | Edad:64 | Riesgo:5 | Momento Inicio:4 | Momento Fin:4
-199)	CI:100579 | Edad:36 | Riesgo:3 | Momento Inicio:4 | Momento Fin:4
+	PDU
+		Vac4
+			 -Cantidad Total de Agendados:	47
+ -Cantidad Agendados de alto riesgo:	45 (95.744%)
+ -Cantidad Agendados de bajo riesgo:	2 (4.255%)
+ -Cantidad Agendados de 18 a 30 años:	2 (4.255%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	0.02173913 dias
+
+	PDE
+		Vac5
+			 -Cantidad Total de Agendados:	37
+ -Cantidad Agendados de alto riesgo:	37 (100.0%)
+ -Cantidad Agendados de bajo riesgo:	0 (0.0%)
+ -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	8.556191E-23 dias
+
+	MDEO
+		Vac1
+			 -Cantidad Total de Agendados:	41
+ -Cantidad Agendados de alto riesgo:	39 (95.121%)
+ -Cantidad Agendados de bajo riesgo:	2 (4.878%)
+ -Cantidad Agendados de 18 a 30 años:	2 (4.878%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	0.024999999 dias
+
+	SALTO
+		Vac3
+			 -Cantidad Total de Agendados:	43
+ -Cantidad Agendados de alto riesgo:	42 (97.674%)
+ -Cantidad Agendados de bajo riesgo:	1 (2.325%)
+ -Cantidad Agendados de 18 a 30 años:	1 (2.325%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	5.5370986E-4 dias

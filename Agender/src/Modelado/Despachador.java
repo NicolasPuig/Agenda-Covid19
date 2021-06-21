@@ -40,8 +40,9 @@ public class Despachador extends Thread {
                 String ci = datos[1];
                 int edad = Integer.parseInt(datos[2]);
                 int riesgo = Integer.parseInt(datos[3]);
+                String departamento = datos[4];
                 try {
-                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual));
+                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual,departamento));
                 } catch (InterruptedException e) {
                     System.out.println(e);
                 }
@@ -55,8 +56,9 @@ public class Despachador extends Thread {
                 String ci = datos[1];
                 int edad = Integer.parseInt(datos[2]);
                 int riesgo = Integer.parseInt(datos[3]);
+                String departamento = datos[4];
                 try {
-                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual));
+                    mlq.insertar(new Solicitud(ci, edad, riesgo, momentoActual, departamento));
                 } catch (InterruptedException e) {
                     System.out.println(e);
                 }

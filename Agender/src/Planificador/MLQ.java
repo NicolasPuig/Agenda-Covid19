@@ -59,9 +59,13 @@ public class MLQ {
 
     public Solicitud proximaSolicitud() throws InterruptedException {
         for (FCFSQueue<Solicitud> queue : queues) {
-            if (!queue.isEmpty()) {
-                return queue.pop();
+            Solicitud solicitud = queue.pop();
+            if (solicitud != null) {
+                return solicitud;
             }
+//            if (!queue.isEmpty()) {
+//                return queue.pop();
+//            }
         }
         return null;
     }

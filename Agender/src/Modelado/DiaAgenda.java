@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Modelado;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.Semaphore;
@@ -13,32 +9,47 @@ import java.util.concurrent.Semaphore;
  * @author Seba Mazzey
  */
 public class DiaAgenda {
-    private Queue<Solicitud> personasAgendadas;
-    private int cantAgendados;
-    private Semaphore mutex;
     
-    public DiaAgenda() {
+    private Queue<Solicitud> personasAgendadas;
+    private int cantAgendadosTotal = 0;
+    private final Semaphore mutexAgenda;
+    private final Semaphore mutexContador;
+    private final int numeroDia;
+    private final Estadistica estadisticaDiaria = new Estadistica();
+    
+    public DiaAgenda(int numeroDia) {
         personasAgendadas = new LinkedList();
-        this.cantAgendados = 0;
-        this.mutex = new Semaphore(1,true);
+        this.mutexAgenda = new Semaphore(1, true);
+        this.mutexContador = new Semaphore(1, true);
+        this.numeroDia = numeroDia;
+    }
+    
+    public String getEstadisticaDiaria(){
+        return estadisticaDiaria.toString();
     }
     
     public Queue<Solicitud> getPersonasAgendadas() {
         return this.personasAgendadas;
     }
     
-    public int getCantAgendados() {
-        return this.cantAgendados;
+    public int getCantAgendados() throws InterruptedException {
+        mutexContador.acquire();
+        int cantidad = this.cantAgendadosTotal;
+        mutexContador.release();
+        return cantidad;
     }
     
-    public void aumentarAgendados() {
-        cantAgendados++;
+    public void aumentarAgendados() throws InterruptedException {
+        mutexContador.acquire();
+        cantAgendadosTotal++;
+        mutexContador.release();
     }
     
-    public void agendarPersona(Solicitud persona) {
-        mutex.acquireUninterruptibly();
+    public void agendarPersona(Solicitud persona) throws InterruptedException {
+        mutexAgenda.acquire();
+        persona.setMomentoFinSolicitud(numeroDia);
         personasAgendadas.add(persona);
-        mutex.release();
-        // TODO: Hacer cosas de estadisticas
+        mutexAgenda.release();
+        estadisticaDiaria.analizarSolicitud(persona);
     }
 }
