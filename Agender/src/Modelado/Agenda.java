@@ -18,7 +18,7 @@ import java.util.concurrent.Semaphore;
 public class Agenda {
 
     private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
-    public static Agenda AGENDA;
+    public static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
     private final Estadistica estadisticaTotal = new Estadistica();
     private Estadistica estadisticaDiaria = new Estadistica();
     private Semaphore sem = new Semaphore(1);

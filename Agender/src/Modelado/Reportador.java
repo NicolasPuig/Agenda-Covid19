@@ -95,7 +95,7 @@ public class Reportador extends Thread {
                 // Despierto a los despachadores y agendadores
                 semDespachador.release(cantidadDespachadores);
                 Agendador.releaseAll();
-            } catch (ArithmeticException e) {
+            } catch (InterruptedException e) {
                 System.out.println(e);
             }
         }

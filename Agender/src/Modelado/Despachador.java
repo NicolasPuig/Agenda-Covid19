@@ -18,7 +18,7 @@ public class Despachador extends Thread {
     private static int cantidadDespachadores = 0;
 
     public Despachador(String archivoEntrada) {
-        super("Productor-" + cantidadDespachadores++);
+        super("Despachador-" + cantidadDespachadores++);
         this.archivoEntrada = archivoEntrada;
     }
 

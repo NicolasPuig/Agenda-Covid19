@@ -3,6 +3,7 @@ package Program;
 import Modelado.Agenda;
 import Modelado.Reportador;
 import Modelado.Agendador;
+import Modelado.Debugger;
 import Modelado.Despachador;
 import Modelado.DespachadorVacunas;
 import Util.ManejadorArchivos;
@@ -19,14 +20,13 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Agenda ag = new Agenda("src/Archivos/vacunatoriosTest.txt");
-        Agenda.AGENDA = ag;
         // ---- Parametros Iniciales ----
         int cantidadDias = 5;
         int cantidadDeArchivadores = 10;
         int cantidadDeProductores = ARCHIVOS_ENTRADA_SOLICITUDES.length;
         boolean reportarListaAgendados = true;
         // ------------------------------
+        new Debugger();
 
         // Eliminar archivos de reportes diarios viejos
         ManejadorArchivos.borrarArchivosSalida();

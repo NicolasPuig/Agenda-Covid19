@@ -1,5 +1,6 @@
 package Planificador;
 
+import Modelado.Agendador;
 import Modelado.Solicitud;
 import java.util.concurrent.Semaphore;
 
@@ -36,8 +37,20 @@ public class MLQ {
     }
 
     public void acquireSolicitud() throws InterruptedException {
-        solicitudes.acquire();
-        vacunas.acquire(2);
+        if (!solicitudes.tryAcquire()) {
+            Agendador.release();
+            solicitudes.acquire();
+            Agendador.acquire();
+        }
+        if (!vacunas.tryAcquire(2)) {
+            Agendador.release();
+            vacunas.acquire(2);
+            Agendador.acquire();
+        }
+    }
+
+    public boolean canAcquireSolicitud() {
+        return solicitudes.availablePermits() > 0 && vacunas.availablePermits() > 0;
     }
 
     public void insertar(Solicitud solicitud) throws InterruptedException {

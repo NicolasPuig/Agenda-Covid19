@@ -1,6 +1,6 @@
 --- REPORTE DIA 5 ---
  -Cantidad Total de Agendados:	0
--Solicitudes en espera:	1477
+-Solicitudes en espera:	2267
 -Vacunas disponibles:	0
 	TBO
 		Vac2

@@ -1,13 +1,13 @@
 --- REPORTE DIA 1 ---
- -Cantidad Total de Agendados:	511
- -Cantidad Agendados de alto riesgo:	191 (37.377%)
- -Cantidad Agendados de bajo riesgo:	320 (62.622%)
- -Cantidad Agendados de 18 a 30 años:	77 (15.068%)
- -Cantidad Agendados de 31 a 50 años:	128 (25.048%)
- -Cantidad Agendados de 51 a 65 años:	115 (22.504%)
+ -Cantidad Total de Agendados:	558
+ -Cantidad Agendados de alto riesgo:	199 (35.663%)
+ -Cantidad Agendados de bajo riesgo:	359 (64.336%)
+ -Cantidad Agendados de 18 a 30 años:	89 (15.949%)
+ -Cantidad Agendados de 31 a 50 años:	140 (25.089%)
+ -Cantidad Agendados de 51 a 65 años:	130 (23.297%)
  -Tiempo de espera promedio:	0.0 dias
--Solicitudes en espera:	45
--Vacunas disponibles:	574
+-Solicitudes en espera:	0
+-Vacunas disponibles:	384
 	TBO
 		Vac2
 			 -Cantidad Total de Agendados:	111
