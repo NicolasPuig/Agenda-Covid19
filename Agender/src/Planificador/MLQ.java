@@ -1,6 +1,7 @@
 package Planificador;
 
 import Modelado.Agendador;
+import Modelado.Estadistica;
 import Modelado.Solicitud;
 import java.util.concurrent.Semaphore;
 
@@ -20,6 +21,9 @@ public class MLQ {
 
     private final Semaphore solicitudes = new Semaphore(0);
     private final Semaphore vacunas = new Semaphore(0);
+    
+    private final Estadistica estadisticaEntranteTotal = new Estadistica();
+    private final Estadistica estadisticaEntranteDiaria = new Estadistica();
 
     private MLQ() {
     }
@@ -49,10 +53,6 @@ public class MLQ {
         }
     }
 
-    public boolean canAcquireSolicitud() {
-        return solicitudes.availablePermits() > 0 && vacunas.availablePermits() > 0;
-    }
-
     public void insertar(Solicitud solicitud) throws InterruptedException {
         int riesgo = solicitud.getRiesgo();
         if (riesgo > 0) {
@@ -68,6 +68,8 @@ public class MLQ {
             }
         }
         solicitudes.release();
+        estadisticaEntranteDiaria.analizarSolicitud(solicitud);
+        estadisticaEntranteTotal.analizarSolicitud(solicitud);
     }
 
     public Solicitud proximaSolicitud() throws InterruptedException {
@@ -76,9 +78,6 @@ public class MLQ {
             if (solicitud != null) {
                 return solicitud;
             }
-//            if (!queue.isEmpty()) {
-//                return queue.pop();
-//            }
         }
         return null;
     }
