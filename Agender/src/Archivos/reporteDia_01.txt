@@ -5,7 +5,7 @@
  -Cantidad Agendados de 18 a 30 años:	89 (15.949%)
  -Cantidad Agendados de 31 a 50 años:	140 (25.089%)
  -Cantidad Agendados de 51 a 65 años:	130 (23.297%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
 -Solicitudes en espera:	0
 -Vacunas disponibles:	384
 	TBO
@@ -16,7 +16,7 @@
  -Cantidad Agendados de 18 a 30 años:	17 (15.315%)
  -Cantidad Agendados de 31 a 50 años:	28 (25.225%)
  -Cantidad Agendados de 51 a 65 años:	25 (22.522%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
 
 	PDU
 		Vac4
@@ -26,7 +26,7 @@
  -Cantidad Agendados de 18 a 30 años:	17 (15.596%)
  -Cantidad Agendados de 31 a 50 años:	27 (24.77%)
  -Cantidad Agendados de 51 a 65 años:	22 (20.183%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
 
 	PDE
 		Vac5
@@ -36,7 +36,7 @@
  -Cantidad Agendados de 18 a 30 años:	21 (18.26%)
  -Cantidad Agendados de 31 a 50 años:	27 (23.478%)
  -Cantidad Agendados de 51 a 65 años:	25 (21.739%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
 
 	MDEO
 		Vac1
@@ -46,7 +46,7 @@
  -Cantidad Agendados de 18 a 30 años:	16 (14.953%)
  -Cantidad Agendados de 31 a 50 años:	23 (21.495%)
  -Cantidad Agendados de 51 a 65 años:	32 (29.906%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
 
 	SALTO
 		Vac3
@@ -56,4 +56,4 @@
  -Cantidad Agendados de 18 a 30 años:	18 (15.517%)
  -Cantidad Agendados de 31 a 50 años:	35 (30.172%)
  -Cantidad Agendados de 51 a 65 años:	26 (22.413%)
- -Tiempo de espera promedio:	0.0 dias
+ -Tiempo de espera promedio:	0.0 días
