@@ -6,11 +6,25 @@
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
  -Tiempo de espera promedio:	1.0 día
+ -Tiempo de espera promedio para personas con riesgo alto:	1.0 día
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 -Solicitudes en espera:	1109
 -Vacunas disponibles:	0
 	TBO
 		Vac2
-			 -Cantidad Total de Agendados:	0
+			 -Cantidad Total de Agendados:	2
+ -Cantidad Agendados de alto riesgo:	2 (100.0%)
+ -Cantidad Agendados de bajo riesgo:	0 (0.0%)
+ -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
+ -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
+ -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
+ -Tiempo de espera promedio:	1.0 día
+ -Tiempo de espera promedio para personas con riesgo alto:	1.0 día
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDU
 		Vac4
@@ -21,19 +35,13 @@
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
  -Tiempo de espera promedio:	1.0 día
+ -Tiempo de espera promedio para personas con riesgo alto:	1.0 día
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDE
 		Vac5
-			 -Cantidad Total de Agendados:	2
- -Cantidad Agendados de alto riesgo:	2 (100.0%)
- -Cantidad Agendados de bajo riesgo:	0 (0.0%)
- -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
- -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
- -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.0 día
-
-	MDEO
-		Vac1
 			 -Cantidad Total de Agendados:	1
  -Cantidad Agendados de alto riesgo:	1 (100.0%)
  -Cantidad Agendados de bajo riesgo:	0 (0.0%)
@@ -41,6 +49,14 @@
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
  -Tiempo de espera promedio:	1.0 día
+ -Tiempo de espera promedio para personas con riesgo alto:	1.0 día
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+	MDEO
+		Vac1
+			 -Cantidad Total de Agendados:	0
 
 	SALTO
 		Vac3

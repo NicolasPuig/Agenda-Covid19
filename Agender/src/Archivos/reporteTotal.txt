@@ -3,9 +3,13 @@ ESTADISTICAS
  - Solicitudes en espera:	2267
  - Vacunas disponibles:	0
  -Cantidad Total de Agendados:	960
- -Cantidad Agendados de alto riesgo:	513 (53.437%)
- -Cantidad Agendados de bajo riesgo:	447 (46.562%)
- -Cantidad Agendados de 18 a 30 años:	137 (14.27%)
- -Cantidad Agendados de 31 a 50 años:	140 (14.583%)
- -Cantidad Agendados de 51 a 65 años:	170 (17.708%)
- -Tiempo de espera promedio:	0.35 días
+ -Cantidad Agendados de alto riesgo:	487 (50.729%)
+ -Cantidad Agendados de bajo riesgo:	473 (49.27%)
+ -Cantidad Agendados de 18 a 30 años:	131 (13.645%)
+ -Cantidad Agendados de 31 a 50 años:	173 (18.02%)
+ -Cantidad Agendados de 51 a 65 años:	169 (17.604%)
+ -Tiempo de espera promedio:	0.37708333 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.7433265 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días

@@ -5,38 +5,54 @@
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.655 días
+ -Tiempo de espera promedio:	1.785 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.785 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 -Solicitudes en espera:	1599
 -Vacunas disponibles:	0
 	TBO
 		Vac2
-			 -Cantidad Total de Agendados:	36
- -Cantidad Agendados de alto riesgo:	36 (100.0%)
+			 -Cantidad Total de Agendados:	37
+ -Cantidad Agendados de alto riesgo:	37 (100.0%)
  -Cantidad Agendados de bajo riesgo:	0 (0.0%)
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.6944444 días
+ -Tiempo de espera promedio:	1.8648648 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.8648648 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDU
 		Vac4
-			 -Cantidad Total de Agendados:	43
- -Cantidad Agendados de alto riesgo:	43 (100.0%)
+			 -Cantidad Total de Agendados:	38
+ -Cantidad Agendados de alto riesgo:	38 (100.0%)
  -Cantidad Agendados de bajo riesgo:	0 (0.0%)
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.6279069 días
+ -Tiempo de espera promedio:	1.8157895 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.8157895 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDE
 		Vac5
-			 -Cantidad Total de Agendados:	44
- -Cantidad Agendados de alto riesgo:	44 (100.0%)
+			 -Cantidad Total de Agendados:	51
+ -Cantidad Agendados de alto riesgo:	51 (100.0%)
  -Cantidad Agendados de bajo riesgo:	0 (0.0%)
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.7045455 días
+ -Tiempo de espera promedio:	1.7058823 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.7058823 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	MDEO
 		Vac1
@@ -46,14 +62,22 @@
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.6829268 días
+ -Tiempo de espera promedio:	1.8536586 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.8536586 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	SALTO
 		Vac3
-			 -Cantidad Total de Agendados:	36
- -Cantidad Agendados de alto riesgo:	36 (100.0%)
+			 -Cantidad Total de Agendados:	33
+ -Cantidad Agendados de alto riesgo:	33 (100.0%)
  -Cantidad Agendados de bajo riesgo:	0 (0.0%)
  -Cantidad Agendados de 18 a 30 años:	0 (0.0%)
  -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
  -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
- -Tiempo de espera promedio:	1.5555556 días
+ -Tiempo de espera promedio:	1.6969697 días
+ -Tiempo de espera promedio para personas con riesgo alto:	1.6969697 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días

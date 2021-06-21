@@ -6,6 +6,10 @@
  -Cantidad Agendados de 31 a 50 años:	140 (25.089%)
  -Cantidad Agendados de 51 a 65 años:	130 (23.297%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 -Solicitudes en espera:	0
 -Vacunas disponibles:	384
 	TBO
@@ -17,6 +21,10 @@
  -Cantidad Agendados de 31 a 50 años:	28 (25.225%)
  -Cantidad Agendados de 51 a 65 años:	25 (22.522%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDU
 		Vac4
@@ -27,6 +35,10 @@
  -Cantidad Agendados de 31 a 50 años:	27 (24.77%)
  -Cantidad Agendados de 51 a 65 años:	22 (20.183%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	PDE
 		Vac5
@@ -37,6 +49,10 @@
  -Cantidad Agendados de 31 a 50 años:	27 (23.478%)
  -Cantidad Agendados de 51 a 65 años:	25 (21.739%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	MDEO
 		Vac1
@@ -47,6 +63,10 @@
  -Cantidad Agendados de 31 a 50 años:	23 (21.495%)
  -Cantidad Agendados de 51 a 65 años:	32 (29.906%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 	SALTO
 		Vac3
@@ -57,3 +77,7 @@
  -Cantidad Agendados de 31 a 50 años:	35 (30.172%)
  -Cantidad Agendados de 51 a 65 años:	26 (22.413%)
  -Tiempo de espera promedio:	0.0 días
+ -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+ -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+ -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+ -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
