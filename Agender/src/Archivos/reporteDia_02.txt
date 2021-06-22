@@ -1,17 +1,17 @@
 ------------ REPORTE DIA 2 ------------
 SOLICITUDES ENTRANTES
-  -Cantidad Total de Solicitudes: 611, donde 197 (32.242%) fueron agendadas
-  -El 40.098% de las solicitudes totales son de alto riesgo, donde 62.04% de ellas fueron agendadas
-  -El 59.901% de las solicitudes totales son de bajo riesgo, donde 12.295% de ellas fueron agendadas
-  -El 30.874% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 39.823% de ellas fueron agendadas
+  -Cantidad Total de Solicitudes: 611, donde 342 (55.973%) fueron agendadas
+  -El 40.098% de las solicitudes totales son de alto riesgo, donde 100.0% de ellas fueron agendadas
+  -El 59.901% de las solicitudes totales son de bajo riesgo, donde 26.502% de ellas fueron agendadas
+  -El 30.874% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 85.84% de ellas fueron agendadas
   -El 40.163% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 0.0% de ellas fueron agendadas
   -El 28.961% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 0.0% de ellas fueron agendadas
 
 SOLICITUDES AGENDADAS
-  -Cantidad Total de Agendados:	197
-  -Cantidad Agendados de alto riesgo:	152 (77.157%)
-  -Cantidad Agendados de bajo riesgo:	45 (22.842%)
-  -Cantidad Agendados de 18 a 30 años:	45 (22.842%)
+  -Cantidad Total de Agendados:	342
+  -Cantidad Agendados de alto riesgo:	245 (71.637%)
+  -Cantidad Agendados de bajo riesgo:	97 (28.362%)
+  -Cantidad Agendados de 18 a 30 años:	97 (28.362%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 
@@ -22,17 +22,17 @@ SOLICITUDES AGENDADAS
   -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
 
 DATOS GENERALES
-  -Solicitudes en cola de espera:	412
+  -Solicitudes en cola de espera:	259
   -Vacunas disponibles:	0
   -Estado del planificador:	SIN VACUNAS
 
 AGENDADO POR DEPARTAMENTO
   1) TBO
     1.1) Vac2
-  -Cantidad Total de Agendados:	40
-  -Cantidad Agendados de alto riesgo:	29 (72.5%)
-  -Cantidad Agendados de bajo riesgo:	11 (27.5%)
-  -Cantidad Agendados de 18 a 30 años:	11 (27.5%)
+  -Cantidad Total de Agendados:	60
+  -Cantidad Agendados de alto riesgo:	42 (70.0%)
+  -Cantidad Agendados de bajo riesgo:	18 (30.0%)
+  -Cantidad Agendados de 18 a 30 años:	18 (30.0%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 
@@ -44,10 +44,10 @@ AGENDADO POR DEPARTAMENTO
 
   2) PDU
     2.1) Vac4
-  -Cantidad Total de Agendados:	43
-  -Cantidad Agendados de alto riesgo:	35 (81.395%)
-  -Cantidad Agendados de bajo riesgo:	8 (18.604%)
-  -Cantidad Agendados de 18 a 30 años:	8 (18.604%)
+  -Cantidad Total de Agendados:	76
+  -Cantidad Agendados de alto riesgo:	55 (72.368%)
+  -Cantidad Agendados de bajo riesgo:	21 (27.631%)
+  -Cantidad Agendados de 18 a 30 años:	21 (27.631%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 
@@ -59,10 +59,10 @@ AGENDADO POR DEPARTAMENTO
 
   3) PDE
     3.1) Vac5
-  -Cantidad Total de Agendados:	50
-  -Cantidad Agendados de alto riesgo:	39 (78.0%)
-  -Cantidad Agendados de bajo riesgo:	11 (22.0%)
-  -Cantidad Agendados de 18 a 30 años:	11 (22.0%)
+  -Cantidad Total de Agendados:	75
+  -Cantidad Agendados de alto riesgo:	57 (76.0%)
+  -Cantidad Agendados de bajo riesgo:	18 (24.0%)
+  -Cantidad Agendados de 18 a 30 años:	18 (24.0%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 
@@ -74,10 +74,10 @@ AGENDADO POR DEPARTAMENTO
 
   4) MDEO
     4.1) Vac1
-  -Cantidad Total de Agendados:	39
-  -Cantidad Agendados de alto riesgo:	31 (79.487%)
-  -Cantidad Agendados de bajo riesgo:	8 (20.512%)
-  -Cantidad Agendados de 18 a 30 años:	8 (20.512%)
+  -Cantidad Total de Agendados:	76
+  -Cantidad Agendados de alto riesgo:	54 (71.052%)
+  -Cantidad Agendados de bajo riesgo:	22 (28.947%)
+  -Cantidad Agendados de 18 a 30 años:	22 (28.947%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 
@@ -89,10 +89,10 @@ AGENDADO POR DEPARTAMENTO
 
   5) SALTO
     5.1) Vac3
-  -Cantidad Total de Agendados:	25
-  -Cantidad Agendados de alto riesgo:	18 (72.0%)
-  -Cantidad Agendados de bajo riesgo:	7 (28.0%)
-  -Cantidad Agendados de 18 a 30 años:	7 (28.0%)
+  -Cantidad Total de Agendados:	55
+  -Cantidad Agendados de alto riesgo:	37 (67.272%)
+  -Cantidad Agendados de bajo riesgo:	18 (32.727%)
+  -Cantidad Agendados de 18 a 30 años:	18 (32.727%)
   -Cantidad Agendados de 31 a 50 años:	0 (0.0%)
   -Cantidad Agendados de 51 a 65 años:	0 (0.0%)
 

@@ -1,6 +1,6 @@
 Vacunas Entrantes
 Dia 1: 1500
-Dia 2: 10
-Dia 3: 10
+Dia 2: 300
+Dia 3: 500
 Dia 4: 400
-Dia 5: 0
+Dia 5: 900
