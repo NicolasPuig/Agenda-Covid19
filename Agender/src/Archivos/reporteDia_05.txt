@@ -1,23 +1,37 @@
---- REPORTE DIA 5 ---
+------------ REPORTE DIA 5 ------------
+SOLICITUDES ENTRANTES
+  -Cantidad Total de Solicitudes: 668, donde 0 (0.0%) fueron agendadas
+  -El 40.868% de las solicitudes totales son de alto riesgo, donde 0.0% de ellas fueron agendadas
+  -El 59.131% de las solicitudes totales son de bajo riesgo, donde 0.0% de ellas fueron agendadas
+  -El 27.341% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 0.0% de ellas fueron agendadas
+  -El 41.518% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 0.0% de ellas fueron agendadas
+  -El 31.139% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 0.0% de ellas fueron agendadas
+
+SOLICITUDES AGENDADAS
  -Cantidad Total de Agendados:	0
--Solicitudes en espera:	2267
--Vacunas disponibles:	0
-	TBO
-		Vac2
-			 -Cantidad Total de Agendados:	0
 
-	PDU
-		Vac4
-			 -Cantidad Total de Agendados:	0
+DATOS GENERALES
+  -Solicitudes en cola de espera:	2267
+  -Vacunas disponibles:	0
+  -Estado del planificador:	SIN VACUNAS
 
-	PDE
-		Vac5
-			 -Cantidad Total de Agendados:	0
+AGENDADO POR DEPARTAMENTO
+  1) TBO
+    1.1) Vac2
+ -Cantidad Total de Agendados:	0
 
-	MDEO
-		Vac1
-			 -Cantidad Total de Agendados:	0
+  2) PDU
+    2.1) Vac4
+ -Cantidad Total de Agendados:	0
 
-	SALTO
-		Vac3
-			 -Cantidad Total de Agendados:	0
+  3) PDE
+    3.1) Vac5
+ -Cantidad Total de Agendados:	0
+
+  4) MDEO
+    4.1) Vac1
+ -Cantidad Total de Agendados:	0
+
+  5) SALTO
+    5.1) Vac3
+ -Cantidad Total de Agendados:	0

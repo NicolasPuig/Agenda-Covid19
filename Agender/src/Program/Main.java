@@ -44,7 +44,7 @@ public class Main {
         // --------------------------------------------------------
 
         // ---- Modelado de lo dias y generador de reportes diarios ----
-        Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1, cantidadDeArchivadores, reportarListaAgendados);
+        Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1, reportarListaAgendados);
         reportador.start();
         // -------------------------------------------------------------
     }

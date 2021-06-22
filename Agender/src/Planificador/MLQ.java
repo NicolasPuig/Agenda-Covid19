@@ -21,23 +21,18 @@ public class MLQ {
 
     private final Semaphore solicitudes = new Semaphore(0);
     private final Semaphore vacunas = new Semaphore(0);
+
+    /* TODO
+    Que la estadisticas de entrada lleven el conteo de vacunas.
+    Seria agregar las properties en Estadisticas, y sumar vacunas dentro del MLQ.agregarVacunas()
+    Por cada solicitud se retiran dos vacunas, puede ser adentro del Estadistica.analizarSolicitud()
     
-    private final Estadistica estadisticaEntranteTotal = new Estadistica();
-    private final Estadistica estadisticaEntranteDiaria = new Estadistica();
+    Asi evitamos usar el semaforo.availablePermits() -> Poco confiable, se deberia usar solo para debuggeo segun documentacion
+     */
+    private final Estadistica estadisticaTotalEntrada = new Estadistica();
+    private Estadistica estadisticaDiariaEntrada = new Estadistica();
 
     private MLQ() {
-    }
-
-    public int getVacunasDisponibles() {
-        return vacunas.availablePermits();
-    }
-
-    public int getLargoColaEspera() {
-        return solicitudes.availablePermits();
-    }
-
-    public void agregarVacunas(int cantidad) {
-        vacunas.release(cantidad);
     }
 
     public void acquireSolicitud() throws InterruptedException {
@@ -68,8 +63,8 @@ public class MLQ {
             }
         }
         solicitudes.release();
-        estadisticaEntranteDiaria.analizarSolicitud(solicitud);
-        estadisticaEntranteTotal.analizarSolicitud(solicitud);
+        estadisticaDiariaEntrada.analizarSolicitud(solicitud);
+        estadisticaTotalEntrada.analizarSolicitud(solicitud);
     }
 
     public Solicitud proximaSolicitud() throws InterruptedException {
@@ -80,5 +75,37 @@ public class MLQ {
             }
         }
         return null;
+    }
+
+    public int getVacunasDisponibles() {
+        return vacunas.availablePermits();
+    }
+
+    public int getLargoColaEspera() {
+        return solicitudes.availablePermits();
+    }
+
+    public void agregarVacunas(int cantidad) {
+        vacunas.release(cantidad);
+    }
+
+    public Estadistica getEstadisticaDiariaEntrada() {
+        Estadistica estadistica = this.estadisticaDiariaEntrada;
+        this.estadisticaDiariaEntrada = new Estadistica();
+        return estadistica;
+    }
+
+    public Estadistica getEstadisticaTotalEntrada() {
+        return this.estadisticaTotalEntrada;
+    }
+
+    public String getEstado() {
+        if (vacunas.availablePermits() == 0) {
+            return "SIN VACUNAS";
+        }
+        if (solicitudes.availablePermits() == 0) {
+            return "NINGUNA SOLICITUD PARA AGENDAR";
+        }
+        return "AGENDANDO";
     }
 }

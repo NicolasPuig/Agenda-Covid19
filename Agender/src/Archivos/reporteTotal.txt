@@ -1,15 +1,28 @@
---- REPORTE TOTAL ---
-ESTADISTICAS
- - Solicitudes en espera:	2267
- - Vacunas disponibles:	0
- -Cantidad Total de Agendados:	960
- -Cantidad Agendados de alto riesgo:	487 (50.729%)
- -Cantidad Agendados de bajo riesgo:	473 (49.27%)
- -Cantidad Agendados de 18 a 30 años:	131 (13.645%)
- -Cantidad Agendados de 31 a 50 años:	173 (18.02%)
- -Cantidad Agendados de 51 a 65 años:	169 (17.604%)
- -Tiempo de espera promedio:	0.37708333 días
- -Tiempo de espera promedio para personas con riesgo alto:	0.7433265 días
- -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
- -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
- -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+------------ REPORTE TOTAL ------------
+SOLICITUDES ENTRANTES
+  -Cantidad Total de Solicitudes: 3237, donde 960 (29.657%) fueron agendadas
+  -El 38.894% de las solicitudes totales son de alto riesgo, donde 44.162% de ellas fueron agendadas
+  -El 61.105% de las solicitudes totales son de bajo riesgo, donde 20.424% de ellas fueron agendadas
+  -El 27.502% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 24.632% de ellas fueron agendadas
+  -El 40.647% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 17.412% de ellas fueron agendadas
+  -El 31.85% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 20.634% de ellas fueron agendadas
+
+SOLICITUDES AGENDADAS
+  -Cantidad Total de Agendados:	960
+  -Cantidad Agendados de alto riesgo:	556 (57.916%)
+  -Cantidad Agendados de bajo riesgo:	404 (42.083%)
+  -Cantidad Agendados de 18 a 30 años:	134 (13.958%)
+  -Cantidad Agendados de 31 a 50 años:	140 (14.583%)
+  -Cantidad Agendados de 51 a 65 años:	130 (13.541%)
+
+  -Tiempo de espera promedio:	0.30520833 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.52697843 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+DATOS GENERALES
+  -Solicitudes en cola de espera:	2267
+  -Vacunas disponibles:	0
+  -Dias transcurridos:	5
+  -Estado del planificador:	SIN VACUNAS

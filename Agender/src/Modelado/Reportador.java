@@ -12,54 +12,66 @@ import java.util.concurrent.Semaphore;
  */
 public class Reportador extends Thread {
 
-    private static Semaphore semReportes = new Semaphore(0);
+    private final static Semaphore semReportes = new Semaphore(0);
+    private final static Semaphore semDespachador = Despachador.getSemaforoDespachadores();
 
-    private int cantidadDespachadores;
-    private int cantidadAgendadores;
-    private int cantidadMomentos;
-    private boolean imprimirListaAgendados;
-    private Semaphore semDespachador;
-    private int agendadosTotales;
+    private final int cantidadDespachadores;
+    private final int cantidadMomentos;
+    private final boolean imprimirListaAgendados;
 
-    public Reportador(int cantidadMomentos, int cantidadDespachadores, int cantidadAgenadores,
+    public Reportador(int cantidadMomentos, int cantidadDespachadores,
             boolean imprimirListaAgendados) {
         super("Reporte");
         this.cantidadDespachadores = cantidadDespachadores;
-        this.cantidadAgendadores = cantidadAgenadores;
         this.cantidadMomentos = cantidadMomentos;
         this.imprimirListaAgendados = imprimirListaAgendados;
-        this.semDespachador = Despachador.getSemaforoDespachadores();
     }
 
     public static Semaphore getSemReportes() {
         return semReportes;
     }
 
-    public void generarArchivoReporteTotal(int vacunasDisponibles, int personasEnEspera) {
-        Estadistica estadisticaTotal = Agenda.AGENDA.getEstadisticaTotal();
+    public void generarArchivoReporteTotal(int vacunasDisponibles, int personasEnEspera, int momentosTranscurridos) {
+        Estadistica entradaTotal = MLQ.MLQ.getEstadisticaTotalEntrada();
+        Estadistica salidaTotal = Agenda.AGENDA.getEstadisticaTotalDeSalida();
         String texto
-                = "--- REPORTE TOTAL ---"
-                + "\nESTADISTICAS"
-                + "\n - Solicitudes en espera:\t" + personasEnEspera
-                + "\n - Vacunas disponibles:\t" + vacunasDisponibles
-                + "\n" + estadisticaTotal.toString();
+                = "------------ REPORTE TOTAL ------------"
+                + "\nSOLICITUDES ENTRANTES\n" + Estadistica.comparar(entradaTotal, salidaTotal)
+                + "\n\nSOLICITUDES AGENDADAS\n" + salidaTotal.toString()
+                + "\n\nDATOS GENERALES"
+                + "\n  -Solicitudes en cola de espera:\t" + personasEnEspera
+                + "\n  -Vacunas disponibles:\t" + vacunasDisponibles
+                + "\n  -Dias transcurridos:\t" + momentosTranscurridos
+                + "\n  -Estado del planificador:\t" + MLQ.MLQ.getEstado();
         ManejadorArchivos.escribirArchivo("src/Archivos/reporteTotal.txt", texto, false);
     }
 
     private void generarArchivoReporteDiario(int momento, Map<String, LinkedList<Vacunatorio>> agendados, int personasEnEspera, int vacunasDisponibles) {
         try {
 
-            Estadistica estadisticaDiariaTotal = Agenda.AGENDA.getEstadisticaDiaria();
-            String texto = "--- REPORTE DIA " + momento + " ---\n" + estadisticaDiariaTotal.toString()
-                    + "\n-Solicitudes en espera:\t" + personasEnEspera
-                    + "\n-Vacunas disponibles:\t" + vacunasDisponibles;
+            Estadistica estadisticaDiariaEntrada = MLQ.MLQ.getEstadisticaDiariaEntrada();
+            Estadistica estadisticaDiariaSalida = Agenda.AGENDA.getEstadisticaDiariaDeSalida();
+            String texto
+                    = "------------ REPORTE DIA " + momento + " ------------"
+                    + "\nSOLICITUDES ENTRANTES\n" + Estadistica.comparar(estadisticaDiariaEntrada, estadisticaDiariaSalida)
+                    + "\n\nSOLICITUDES AGENDADAS\n" + estadisticaDiariaSalida.toString()
+                    + "\n\nDATOS GENERALES"
+                    + "\n  -Solicitudes en cola de espera:\t" + personasEnEspera
+                    + "\n  -Vacunas disponibles:\t" + vacunasDisponibles
+                    + "\n  -Estado del planificador:\t" + MLQ.MLQ.getEstado()
+                    + "\n\nAGENDADO POR DEPARTAMENTO";
+
+            int numDepartamento = 1;
             for (Map.Entry<String, LinkedList<Vacunatorio>> departamento : agendados.entrySet()) {
-                texto += "\n\t" + departamento.getKey();
+                int numVacunatorio = 1;
+                texto += "\n  " + numDepartamento + ") " + departamento.getKey();
                 for (Vacunatorio vacunatorio : departamento.getValue()) {
                     DiaAgenda dia = vacunatorio.removerDiaActual(momento);
-                    texto += "\n\t\t" + vacunatorio.getNombre()
-                            + "\n\t\t\t" + dia.getEstadisticaDiaria() + "\n";
+                    texto += "\n    " + numDepartamento + "." + numVacunatorio + ") " + vacunatorio.getNombre()
+                            + "\n" + dia.getEstadisticaDiaria() + "\n";
+                    numVacunatorio++;
                 }
+                numDepartamento++;
             }
             ManejadorArchivos.escribirArchivo(getPath(momento), texto, false);
         } catch (ArithmeticException e) {
@@ -75,7 +87,8 @@ public class Reportador extends Thread {
     public void run() {
         int vacunasDisponibles = 0;
         int personasEnEspera = 0;
-        for (int momento = 1; momento <= cantidadMomentos; momento++) {
+        int momento = 1;
+        for (; momento <= cantidadMomentos; momento++) {
             try {
                 System.out.println("Dia " + momento);
                 // Espero que los despachadores terminen de producir solicitudes
@@ -101,6 +114,6 @@ public class Reportador extends Thread {
         }
         // Creo el reporte total
         System.out.println("Nada mas que reportar! Se termina el programa");
-        this.generarArchivoReporteTotal(vacunasDisponibles, personasEnEspera);
+        this.generarArchivoReporteTotal(vacunasDisponibles, personasEnEspera, momento - 1);
     }
 }

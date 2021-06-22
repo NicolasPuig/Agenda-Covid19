@@ -84,13 +84,13 @@ public class Agenda {
         return null;
     }
 
-    public Estadistica getEstadisticaDiaria() {
+    public Estadistica getEstadisticaDiariaDeSalida() {
         Estadistica estadisticaDiaActual = this.estadisticaDiaria;
         this.estadisticaDiaria = new Estadistica();
         return estadisticaDiaActual;
     }
 
-    public Estadistica getEstadisticaTotal() {
+    public Estadistica getEstadisticaTotalDeSalida() {
         return estadisticaTotal;
     }
 }
