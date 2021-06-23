@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Estadistica {
 
@@ -30,6 +30,35 @@ public class Estadistica {
         mutexTotal.acquire();
         cantAgendadosTotal++;
         mutexTotal.release();
+
+        int riesgo = solicitud.getRiesgo();
+        if (riesgo > 0) {
+            mutexRiesgoAlto.acquire();
+            cantRiesgoAlto++;
+            mutexRiesgoAlto.release();
+        } else {
+            int edad = solicitud.getEdad();
+            if (edad < 31) {
+                mutexRiesgoBajo18_30.acquire();
+                cantRiesgoBajo18_30++;
+                mutexRiesgoBajo18_30.release();
+            } else if (edad < 51) {
+                mutexRiesgoBajo31_50.acquire();
+                cantRiesgoBajo31_50++;
+                mutexRiesgoBajo31_50.release();
+            } else {
+                mutexRiesgoBajo51_65.acquire();
+                cantRiesgoBajo51_65++;
+                mutexRiesgoBajo51_65.release();
+            }
+        }
+    }
+
+    public void analizarSolicitudConTiempo(Solicitud solicitud) throws InterruptedException {
+        mutexTotal.acquire();
+        cantAgendadosTotal++;
+        mutexTotal.release();
+
         mutexTiempoEsperaTotal.acquire();
         long tiempoEspera = solicitud.getTiempoEspera();
         tiempoEsperaTotal += tiempoEspera;
@@ -63,7 +92,7 @@ public class Estadistica {
     }
 
     private static float porcentaje(int cantidad, int total) throws ArithmeticException {
-        return total != 0 ? Math.round(1000 * 100 * cantidad / total) / 1000f : 0f;
+        return total != 0 ? Math.round(1000L * 100 * cantidad / total) / 1000f : 0f;
     }
 
     public static String comparar(Estadistica entrada, Estadistica salida) {
@@ -80,7 +109,7 @@ public class Estadistica {
     @Override
     public String toString() {
         if (cantAgendadosTotal == 0) {
-            return " -Cantidad Total de Agendados:\t0";
+            return "  -Cantidad Total de Agendados:\t0";
         }
         int bajoRiesgoTotal = cantRiesgoBajo18_30 + cantRiesgoBajo31_50 + cantRiesgoBajo51_65;
         float mediaTiempoEspera = (float) tiempoEsperaTotal / cantAgendadosTotal;

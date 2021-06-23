@@ -5,32 +5,30 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author Seba Mazzey
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Vacunatorio {
 
-    private String nombre;
-    // Una lista de dias con un array de solicitudes
+    private final String nombre;
+    // Una lista de solicitudesPorDia con un array de solicitudes
     // La posicion en el array determina a que turno pertenece
-    private SyncHashMap<Integer, DiaAgenda> dias;
-    private int capacidadTurno;
+    private final SyncHashMap<Integer, DiaAgenda> solicitudesPorDia;
     private final int capacidadDia;
-    private int capacidadDiaActual;
-    private Semaphore lugaresDisponibles;
-    private Semaphore lugaresOcupados;
     private int diaActual;
+    private int capacidadDiaActual;
+    private final Semaphore lugaresDisponibles;
+    private final Semaphore lugaresOcupados;
 
     public Vacunatorio(String nombre, int capacidadTurno) {
         this.nombre = nombre;
         this.diaActual = 1;
-        this.dias = new SyncHashMap(50);
+        this.solicitudesPorDia = new SyncHashMap(50);
         // Agrego el dia 1 y el dia 1+30
-        this.dias.put(diaActual, new DiaAgenda(this.diaActual));
-        this.dias.put(diaActual + 28, new DiaAgenda(this.diaActual + 28));
+        this.solicitudesPorDia.put(diaActual, new DiaAgenda(this.diaActual));
+        this.solicitudesPorDia.put(diaActual + 28, new DiaAgenda(this.diaActual + 28));
         // Los vac funcionan de 8am a 9pm = 13 horas
         // Los turnos serian de 15min -> 4 turnos por hora
         // Total de 52 Turnos por Dia
-        this.capacidadTurno = capacidadTurno;
         this.capacidadDia = 52 * capacidadTurno;
         this.capacidadDiaActual = this.capacidadDia;
         // Semaforos para poder agendar correctamente
@@ -46,13 +44,13 @@ public class Vacunatorio {
         return null;
     }
 
-    public SyncHashMap<Integer, DiaAgenda> getDias() {
-        return this.dias;
+    public SyncHashMap<Integer, DiaAgenda> getSolicitudesPorDia() {
+        return this.solicitudesPorDia;
     }
 
     public DiaAgenda removerDiaActual(int indiceDia) {
         try {
-            DiaAgenda dia = this.dias.remove(indiceDia);
+            DiaAgenda dia = this.solicitudesPorDia.remove(indiceDia);
             if (diaActual <= indiceDia) {
                 capacidadDiaActual = this.cambiarDiaActual();
                 lugaresDisponibles.drainPermits();
@@ -68,9 +66,9 @@ public class Vacunatorio {
 
     public void agendar(Solicitud solicitud) throws InterruptedException {
         lugaresDisponibles.acquire();// arranca con capacidadDia permisos
-        DiaAgenda diaPrimeraDosis = this.dias.get(this.diaActual);
+        DiaAgenda diaPrimeraDosis = this.solicitudesPorDia.get(this.diaActual);
         diaPrimeraDosis.aumentarAgendados();
-        DiaAgenda diaSegundaDosis = this.dias.get(this.diaActual + 28);
+        DiaAgenda diaSegundaDosis = this.solicitudesPorDia.get(this.diaActual + 28);
         diaSegundaDosis.aumentarAgendados();
         lugaresOcupados.release();
 
@@ -88,19 +86,19 @@ public class Vacunatorio {
     private int cambiarDiaActual() throws InterruptedException {
         while (true) {
             this.diaActual++;
-            DiaAgenda diaBuscar = this.dias.get(this.diaActual);
+            DiaAgenda diaBuscar = this.solicitudesPorDia.get(this.diaActual);
             if (diaBuscar != null) {
                 int capacidadRestante = this.capacidadDia - diaBuscar.getCantAgendados();
                 if (capacidadRestante > 0) {
                     // Me sirve el diaBuscar necesito dia+28 y se que no existe
-                    this.dias.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
+                    this.solicitudesPorDia.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
                     return capacidadRestante;
                 }
                 // El dia que consegui esta lleno y salteo
             } else {
                 // El dia es nulo, creo dia y dia +28
-                this.dias.put(this.diaActual, new DiaAgenda(this.diaActual));
-                this.dias.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
+                this.solicitudesPorDia.put(this.diaActual, new DiaAgenda(this.diaActual));
+                this.solicitudesPorDia.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
                 return this.capacidadDia;
             }
         }

@@ -15,17 +15,25 @@ import java.util.LinkedList;
  */
 public class ManejadorArchivos {
 
-    public static void generarArchivoEntradaConMomentos(String path, int cantidadMomentos, int id) {
+    public static void generarArchivoEntradaVacunas(String path, int cantidadMomentos, int minVacunas, int maxVacunas) {
+        String texto = "Vacunas Entrantes";
+        for (int momento = 1; momento <= cantidadMomentos; momento++) {
+            texto += "\ndia " + momento + ": " + (int) (Math.random() * (maxVacunas - minVacunas) + minVacunas);
+        }
+        escribirArchivo(path, texto, false);
+    }
+
+    public static void generarArchivosEntradaSolicitudes(String path, int cantidadMomentos, int id, int minPersonasPorMomento, int maxPersonasPorMomento, float probabilidadRiesgo) {
         String separator = ";";
         int ci = 100000 * id;
         LinkedList<String> lineas = new LinkedList<>();
         String[] departamentos = {"TBO", "MDEO", "PDU", "PDE", "SALTO"};
         lineas.add("Momento;CI;edad;riesgo;departamento");
         for (int momento = 1; momento <= cantidadMomentos; momento++) {
-            int cantidadPorMomento = (int) (Math.random() * (250 - 100)) + 100;
+            int cantidadPorMomento = (int) (Math.random() * (maxPersonasPorMomento - minPersonasPorMomento)) + minPersonasPorMomento;
             for (int i = 0; i < cantidadPorMomento; i++) {
-                int edad = (int) (Math.floor(Math.random() * (90 - 18)) + 18);
-                int riesgo = (edad > 65 || Math.random() > 0.9) ? (int) (Math.ceil(Math.random() * 5)) : 0;
+                int edad = (int) (Math.floor(Math.random() * (80 - 18)) + 18);
+                int riesgo = (edad > 65 || Math.random() > 1 - probabilidadRiesgo) ? (int) (Math.ceil(Math.random() * 5)) : 0;
                 String departamento = departamentos[(int) (Math.random() * (departamentos.length))];
                 String linea = String.join(separator, String.valueOf(momento), String.valueOf(ci++),
                         String.valueOf(edad), String.valueOf(riesgo), departamento);

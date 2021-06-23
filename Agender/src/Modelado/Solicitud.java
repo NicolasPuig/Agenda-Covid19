@@ -12,7 +12,6 @@ public class Solicitud {
     private final long momentoInicioSolicitud;
     private long momentoFinSolicitud;
     private String departamento;
-    private String vacuna;
 
     public Solicitud(String CI, int edad, int riesgo, int momentoInicial, String departamento) {
         this.CI = CI;
@@ -21,7 +20,6 @@ public class Solicitud {
         this.momentoInicioSolicitud = momentoInicial;
         this.momentoFinSolicitud = -1;
         this.departamento = departamento;
-        this.vacuna = riesgo > 0 ? "Faiser" : "sinobak";
     }
 
     public int getRiesgo() {

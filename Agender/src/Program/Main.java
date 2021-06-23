@@ -1,11 +1,10 @@
 package Program;
 
-import Modelado.Agenda;
-import Modelado.Reportador;
-import Modelado.Agendador;
-import Modelado.Debugger;
-import Modelado.Despachador;
-import Modelado.DespachadorVacunas;
+import Hilos.Reportador;
+import Hilos.Agendador;
+import Hilos.Debugger;
+import Hilos.Despachador;
+import Hilos.DespachadorVacunas;
 import Util.ManejadorArchivos;
 
 /**
@@ -21,12 +20,14 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         // ---- Parametros Iniciales ----
-        int cantidadDias = 5;
+        int cantidadDias = 30;
         int cantidadDeArchivadores = 10;
         int cantidadDeProductores = ARCHIVOS_ENTRADA_SOLICITUDES.length;
-        boolean reportarListaAgendados = true;
         // ------------------------------
-        new Debugger();
+        
+//        generarArchivosEntrada(cantidadDias);
+
+//        new Debugger(); // Solo correr para modo Debug, relantiza el programa
 
         // Eliminar archivos de reportes diarios viejos
         ManejadorArchivos.borrarArchivosSalida();
@@ -44,16 +45,27 @@ public class Main {
         // --------------------------------------------------------
 
         // ---- Modelado de lo dias y generador de reportes diarios ----
-        Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1, reportarListaAgendados);
+        Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1);
         reportador.setPriority(4);
         reportador.start();
         // -------------------------------------------------------------
     }
 
-    private static void generaArchivosEntrada() {
-        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaAPP.txt", 5, 1);
-        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaWSP.txt", 5, 2);
-        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaWEB.txt", 5, 3);
-        ManejadorArchivos.generarArchivoEntradaConMomentos(PATH_ARCHIVOS + "entradaSMS.txt", 5, 4);
+    private static void generarArchivosEntrada(int cantidadMomentos) {
+
+        // --- Configuracion ---
+        int minPersonasPorMomento = 5000;
+        int maxPersonasPorMomento = 150000;
+        float probabilidadRiesgo = 0.05f;
+
+        int minVacunasPorMomento = 0;
+        int maxVacunasPorMomento = 1000000;
+        // ---------------------
+
+        int i = 1;
+        for (String archivo : ARCHIVOS_ENTRADA_SOLICITUDES) {
+            ManejadorArchivos.generarArchivosEntradaSolicitudes(PATH_ARCHIVOS + archivo, cantidadMomentos, i++, minPersonasPorMomento, maxPersonasPorMomento, probabilidadRiesgo);
+        }
+        ManejadorArchivos.generarArchivoEntradaVacunas(PATH_ARCHIVOS + ARCHIVO_VACUNAS, cantidadMomentos, minVacunasPorMomento, maxVacunasPorMomento);
     }
 }

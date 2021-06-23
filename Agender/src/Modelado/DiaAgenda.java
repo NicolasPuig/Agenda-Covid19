@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author Seba Mazzey
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class DiaAgenda {
     
@@ -50,6 +50,6 @@ public class DiaAgenda {
         persona.setMomentoFinSolicitud(numeroDia);
         personasAgendadas.add(persona);
         mutexAgenda.release();
-        estadisticaDiaria.analizarSolicitud(persona);
+        estadisticaDiaria.analizarSolicitudConTiempo(persona);
     }
 }

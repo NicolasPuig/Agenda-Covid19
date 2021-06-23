@@ -1,37 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Modelado;
 
 import java.util.HashMap;
 import Util.ManejadorArchivos;
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author Seba Mazzey
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Agenda {
 
-    private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
     public static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
+
+    private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
     private final Estadistica estadisticaTotal = new Estadistica();
     private Estadistica estadisticaDiaria = new Estadistica();
-    private Semaphore sem = new Semaphore(1);
 
-    public Agenda(String archDepartamentos) {
+    private Agenda(String archDepartamentos) {
         cargarVacunatorios(archDepartamentos);
     }
 
     public void agendar(Solicitud solicitud) throws InterruptedException {
         Vacunatorio vacunatorio = getMejorVacunatorio(solicitud.getDepartamento());
         vacunatorio.agendar(solicitud);
-        estadisticaTotal.analizarSolicitud(solicitud);
-        estadisticaDiaria.analizarSolicitud(solicitud);
+        estadisticaTotal.analizarSolicitudConTiempo(solicitud);
+        estadisticaDiaria.analizarSolicitudConTiempo(solicitud);
     }
 
     private void cargarVacunatorios(String archDepartamentos) {
@@ -69,19 +63,7 @@ public class Agenda {
      * @return un vacunatorio con buena disponibilidad
      */
     public Vacunatorio getMejorVacunatorio(String departamento) {
-        try {
-            sem.acquire();
-            LinkedList<Vacunatorio> vacs = vacunatoriosPorDepartamento.get(departamento);
-            Vacunatorio vac = vacs.getFirst();
-            sem.release();
-            return vac;
-
-        } catch (InterruptedException ex) {
-            System.out.println(ex);
-        } catch (NullPointerException np) {
-            System.out.println(vacunatoriosPorDepartamento.toString());
-        }
-        return null;
+        return vacunatoriosPorDepartamento.get(departamento).getFirst();
     }
 
     public Estadistica getEstadisticaDiariaDeSalida() {

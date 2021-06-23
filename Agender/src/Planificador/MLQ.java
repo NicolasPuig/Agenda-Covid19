@@ -1,6 +1,6 @@
 package Planificador;
 
-import Modelado.Agendador;
+import Hilos.Agendador;
 import Modelado.Estadistica;
 import Modelado.Solicitud;
 import java.util.concurrent.Semaphore;
@@ -22,13 +22,6 @@ public class MLQ {
     private final Semaphore solicitudes = new Semaphore(0);
     private final Semaphore vacunas = new Semaphore(0);
 
-    /* TODO
-    Que la estadisticas de entrada lleven el conteo de vacunas.
-    Seria agregar las properties en Estadisticas, y sumar vacunas dentro del MLQ.agregarVacunas()
-    Por cada solicitud se retiran dos vacunas, puede ser adentro del Estadistica.analizarSolicitud()
-    
-    Asi evitamos usar el semaforo.availablePermits() -> Poco confiable, se deberia usar solo para debuggeo segun documentacion
-     */
     private final Estadistica estadisticaTotalEntrada = new Estadistica();
     private Estadistica estadisticaDiariaEntrada = new Estadistica();
 
@@ -80,12 +73,12 @@ public class MLQ {
     public int getVacunasDisponibles() {
         return vacunas.availablePermits();
     }
-
-    public int getLargoColaEspera() {
+    
+    public int getSolicitudesEnEspera(){
         return solicitudes.availablePermits();
     }
-
-    public void agregarVacunas(int cantidad) {
+    
+    public void agregarVacunas(int cantidad) throws InterruptedException {
         vacunas.release(cantidad);
     }
 
@@ -100,7 +93,7 @@ public class MLQ {
     }
 
     public String getEstado() {
-        if (vacunas.availablePermits() == 0) {
+        if (vacunas.availablePermits() < 2) {
             return "SIN VACUNAS";
         }
         if (solicitudes.availablePermits() == 0) {

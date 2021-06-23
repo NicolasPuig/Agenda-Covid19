@@ -45,7 +45,7 @@ public class VacunatorioTest {
             System.out.println(ex);
         }
 
-        DiaAgenda diaActual = vacTest.getDias().get(1);
+        DiaAgenda diaActual = vacTest.getSolicitudesPorDia().get(1);
         String actual = diaActual.getPersonasAgendadas().remove().getCI();
 
         String expected = solTest1.getCI();
@@ -64,7 +64,7 @@ public class VacunatorioTest {
             System.out.println(ex);
         }
 
-        DiaAgenda diaActual = vacTest.getDias().get(29);
+        DiaAgenda diaActual = vacTest.getSolicitudesPorDia().get(29);
         String actual = diaActual.getPersonasAgendadas().remove().getCI();
 
         String expected = solTest1.getCI();
@@ -85,7 +85,7 @@ public class VacunatorioTest {
         } catch (InterruptedException ex) {
             Logger.getLogger(VacunatorioTest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        DiaAgenda diaActual = vacTest.getDias().get(1);
+        DiaAgenda diaActual = vacTest.getSolicitudesPorDia().get(1);
         String agendado1 = diaActual.getPersonasAgendadas().remove().getCI();
         String agendado2 = diaActual.getPersonasAgendadas().remove().getCI();
         String agendado3 = diaActual.getPersonasAgendadas().remove().getCI();
@@ -111,7 +111,7 @@ public class VacunatorioTest {
             }
             // Agendo al n°53 (deberia ir al dia 2)
             vacTest.agendar(solTest2);
-            DiaAgenda diaActual = vacTest.getDias().get(2);
+            DiaAgenda diaActual = vacTest.getSolicitudesPorDia().get(2);
             String actual = diaActual.getPersonasAgendadas().remove().getCI();
 
             String expected = solTest2.getCI();
@@ -137,7 +137,7 @@ public class VacunatorioTest {
             }
             // La siguiente agenda deberia caer en el dia 28*2+1 = 57
             vacTest.agendar(solTest2);
-            DiaAgenda diaActual = vacTest.getDias().get(57);
+            DiaAgenda diaActual = vacTest.getSolicitudesPorDia().get(57);
             String actual = diaActual.getPersonasAgendadas().remove().getCI();
 
             String expected = solTest2.getCI();

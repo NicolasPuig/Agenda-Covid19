@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  * @param <K>
  * @param <V>
  */
