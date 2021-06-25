@@ -11,11 +11,11 @@ import java.util.LinkedList;
  */
 public class Agenda {
 
-    public static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
+    public final static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
 
     private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
-    private final Estadistica estadisticaTotal = new Estadistica();
-    private Estadistica estadisticaDiaria = new Estadistica();
+    private final Estadistica estadisticaTotal = new EstadisticaConTiempo();
+    private Estadistica estadisticaDiaria = new EstadisticaConTiempo();
 
     private Agenda(String archDepartamentos) {
         cargarVacunatorios(archDepartamentos);
@@ -24,8 +24,8 @@ public class Agenda {
     public void agendar(Solicitud solicitud) throws InterruptedException {
         Vacunatorio vacunatorio = getMejorVacunatorio(solicitud.getDepartamento());
         vacunatorio.agendar(solicitud);
-        estadisticaTotal.analizarSolicitudConTiempo(solicitud);
-        estadisticaDiaria.analizarSolicitudConTiempo(solicitud);
+        estadisticaTotal.pedirAnalisis(solicitud);
+        estadisticaDiaria.pedirAnalisis(solicitud);
     }
 
     private void cargarVacunatorios(String archDepartamentos) {
@@ -67,12 +67,14 @@ public class Agenda {
     }
 
     public Estadistica getEstadisticaDiariaDeSalida() {
+        this.estadisticaDiaria.esperarFinAnalisis();
         Estadistica estadisticaDiaActual = this.estadisticaDiaria;
-        this.estadisticaDiaria = new Estadistica();
+        this.estadisticaDiaria = new EstadisticaConTiempo();
         return estadisticaDiaActual;
     }
 
     public Estadistica getEstadisticaTotalDeSalida() {
+        estadisticaTotal.esperarFinAnalisis();
         return estadisticaTotal;
     }
 }

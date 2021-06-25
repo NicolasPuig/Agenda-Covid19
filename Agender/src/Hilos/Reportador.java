@@ -42,6 +42,7 @@ public class Reportador extends Thread {
                 + "\n\nDATOS GENERALES"
                 + "\n  -Solicitudes en cola de espera:\t" + MLQ.getSolicitudesEnEspera()
                 + "\n  -Vacunas disponibles:\t" + MLQ.getVacunasDisponibles()
+                + "\n  -Vacunas ingresadas:\t" + entradaTotal.getCantidadVacunas()
                 + "\n  -Dias transcurridos:\t" + momentosTranscurridos
                 + "\n  -Estado del planificador:\t" + MLQ.getEstado();
         ManejadorArchivos.escribirArchivo("src/Archivos/reporteTotal.txt", texto, false);
@@ -59,6 +60,7 @@ public class Reportador extends Thread {
                     + "\n\nDATOS GENERALES"
                     + "\n  -Solicitudes en cola de espera:\t" + MLQ.getSolicitudesEnEspera()
                     + "\n  -Vacunas disponibles:\t" + MLQ.getVacunasDisponibles()
+                    + "\n  -Vacunas ingresadas:\t" + estadisticaDiariaEntrada.getCantidadVacunas()
                     + "\n  -Estado del planificador:\t" + MLQ.getEstado()
                     + "\n\nAGENDADO POR DEPARTAMENTO";
 

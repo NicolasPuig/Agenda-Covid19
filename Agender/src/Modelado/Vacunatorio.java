@@ -40,10 +40,6 @@ public class Vacunatorio {
         return nombre;
     }
 
-    public String getEstadisticas() {
-        return null;
-    }
-
     public SyncHashMap<Integer, DiaAgenda> getSolicitudesPorDia() {
         return this.solicitudesPorDia;
     }
@@ -79,8 +75,8 @@ public class Vacunatorio {
         }
 
         // Si llego aca ya se en que dia me agendo
-        diaPrimeraDosis.agendarPersona(solicitud);
-        diaSegundaDosis.agendarPersona(solicitud);
+        diaPrimeraDosis.agendar(solicitud);
+        diaSegundaDosis.agendar(solicitud);
     }
 
     private int cambiarDiaActual() throws InterruptedException {

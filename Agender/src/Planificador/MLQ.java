@@ -56,8 +56,8 @@ public class MLQ {
             }
         }
         solicitudes.release();
-        estadisticaDiariaEntrada.analizarSolicitud(solicitud);
-        estadisticaTotalEntrada.analizarSolicitud(solicitud);
+        estadisticaDiariaEntrada.pedirAnalisis(solicitud);
+        estadisticaTotalEntrada.pedirAnalisis(solicitud);
     }
 
     public Solicitud proximaSolicitud() throws InterruptedException {
@@ -73,23 +73,27 @@ public class MLQ {
     public int getVacunasDisponibles() {
         return vacunas.availablePermits();
     }
-    
-    public int getSolicitudesEnEspera(){
+
+    public int getSolicitudesEnEspera() {
         return solicitudes.availablePermits();
     }
-    
+
     public void agregarVacunas(int cantidad) throws InterruptedException {
         vacunas.release(cantidad);
+        estadisticaDiariaEntrada.agregarVacunas(cantidad);
+        estadisticaTotalEntrada.agregarVacunas(cantidad);
     }
 
     public Estadistica getEstadisticaDiariaEntrada() {
+        this.estadisticaDiariaEntrada.esperarFinAnalisis();
         Estadistica estadistica = this.estadisticaDiariaEntrada;
         this.estadisticaDiariaEntrada = new Estadistica();
         return estadistica;
     }
 
     public Estadistica getEstadisticaTotalEntrada() {
-        return this.estadisticaTotalEntrada;
+        estadisticaTotalEntrada.esperarFinAnalisis();
+        return estadisticaTotalEntrada;
     }
 
     public String getEstado() {

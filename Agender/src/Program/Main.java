@@ -5,6 +5,7 @@ import Hilos.Agendador;
 import Hilos.Debugger;
 import Hilos.Despachador;
 import Hilos.DespachadorVacunas;
+import Hilos.Estadistico;
 import Util.ManejadorArchivos;
 
 /**
@@ -22,12 +23,13 @@ public class Main {
         // ---- Parametros Iniciales ----
         int cantidadDias = 30;
         int cantidadDeArchivadores = 10;
+        int cantidadDeEstadisticos = 5;
         int cantidadDeProductores = ARCHIVOS_ENTRADA_SOLICITUDES.length;
         // ------------------------------
-        
-//        generarArchivosEntrada(cantidadDias);
 
-//        new Debugger(); // Solo correr para modo Debug, relantiza el programa
+        generarArchivosEntrada(cantidadDias);
+
+        new Debugger(); // Solo correr para modo Debug, relantiza el programa
 
         // Eliminar archivos de reportes diarios viejos
         ManejadorArchivos.borrarArchivosSalida();
@@ -42,8 +44,12 @@ public class Main {
         for (int i = 0; i < cantidadDeArchivadores; i++) {
             new Agendador().start();
         }
-        // --------------------------------------------------------
 
+        for (int i = 0; i < cantidadDeEstadisticos; i++) {
+            new Estadistico().start();
+        }
+
+        // --------------------------------------------------------
         // ---- Modelado de lo dias y generador de reportes diarios ----
         Reportador reportador = new Reportador(cantidadDias, cantidadDeProductores + 1);
         reportador.setPriority(4);
@@ -54,18 +60,18 @@ public class Main {
     private static void generarArchivosEntrada(int cantidadMomentos) {
 
         // --- Configuracion ---
-        int minPersonasPorMomento = 5000;
-        int maxPersonasPorMomento = 150000;
-        float probabilidadRiesgo = 0.05f;
+        int minPersonasPorMomento = 50000;
+        int maxPersonasPorMomento = 100000;
+        float probabilidadRiesgo = 0.1f;
 
-        int minVacunasPorMomento = 0;
-        int maxVacunasPorMomento = 1000000;
+        int minVacunasPorMomento = 50000;
+        int maxVacunasPorMomento = 500000;
         // ---------------------
 
-        int i = 1;
-        for (String archivo : ARCHIVOS_ENTRADA_SOLICITUDES) {
-            ManejadorArchivos.generarArchivosEntradaSolicitudes(PATH_ARCHIVOS + archivo, cantidadMomentos, i++, minPersonasPorMomento, maxPersonasPorMomento, probabilidadRiesgo);
-        }
+//        int i = 1;
+//        for (String archivo : ARCHIVOS_ENTRADA_SOLICITUDES) {
+//            ManejadorArchivos.generarArchivosEntradaSolicitudes(PATH_ARCHIVOS + archivo, cantidadMomentos, i++, minPersonasPorMomento, maxPersonasPorMomento, probabilidadRiesgo);
+//        }
         ManejadorArchivos.generarArchivoEntradaVacunas(PATH_ARCHIVOS + ARCHIVO_VACUNAS, cantidadMomentos, minVacunasPorMomento, maxVacunasPorMomento);
     }
 }
