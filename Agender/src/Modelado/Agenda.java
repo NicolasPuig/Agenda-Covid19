@@ -4,6 +4,7 @@ import java.util.HashMap;
 import Util.ManejadorArchivos;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.concurrent.Semaphore;
 
 /**
  *
@@ -14,6 +15,7 @@ public class Agenda {
     public final static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
 
     private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
+    private final HashMap<String, Semaphore> semDepartamentos = new HashMap<>();
     private final Estadistica estadisticaTotal = new EstadisticaConTiempo();
     private Estadistica estadisticaDiaria = new EstadisticaConTiempo();
 
@@ -36,6 +38,7 @@ public class Agenda {
             if (dptoActual == null) {
                 dptoActual = new LinkedList<>();
                 vacunatoriosPorDepartamento.put(datos[0], dptoActual);
+                semDepartamentos.put(datos[0], new Semaphore(1, true));
             }
             dptoActual.add(new Vacunatorio(datos[1], Integer.parseInt(datos[2])));
         }
@@ -63,7 +66,13 @@ public class Agenda {
      * @return un vacunatorio con buena disponibilidad
      */
     public Vacunatorio getMejorVacunatorio(String departamento) {
-        return vacunatoriosPorDepartamento.get(departamento).getFirst();
+        Semaphore semDepartamento = semDepartamentos.get(departamento);
+        Vacunatorio vacActual;
+        semDepartamento.acquireUninterruptibly();
+        vacActual = vacunatoriosPorDepartamento.get(departamento).removeFirst();
+        vacunatoriosPorDepartamento.get(departamento).addLast(vacActual);
+        semDepartamento.release();
+        return vacActual;
     }
 
     public Estadistica getEstadisticaDiariaDeSalida() {
