@@ -1,0 +1,138 @@
+Departamento,NombreVacunatorio,Capacidad
+Artigas,Artigas - Centro Tisiológico 1,30
+Artigas,Artigas - Centro Tisiológico 2,30
+Artigas,Bella Unión - Hospital ASSE 1,30
+Artigas,Bella Unión - Hospital ASSE 2,30
+Canelones,Canelones - CP Canelones 1,60
+Canelones,Canelones - CP Canelones 2,60
+Canelones,Polideportivo IMM Las Piedras 1,30
+Canelones,Polideportivo IMM Las Piedras 2,30
+Canelones,Pando - Hospital Pando 1,90
+Canelones,Pando - Hospital Pando 2,90
+Canelones,San Ramón - ASSE 1,60
+Canelones,San Ramón - ASSE 2,60
+Canelones,Canelones - COMECA,90
+Canelones,Ciudad de la Costa - Centro Salud ASSE 1,60
+Canelones,Ciudad de la Costa - Centro Salud ASSE 2,60
+Canelones,Pando - CAAMEPA,90
+Canelones,Sauce - Centro Cultural Casa de Artigas,60
+Cerro Largo,Melo - UTU Gimnasio 1,60
+Cerro Largo,Melo - UTU Gimnasio 2,60
+Cerro Largo,Río Branco - Plaza de Deportes 1,60
+Cerro Largo,Río Branco - Plaza de Deportes 2,60
+Cerro Largo,Aceguá Policlínica ASSE,60
+Cerro Largo,Fraile Muerto - Club Uruguay,60
+Colonia,Colonia - Hospital Samuel Berton CHLA-EP 1,60
+Colonia,Colonia - Hospital Samuel Berton CHLA-EP 2,60
+Colonia,Carmelo - Hospital ASSE 1,90
+Colonia,Carmelo - Hospital ASSE 2,90
+Colonia,Rosario - Hospital ASSE CP Rosario 1,90
+Colonia,Rosario - Hospital ASSE CP Rosario 2,90
+Colonia,Nueva Palmira Centro Auxiliar ASSE,60
+Colonia,Nueva Helvecia Centro Auxiliar ASSE,60
+Colonia,Tarariras Policlinica Htal. Evangélico,90
+Colonia,Juan Lacaze Sede secundaria CCOU,60
+Durazno,Durazno - CP Durazno CHALEP 1,90
+Durazno,Durazno - CP Durazno CHALEP 2,90
+Durazno,Sarandí del Yí - Sub CP Sarandí del Yí CHLAEP 1,60
+Durazno,Sarandí del Yí - Sub CP Sarandí del Yí CHLAEP 2,60
+Flores,Trinidad - Plaza de Deportes 1,60
+Flores,Trinidad - Plaza de Deportes 2,60
+Florida,Florida - Hospital ASSE CP Florida CHLAEP 1,60
+Florida,Florida - Hospital ASSE CP Florida CHLAEP 2,60
+Florida,Florida - Policlínico COMEF,100
+Florida,Sarandí Grande - Sub CP Sdi Grande - ASSE 1,60
+Florida,Sarandí Grande - Sub CP Sdi Grande - ASSE 2,60
+Florida,Casupá - Policlínica ASSE,60
+Lavalleja,Minas - Estadio Municipal 1,60
+Lavalleja,Minas - Estadio Municipal 2,60
+Maldonado,Maldonado - CAMPUS Puesto 1,60
+Maldonado,Maldonado - CAMPUS Puesto 2,60
+Maldonado,Pan de Azúcar - Hospital Pan de Azúcar 1,90
+Maldonado,Pan de Azúcar - Hospital Pan de Azúcar 2,90
+Maldonado,Maldonado - CEDEMCAR,60
+Montevideo,ANTEL ARENA 1,120
+Montevideo,ANTEL ARENA 2,120
+Montevideo,ANTEL ARENA 3,120
+Montevideo,ANTEL ARENA 4,120
+Montevideo,ANTEL ARENA 5,120
+Montevideo,Asociación Española,120
+Montevideo,Centro Salud Cerro,120
+Montevideo,CASMU,120
+Montevideo,Círculo Católico,90
+Montevideo,COSEM Malvín,90
+Montevideo,CUDAM,90
+Montevideo,ED. PARQUE BATLLE - UDELAR 1,120
+Montevideo,ED. PARQUE BATLLE - UDELAR 2,120
+Montevideo,ED. PARQUE BATLLE - UDELAR 3,120
+Montevideo,ED. PARQUE BATLLE - UDELAR 4,120
+Montevideo,ED. PARQUE BATLLE - UDELAR 5,120
+Montevideo,ELEPEM - MONTEVIDEO,90
+Montevideo,INISA,90
+Montevideo,IMM Complejo CRECE,90
+Montevideo,Hospital Maciel,120
+Montevideo,Hospital Militar,120
+Montevideo,Hospital Britanico,120
+Montevideo,Hospital de Clínicas A,120
+Montevideo,Hospital de Clínicas B,120
+Montevideo,Hospital de Clínicas C,120
+Montevideo,Hospital Pasteur,120
+Montevideo,Hospital Pereira Rossell,120
+Montevideo,Hospital Policial,120
+Montevideo,Hospital Evangélico,120
+Montevideo,IMM Policlinica Zully Sánchez,120
+Montevideo,Medica Uruguaya,120
+Montevideo,SAI PPL,90
+Montevideo,Sanatorio Casa de Galicia,90
+Montevideo,SMI IMPASA,90
+Montevideo,UNIVERSAL,90
+Paysandú,Paysandú - CP Paysandú CHLAEP 1,90
+Paysandú,Paysandú - CP Paysandú CHLAEP 2,90
+Río Negro,Fray Bentos - Hospital ASSE 1,120
+Río Negro,Fray Bentos - Hospital ASSE 2,120
+Río Negro,Young - CAMY Pediatría,30
+Río Negro,Young - Hospital Young,90
+Rivera,Minas de Corrales Hospital ASSE Minas de Corrales,90
+Rivera,Rivera - Casa de la Cultura,90
+Rivera,Rivera - CASMER 1,90
+Rivera,Rivera - CASMER 2,90
+Rivera,Rivera - COMERI,90
+Rivera,Tranqueras - Policlínica ASSE,90
+Rivera,Vichadero - Policlínica ASSE,90
+Rocha,Castillos - Hospital Castillos,90
+Rocha,Chuy - Policlinica Samuel Priliac Sub CP Chuy,90
+Rocha,Chuy - Hospital Chuy,90
+Rocha,Lascano - Hospital Lascano,90
+Rocha,Rocha - COMERO,90
+Rocha,Rocha - CP Rocha CHLAEP Hospital Rocha,90
+Rocha,Rocha – Centro Cultural La Paloma,90
+Salto,Salto - LOCAL COMERCIAL 1,90
+Salto,Salto - LOCAL COMERCIAL 2,90
+Salto,Salto - SMQS - HOSPITAL DE AGUDOS,90
+San José,Ciudad del Plata Policlínica AMSJ 1,90
+San José,Ciudad del Plata Policlínica AMSJ 2,90
+San José,Delta del Tigre - Comisión profomento Delta del Tigre,60
+San José,Libertad - Hospital ASSE 1,90
+San José,Libertad - Hospital ASSE 2,90
+San José,San José de Mayo Centro Protección de Choferes 1,60
+San José,San José de Mayo Centro Protección de Choferes 2,60
+San José,San José de Mayo - Local ex Garelli,60
+Soriano,Mercedes - CP Mercedes CHLAEP 1,90
+Soriano,Mercedes - CP Mercedes CHLAEP 2,90
+Soriano,Cardona - Círculo Católico 1,60
+Soriano,Cardona - Círculo Católico 2,60
+Soriano,Cardona - CAMS,100
+Soriano,Dolores - CAMS 1,60
+Soriano,Dolores - CAMS 2,60
+Soriano,Dolores - Hospital Dolores,90
+Soriano,UNIDAD N°24 PENSE INR,90
+Tacuarembó,COMTA - Clínica Fisioterapia,60
+Tacuarembó,Centro de salud San Gregorio de Polanco,60
+Tacuarembó,Paso de los Toros - COMTA 1,90
+Tacuarembó,Paso de los Toros - COMTA 2,90
+Tacuarembó,Tacuarembó COMPLEJO BARRIOS AMORÍN,90
+Tacuarembó,Tacuarembó - COMTA Clínica Fisioterapia,90
+Treinta y Tres,Estadio Municipal Centro Empleados de Comercio 1,90
+Treinta y Tres,Estadio Municipal Centro Empleados de Comercio 2,90
+Treinta y Tres,Cerro Chato Centro Social Democrático,60
+Treinta y Tres,Vergara - Hospital Vergara,60
