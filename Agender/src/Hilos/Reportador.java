@@ -20,11 +20,13 @@ public class Reportador extends Thread {
 
     private final int cantidadDespachadores;
     private final int cantidadMomentos;
+    private final boolean escribirReportesDiarios;
 
-    public Reportador(int cantidadMomentos, int cantidadDespachadores) {
+    public Reportador(int cantidadMomentos, int cantidadDespachadores, boolean escribirReportesDiarios) {
         super("Reportador");
         this.cantidadDespachadores = cantidadDespachadores;
         this.cantidadMomentos = cantidadMomentos;
+        this.escribirReportesDiarios = escribirReportesDiarios;
     }
 
     public static void release() {
@@ -69,14 +71,53 @@ public class Reportador extends Thread {
                 int numVacunatorio = 1;
                 texto += "\n  " + numDepartamento + ") " + departamento.getKey();
                 for (Vacunatorio vacunatorio : departamento.getValue()) {
-                    DiaAgenda dia = vacunatorio.removerDiaActual(momento);
+                    DiaAgenda dia = vacunatorio.removerDiaActual(momento, true);
                     texto += "\n    " + numDepartamento + "." + numVacunatorio + ") " + vacunatorio.getNombre()
                             + "\n" + dia.getEstadisticaDiaria() + "\n";
                     numVacunatorio++;
                 }
                 numDepartamento++;
             }
-            ManejadorArchivos.escribirArchivo(getPathReporteDiario(momento), texto, false);
+            if (escribirReportesDiarios) {
+                ManejadorArchivos.escribirArchivo(getPathReporteDiario(momento), texto, false);
+            }
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+    }
+
+    private void generarArchivoReporteRestantes(int momento) {
+        try {
+            if (escribirReportesDiarios) {
+                Map<String, LinkedList<Vacunatorio>> agendadosPorDepartamento = Agendador.getSolicitudesAgendadas();
+                int ultimoDia = 1;
+                for (Map.Entry<String, LinkedList<Vacunatorio>> departamento : agendadosPorDepartamento.entrySet()) {
+                    for (Vacunatorio vacunatorio : departamento.getValue()) {
+                        if (ultimoDia < vacunatorio.getUltimoDiaAgendado()) {
+                            ultimoDia = vacunatorio.getUltimoDiaAgendado();
+                        }
+                    }
+                }
+                for (int i = momento; i <= ultimoDia; i++) {
+                    String texto
+                            = "------------ REPORTE DIA " + i + " ------------"
+                            + "\n\nAGENDADO POR DEPARTAMENTO";
+
+                    int numDepartamento = 1;
+                    for (Map.Entry<String, LinkedList<Vacunatorio>> departamento : agendadosPorDepartamento.entrySet()) {
+                        int numVacunatorio = 1;
+                        texto += "\n  " + numDepartamento + ") " + departamento.getKey();
+                        for (Vacunatorio vacunatorio : departamento.getValue()) {
+                            DiaAgenda dia = vacunatorio.removerDiaActual(i, false);
+                            texto += "\n    " + numDepartamento + "." + numVacunatorio + ") " + vacunatorio.getNombre()
+                                    + "\n" + (dia != null ? dia.getEstadisticaDiaria() : "Ningun Agendado") + "\n";
+                            numVacunatorio++;
+                        }
+                        numDepartamento++;
+                    }
+                    ManejadorArchivos.escribirArchivo(getPathReporteDiarioRestante(i), texto, false);
+                }
+            }
         } catch (ArithmeticException e) {
             System.out.println(e);
         }
@@ -84,6 +125,10 @@ public class Reportador extends Thread {
 
     private String getPathReporteDiario(int dia) {
         return "src/Archivos/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
+    }
+
+    private String getPathReporteDiarioRestante(int dia) {
+        return "src/Archivos/DiasRestantes/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
     }
 
     @Override
@@ -112,6 +157,7 @@ public class Reportador extends Thread {
         }
         // Creo el reporte total
         System.out.println("Nada mas que reportar! Se termina el programa");
+        this.generarArchivoReporteRestantes(momento);
         this.generarArchivoReporteTotal(momento - 1);
     }
 }

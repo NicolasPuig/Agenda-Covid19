@@ -18,6 +18,7 @@ public class Vacunatorio {
     private int capacidadDiaActual;
     private final Semaphore lugaresDisponibles;
     private final Semaphore lugaresOcupados;
+    private int ultimoDiaAgendado;
 
     public Vacunatorio(String nombre, int capacidadTurno) {
         this.nombre = nombre;
@@ -26,6 +27,7 @@ public class Vacunatorio {
         // Agrego el dia 1 y el dia 1+30
         this.solicitudesPorDia.put(diaActual, new DiaAgenda(this.diaActual));
         this.solicitudesPorDia.put(diaActual + 28, new DiaAgenda(this.diaActual + 28));
+        this.ultimoDiaAgendado = 29;
         // Los vac funcionan de 8am a 9pm = 13 horas
         // Los turnos serian de 15min -> 4 turnos por hora
         // Total de 52 Turnos por Dia
@@ -44,10 +46,10 @@ public class Vacunatorio {
         return this.solicitudesPorDia;
     }
 
-    public DiaAgenda removerDiaActual(int indiceDia) {
+    public DiaAgenda removerDiaActual(int indiceDia, boolean agregarDia) {
         try {
             DiaAgenda dia = this.solicitudesPorDia.remove(indiceDia);
-            if (diaActual <= indiceDia) {
+            if (agregarDia && diaActual <= indiceDia) {
                 capacidadDiaActual = this.cambiarDiaActual();
                 lugaresDisponibles.drainPermits();
                 lugaresDisponibles.release(capacidadDiaActual);
@@ -88,6 +90,7 @@ public class Vacunatorio {
                 if (capacidadRestante > 0) {
                     // Me sirve el diaBuscar necesito dia+28 y se que no existe
                     this.solicitudesPorDia.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
+                    this.ultimoDiaAgendado = this.diaActual + 28;
                     return capacidadRestante;
                 }
                 // El dia que consegui esta lleno y salteo
@@ -95,8 +98,13 @@ public class Vacunatorio {
                 // El dia es nulo, creo dia y dia +28
                 this.solicitudesPorDia.put(this.diaActual, new DiaAgenda(this.diaActual));
                 this.solicitudesPorDia.put(this.diaActual + 28, new DiaAgenda(this.diaActual + 28));
+                this.ultimoDiaAgendado = this.diaActual + 28;
                 return this.capacidadDia;
             }
         }
+    }
+    
+    public int getUltimoDiaAgendado(){
+        return ultimoDiaAgendado;
     }
 }

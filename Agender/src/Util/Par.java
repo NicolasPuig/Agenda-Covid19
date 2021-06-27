@@ -2,7 +2,9 @@ package Util;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
+ * @param <M>
+ * @param <N>
  */
 public class Par<M, N> {
 

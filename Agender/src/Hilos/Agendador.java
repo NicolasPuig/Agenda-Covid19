@@ -21,6 +21,7 @@ public class Agendador implements Runnable {
 
     public Agendador() {
         this.thread = new Thread(this, "Agendador-" + cantidadAgendadores++);
+        this.thread.setPriority(7);
         this.thread.setDaemon(true);
     }
 

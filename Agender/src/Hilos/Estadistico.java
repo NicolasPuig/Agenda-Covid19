@@ -9,7 +9,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * @author NicoPuig
+ * @author PaoloMazza, SebaMazzey, NicoPuig
  */
 public class Estadistico implements Runnable {
 

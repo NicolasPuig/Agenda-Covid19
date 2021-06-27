@@ -1,6 +1,9 @@
 package Planificador;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -9,7 +12,7 @@ import java.util.concurrent.Semaphore;
  * @param <K>
  * @param <V>
  */
-public class SyncHashMap<K, V> {
+public class SyncHashMap<K extends Comparable, V> {
 
     private final Semaphore mutex = new Semaphore(1, true);
     private final HashMap<K, V> map;
@@ -50,6 +53,19 @@ public class SyncHashMap<K, V> {
             V value = map.remove(key);
             mutex.release();
             return value;
+        } catch (InterruptedException ex) {
+            System.out.println(ex);
+            return null;
+        }
+    }
+
+    public List<Map.Entry<K, V>> getSortedEntryList() {
+        try {
+            mutex.acquire();
+            List<Map.Entry<K, V>> list = new LinkedList<>(map.entrySet());
+            list.sort((entry1, entry2) -> entry1.getKey().compareTo(entry2.getKey()));
+            mutex.release();
+            return list;
         } catch (InterruptedException ex) {
             System.out.println(ex);
             return null;

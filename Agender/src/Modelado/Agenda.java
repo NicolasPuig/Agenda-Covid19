@@ -4,6 +4,7 @@ import java.util.HashMap;
 import Util.ManejadorArchivos;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -12,15 +13,15 @@ import java.util.concurrent.Semaphore;
  */
 public class Agenda {
 
-    public final static Agenda AGENDA = new Agenda("src/Archivos/vacunatoriosTest.txt");
+    public static Agenda AGENDA;
 
     private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
     private final HashMap<String, Semaphore> semDepartamentos = new HashMap<>();
     private final Estadistica estadisticaTotal = new EstadisticaConTiempo();
     private Estadistica estadisticaDiaria = new EstadisticaConTiempo();
 
-    private Agenda(String archDepartamentos) {
-        cargarVacunatorios(archDepartamentos);
+    public Agenda(String pathVacunatorios) {
+        cargarVacunatorios(pathVacunatorios);
     }
 
     public void agendar(Solicitud solicitud) throws InterruptedException {
@@ -65,7 +66,7 @@ public class Agenda {
      * @param departamento el departamento
      * @return un vacunatorio con buena disponibilidad
      */
-    public Vacunatorio getMejorVacunatorio(String departamento) {
+    private Vacunatorio getMejorVacunatorio(String departamento) {
         Semaphore semDepartamento = semDepartamentos.get(departamento);
         Vacunatorio vacActual;
         semDepartamento.acquireUninterruptibly();
@@ -86,4 +87,16 @@ public class Agenda {
         estadisticaTotal.esperarFinAnalisis();
         return estadisticaTotal;
     }
+
+//    public String emitirReporteDiasRestantes() {
+//        String texto = "";
+//        for (Map.Entry<String, LinkedList<Vacunatorio>> entry : vacunatoriosPorDepartamento.entrySet()) {
+//            String departamento = entry.getKey();
+//            LinkedList<Vacunatorio> vacunatorios = entry.getValue();
+//            texto += departamento + "\n";
+//            for (Vacunatorio vacunatorio : vacunatorios) {
+//
+//            }
+//        }
+//    }
 }

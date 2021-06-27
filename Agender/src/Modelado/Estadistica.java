@@ -1,11 +1,7 @@
 package Modelado;
 
 import Hilos.Estadistico;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.concurrent.Semaphore;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
