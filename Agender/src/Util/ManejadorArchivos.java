@@ -28,7 +28,7 @@ public class ManejadorArchivos {
         String separator = ";";
         int ci = 100000 * id;
         LinkedList<String> lineas = new LinkedList<>();
-        String[] departamentos = {"TBO", "MDEO", "PDU", "PDE", "SALTO"};
+        String[] departamentos = {"Tacuarembó", "Treinta y Tres", "Soriano", "San José", "Salto", "Rocha", "Rivera", "Río Negro", "Paysandú", "Montevideo", "Maldonado", "Lavalleja", "Florida", "Durazno", "Colonia", "Cerro Largo", "Canelones", "Artigas", "Flores"};
         lineas.add("Momento;CI;edad;riesgo;departamento");
         for (int momento = 1; momento <= cantidadMomentos; momento++) {
             int cantidadPorMomento = (int) (Math.random() * (maxPersonasPorMomento - minPersonasPorMomento)) + minPersonasPorMomento;
@@ -101,9 +101,9 @@ public class ManejadorArchivos {
 
     public static void borrarArchivosSalida() {
         int i = 1;
-        File[] carpetasSalida = new File("src/Archivos/").listFiles(file-> file.getName().startsWith("Salida"));
-        for(File carpeta : carpetasSalida){
-            for(File archivo : carpeta.listFiles()){
+        File[] carpetasSalida = new File("src/Archivos/").listFiles(file -> file.getName().startsWith("Salida"));
+        for (File carpeta : carpetasSalida) {
+            for (File archivo : carpeta.listFiles()) {
                 archivo.delete();
             }
         }

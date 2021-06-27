@@ -136,11 +136,11 @@ public class Reportador extends Thread {
     }
 
     private String getPathCSVCantidad() {
-        return PATH_ARCHIVOS + "SalidaCSV/csvCantidades.txt";
+        return PATH_ARCHIVOS + "SalidaCSV/csvCantidades.csv";
     }
 
     private String getPathCSVPorcentajes() {
-        return PATH_ARCHIVOS + "SalidaCSV/csvPorcentajes.txt";
+        return PATH_ARCHIVOS + "SalidaCSV/csvPorcentajes.csv";
     }
 
     private void agregarHeadersCSV() {

@@ -16,7 +16,7 @@ import Util.ManejadorArchivos;
 public class Main {
 
     private final static String[] ARCHIVOS_ENTRADA_SOLICITUDES = {"entradaWSP.txt", "entradaWeb.txt", "entradaApp.txt", "entradaSMS.txt"};
-    private final static String PATH_VACUNATORIOS = "entradaVacunatorios.txt";
+    private final static String PATH_VACUNATORIOS = "vacunatoriosReal.txt";
     private final static String ARCHIVO_VACUNAS = "entradaVacunas.txt";
     private final static String PATH_ARCHIVOS_ENTRADA = "src/Archivos/Entrada/";
 
@@ -75,11 +75,11 @@ public class Main {
 
         // --- Configuracion de Archivos ---
         int minPersonasPorMomento = 5000;
-        int maxPersonasPorMomento = 10000;
+        int maxPersonasPorMomento = 6000;
         float probabilidadRiesgo = 0.1f;
 
-        int minVacunasPorMomento = 50000;
-        int maxVacunasPorMomento = 80000;
+        int minVacunasPorMomento = 10000;
+        int maxVacunasPorMomento = 50000;
         // ---------------------------------
 
         int i = 1;

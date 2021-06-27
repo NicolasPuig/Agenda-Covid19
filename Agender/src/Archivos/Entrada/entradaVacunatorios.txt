@@ -1,0 +1,8 @@
+Departamento,NombreVacunatorio,Capacidad
+MDEO,Antel Arena 1,1000
+MDEO,Antel Arena 2,1000
+MDEO,Antel Arena 3,1000
+TBO,Vac2,1000
+SALTO,Vac3,1000
+PDU,Vac4,500
+PDE,Vac5,1000

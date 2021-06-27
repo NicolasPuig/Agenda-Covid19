@@ -24,5 +24,4 @@ hs_err_pid*
 /Agender/nbproject/private/
 /Agender/build/
 /Agender/dist/
-/Agender/src/Archivos/reporte*
-/Agender/src/Archivos/entrada*
+Agender/src/Archivos/SalidaD*
