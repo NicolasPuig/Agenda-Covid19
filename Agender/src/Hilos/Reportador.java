@@ -16,6 +16,8 @@ import java.util.concurrent.Semaphore;
  */
 public class Reportador extends Thread {
 
+    private final static String PATH_ARCHIVOS = "src/Archivos/";
+
     private final static Semaphore semReportes = new Semaphore(0);
 
     private final int cantidadDespachadores;
@@ -47,7 +49,7 @@ public class Reportador extends Thread {
                 + "\n  -Vacunas ingresadas:\t" + entradaTotal.getCantidadVacunas()
                 + "\n  -Dias transcurridos:\t" + momentosTranscurridos
                 + "\n  -Estado del planificador:\t" + MLQ.getEstado();
-        ManejadorArchivos.escribirArchivo("src/Archivos/reporteTotal.txt", texto, false);
+        ManejadorArchivos.escribirArchivo(PATH_ARCHIVOS + "SalidaDiarios/reporteTotal.txt", texto, false);
     }
 
     private void generarArchivoReporteDiario(int momento, Map<String, LinkedList<Vacunatorio>> agendados) {
@@ -79,6 +81,8 @@ public class Reportador extends Thread {
                 numDepartamento++;
             }
             if (escribirReportesDiarios) {
+                ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), estadisticaDiariaSalida.cantidadToCSV(momento) + "\n", true);
+                ManejadorArchivos.escribirArchivo(getPathCSVPorcentajes(), Estadistica.porcentajeToCSV(estadisticaDiariaEntrada, estadisticaDiariaSalida, momento) + "\n", true);
                 ManejadorArchivos.escribirArchivo(getPathReporteDiario(momento), texto, false);
             }
         } catch (ArithmeticException e) {
@@ -102,7 +106,6 @@ public class Reportador extends Thread {
                     String texto
                             = "------------ REPORTE DIA " + i + " ------------"
                             + "\n\nAGENDADO POR DEPARTAMENTO";
-
                     int numDepartamento = 1;
                     for (Map.Entry<String, LinkedList<Vacunatorio>> departamento : agendadosPorDepartamento.entrySet()) {
                         int numVacunatorio = 1;
@@ -115,6 +118,7 @@ public class Reportador extends Thread {
                         }
                         numDepartamento++;
                     }
+//                    ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), estadisticaDiariaSalida.cantidadToCSV() + "\n", true);
                     ManejadorArchivos.escribirArchivo(getPathReporteDiarioRestante(i), texto, false);
                 }
             }
@@ -124,16 +128,33 @@ public class Reportador extends Thread {
     }
 
     private String getPathReporteDiario(int dia) {
-        return "src/Archivos/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
+        return PATH_ARCHIVOS + "SalidaDiarios/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
     }
 
     private String getPathReporteDiarioRestante(int dia) {
-        return "src/Archivos/DiasRestantes/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
+        return PATH_ARCHIVOS + "SalidaDiasRestantes/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
+    }
+
+    private String getPathCSVCantidad() {
+        return PATH_ARCHIVOS + "SalidaCSV/csvCantidades.txt";
+    }
+
+    private String getPathCSVPorcentajes() {
+        return PATH_ARCHIVOS + "SalidaCSV/csvPorcentajes.txt";
+    }
+
+    private void agregarHeadersCSV() {
+        if (escribirReportesDiarios) {
+            String headers = "Momento;Agendados Totales;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
+            ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), headers, false);
+            ManejadorArchivos.escribirArchivo(getPathCSVPorcentajes(), headers, false);
+        }
     }
 
     @Override
     public void run() {
         int momento = 1;
+        agregarHeadersCSV();
         for (; momento <= cantidadMomentos; momento++) {
             try {
                 System.out.println("Dia " + momento);

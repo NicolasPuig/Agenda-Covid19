@@ -1,0 +1,132 @@
+------------ REPORTE DIA 16 ------------
+SOLICITUDES ENTRANTES
+  -Cantidad Total de Solicitudes: 28855, donde 28855 (100.0%) fueron agendadas
+  -El 30.341% de las solicitudes totales son de alto riesgo, donde 100.0% de ellas fueron agendadas
+  -El 69.658% de las solicitudes totales son de bajo riesgo, donde 100.0% de ellas fueron agendadas
+  -El 27.353% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 100.0% de ellas fueron agendadas
+  -El 41.661% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 100.0% de ellas fueron agendadas
+  -El 30.985% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 100.0% de ellas fueron agendadas
+
+SOLICITUDES AGENDADAS
+  -Cantidad Total de Agendados:	28855
+  -Cantidad Agendados de alto riesgo:	8755 (30.341%)
+  -Cantidad Agendados de bajo riesgo:	20100 (69.658%)
+  -Cantidad Agendados de 18 a 30 años:	5498 (19.053%)
+  -Cantidad Agendados de 31 a 50 años:	8374 (29.02%)
+  -Cantidad Agendados de 51 a 65 años:	6228 (21.583%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+DATOS GENERALES
+  -Solicitudes en cola de espera:	0
+  -Vacunas disponibles:	57154
+  -Vacunas ingresadas:	73328
+  -Estado del planificador:	NINGUNA SOLICITUD PARA AGENDAR
+
+AGENDADO POR DEPARTAMENTO
+  1) TBO
+    1.1) Vac2
+  -Cantidad Total de Agendados:	11260
+  -Cantidad Agendados de alto riesgo:	3552 (31.545%)
+  -Cantidad Agendados de bajo riesgo:	7708 (68.454%)
+  -Cantidad Agendados de 18 a 30 años:	2066 (18.348%)
+  -Cantidad Agendados de 31 a 50 años:	3216 (28.561%)
+  -Cantidad Agendados de 51 a 65 años:	2426 (21.545%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  2) PDU
+    2.1) Vac4
+  -Cantidad Total de Agendados:	11614
+  -Cantidad Agendados de alto riesgo:	3544 (30.514%)
+  -Cantidad Agendados de bajo riesgo:	8070 (69.485%)
+  -Cantidad Agendados de 18 a 30 años:	2266 (19.51%)
+  -Cantidad Agendados de 31 a 50 años:	3316 (28.551%)
+  -Cantidad Agendados de 51 a 65 años:	2488 (21.422%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  3) PDE
+    3.1) Vac5
+  -Cantidad Total de Agendados:	11602
+  -Cantidad Agendados de alto riesgo:	3400 (29.305%)
+  -Cantidad Agendados de bajo riesgo:	8202 (70.694%)
+  -Cantidad Agendados de 18 a 30 años:	2256 (19.444%)
+  -Cantidad Agendados de 31 a 50 años:	3386 (29.184%)
+  -Cantidad Agendados de 51 a 65 años:	2560 (22.065%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  4) MDEO
+    4.1) Antel Arena 3
+  -Cantidad Total de Agendados:	3892
+  -Cantidad Agendados de alto riesgo:	1120 (28.776%)
+  -Cantidad Agendados de bajo riesgo:	2772 (71.223%)
+  -Cantidad Agendados de 18 a 30 años:	748 (19.218%)
+  -Cantidad Agendados de 31 a 50 años:	1204 (30.935%)
+  -Cantidad Agendados de 51 a 65 años:	820 (21.068%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.2) Antel Arena 1
+  -Cantidad Total de Agendados:	3892
+  -Cantidad Agendados de alto riesgo:	1230 (31.603%)
+  -Cantidad Agendados de bajo riesgo:	2662 (68.396%)
+  -Cantidad Agendados de 18 a 30 años:	688 (17.677%)
+  -Cantidad Agendados de 31 a 50 años:	1112 (28.571%)
+  -Cantidad Agendados de 51 a 65 años:	862 (22.147%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.3) Antel Arena 2
+  -Cantidad Total de Agendados:	3894
+  -Cantidad Agendados de alto riesgo:	1170 (30.046%)
+  -Cantidad Agendados de bajo riesgo:	2724 (69.953%)
+  -Cantidad Agendados de 18 a 30 años:	760 (19.517%)
+  -Cantidad Agendados de 31 a 50 años:	1114 (28.608%)
+  -Cantidad Agendados de 51 a 65 años:	850 (21.828%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  5) SALTO
+    5.1) Vac3
+  -Cantidad Total de Agendados:	11556
+  -Cantidad Agendados de alto riesgo:	3494 (30.235%)
+  -Cantidad Agendados de bajo riesgo:	8062 (69.764%)
+  -Cantidad Agendados de 18 a 30 años:	2212 (19.141%)
+  -Cantidad Agendados de 31 a 50 años:	3400 (29.421%)
+  -Cantidad Agendados de 51 a 65 años:	2450 (21.201%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días

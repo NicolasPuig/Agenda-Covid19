@@ -1,0 +1,29 @@
+------------ REPORTE TOTAL ------------
+SOLICITUDES ENTRANTES
+  -Cantidad Total de Solicitudes: 897746, donde 897746 (100.0%) fueron agendadas
+  -El 30.359% de las solicitudes totales son de alto riesgo, donde 100.0% de ellas fueron agendadas
+  -El 69.64% de las solicitudes totales son de bajo riesgo, donde 100.0% de ellas fueron agendadas
+  -El 27.019% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 100.0% de ellas fueron agendadas
+  -El 41.74% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 100.0% de ellas fueron agendadas
+  -El 31.239% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 100.0% de ellas fueron agendadas
+
+SOLICITUDES AGENDADAS
+  -Cantidad Total de Agendados:	897746
+  -Cantidad Agendados de alto riesgo:	272550 (30.359%)
+  -Cantidad Agendados de bajo riesgo:	625196 (69.64%)
+  -Cantidad Agendados de 18 a 30 años:	168926 (18.816%)
+  -Cantidad Agendados de 31 a 50 años:	260963 (29.068%)
+  -Cantidad Agendados de 51 a 65 años:	195307 (21.755%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+DATOS GENERALES
+  -Solicitudes en cola de espera:	0
+  -Vacunas disponibles:	72058
+  -Vacunas ingresadas:	1867550
+  -Dias transcurridos:	30
+  -Estado del planificador:	NINGUNA SOLICITUD PARA AGENDAR

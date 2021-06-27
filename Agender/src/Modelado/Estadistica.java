@@ -84,6 +84,20 @@ public class Estadistica {
         semEstadistica.release();
     }
 
+    public String cantidadToCSV(int momento) {
+        return String.join(";", String.valueOf(momento), String.valueOf(cantAgendadosTotal), String.valueOf(cantRiesgoAlto),
+                String.valueOf(cantRiesgoBajo18_30), String.valueOf(cantRiesgoBajo31_50),
+                String.valueOf(cantRiesgoBajo51_65));
+    }
+
+    public static String porcentajeToCSV(Estadistica entrada, Estadistica salida, int momento) {
+        return String.join(";", String.valueOf(momento), String.valueOf(porcentaje(salida.cantAgendadosTotal, entrada.cantAgendadosTotal)),
+                String.valueOf(porcentaje(salida.cantRiesgoAlto, entrada.cantRiesgoAlto)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo18_30, entrada.cantRiesgoBajo18_30)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo31_50, entrada.cantRiesgoBajo31_50)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo51_65, entrada.cantRiesgoBajo51_65)));
+    }
+
     public static String comparar(Estadistica entrada, Estadistica salida) {
         int bajoRiesgoTotalEntrada = entrada.cantRiesgoBajo18_30 + entrada.cantRiesgoBajo31_50 + entrada.cantRiesgoBajo51_65;
         int bajoRiesgoTotalSalida = salida.cantRiesgoBajo18_30 + salida.cantRiesgoBajo31_50 + salida.cantRiesgoBajo51_65;

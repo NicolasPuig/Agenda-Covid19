@@ -18,15 +18,15 @@ public class Main {
     private final static String[] ARCHIVOS_ENTRADA_SOLICITUDES = {"entradaWSP.txt", "entradaWeb.txt", "entradaApp.txt", "entradaSMS.txt"};
     private final static String PATH_VACUNATORIOS = "entradaVacunatorios.txt";
     private final static String ARCHIVO_VACUNAS = "entradaVacunas.txt";
-    private final static String PATH_ARCHIVOS = "src/Archivos/";
+    private final static String PATH_ARCHIVOS_ENTRADA = "src/Archivos/Entrada/";
 
     public static void main(String[] args) throws InterruptedException {
 
         /* -------------------- Parametros Iniciales -------------------------*/
-        int cantidadDias = 10;
+        int cantidadDias = 30;
         int cantidadDeAgendadores = 10;
         int cantidadDeEstadisticos = 5;
-        boolean generarArchivoEntrada = false;
+        boolean generarArchivoEntrada = true;
         boolean modoDebug = false;
         boolean escribirReportesDiarios = true;
         // ------------------------------------------------------------------ //
@@ -38,18 +38,18 @@ public class Main {
         if (modoDebug) {
             new Debugger().start();
         }
-        Agenda.AGENDA = new Agenda(PATH_ARCHIVOS + PATH_VACUNATORIOS);
+        Agenda.AGENDA = new Agenda(PATH_ARCHIVOS_ENTRADA + PATH_VACUNATORIOS);
         ManejadorArchivos.borrarArchivosSalida();
 
         /* --- Creacion de hilos de despachadores y agendadores --- */
         // 1) Despachador de vacunas
-        Thread vacunador = new DespachadorVacunas(PATH_ARCHIVOS + ARCHIVO_VACUNAS);
+        Thread vacunador = new DespachadorVacunas(PATH_ARCHIVOS_ENTRADA + ARCHIVO_VACUNAS);
         vacunador.setPriority(7);
         vacunador.start();
 
         // 2) Despachador de solicitudes
         for (String archivoEntrada : ARCHIVOS_ENTRADA_SOLICITUDES) {
-            Thread despachador = new Despachador(PATH_ARCHIVOS + archivoEntrada);
+            Thread despachador = new Despachador(PATH_ARCHIVOS_ENTRADA + archivoEntrada);
             despachador.setPriority(7);
             despachador.start();
         }
@@ -78,14 +78,14 @@ public class Main {
         int maxPersonasPorMomento = 10000;
         float probabilidadRiesgo = 0.1f;
 
-        int minVacunasPorMomento = 0;
-        int maxVacunasPorMomento = 100000;
+        int minVacunasPorMomento = 50000;
+        int maxVacunasPorMomento = 80000;
         // ---------------------------------
 
         int i = 1;
         for (String archivo : ARCHIVOS_ENTRADA_SOLICITUDES) {
-            ManejadorArchivos.generarArchivosEntradaSolicitudes(PATH_ARCHIVOS + archivo, cantidadMomentos, i++, minPersonasPorMomento, maxPersonasPorMomento, probabilidadRiesgo);
+            ManejadorArchivos.generarArchivosEntradaSolicitudes(PATH_ARCHIVOS_ENTRADA + archivo, cantidadMomentos, i++, minPersonasPorMomento, maxPersonasPorMomento, probabilidadRiesgo);
         }
-        ManejadorArchivos.generarArchivoEntradaVacunas(PATH_ARCHIVOS + ARCHIVO_VACUNAS, cantidadMomentos, minVacunasPorMomento, maxVacunasPorMomento);
+        ManejadorArchivos.generarArchivoEntradaVacunas(PATH_ARCHIVOS_ENTRADA + ARCHIVO_VACUNAS, cantidadMomentos, minVacunasPorMomento, maxVacunasPorMomento);
     }
 }

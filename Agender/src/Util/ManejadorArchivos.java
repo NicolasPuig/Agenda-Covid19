@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.stream.Stream;
 
 /**
  *
@@ -100,8 +101,11 @@ public class ManejadorArchivos {
 
     public static void borrarArchivosSalida() {
         int i = 1;
-        while (new File("src/Archivos/reporteDia_" + (i < 10 ? "0" : "") + i + ".txt").delete()) {
-            i++;
+        File[] carpetasSalida = new File("src/Archivos/").listFiles(file-> file.getName().startsWith("Salida"));
+        for(File carpeta : carpetasSalida){
+            for(File archivo : carpeta.listFiles()){
+                archivo.delete();
+            }
         }
     }
 }

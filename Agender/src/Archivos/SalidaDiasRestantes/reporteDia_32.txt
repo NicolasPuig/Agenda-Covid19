@@ -1,0 +1,105 @@
+------------ REPORTE DIA 32 ------------
+
+AGENDADO POR DEPARTAMENTO
+  1) TBO
+    1.1) Vac2
+  -Cantidad Total de Agendados:	11682
+  -Cantidad Agendados de alto riesgo:	3606 (30.868%)
+  -Cantidad Agendados de bajo riesgo:	8076 (69.131%)
+  -Cantidad Agendados de 18 a 30 años:	2254 (19.294%)
+  -Cantidad Agendados de 31 a 50 años:	3328 (28.488%)
+  -Cantidad Agendados de 51 a 65 años:	2494 (21.349%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  2) PDU
+    2.1) Vac4
+  -Cantidad Total de Agendados:	11548
+  -Cantidad Agendados de alto riesgo:	3524 (30.516%)
+  -Cantidad Agendados de bajo riesgo:	8024 (69.483%)
+  -Cantidad Agendados de 18 a 30 años:	2248 (19.466%)
+  -Cantidad Agendados de 31 a 50 años:	3350 (29.009%)
+  -Cantidad Agendados de 51 a 65 años:	2426 (21.007%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  3) PDE
+    3.1) Vac5
+  -Cantidad Total de Agendados:	11536
+  -Cantidad Agendados de alto riesgo:	3394 (29.42%)
+  -Cantidad Agendados de bajo riesgo:	8142 (70.579%)
+  -Cantidad Agendados de 18 a 30 años:	2206 (19.122%)
+  -Cantidad Agendados de 31 a 50 años:	3406 (29.524%)
+  -Cantidad Agendados de 51 a 65 años:	2530 (21.931%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  4) MDEO
+    4.1) Antel Arena 3
+  -Cantidad Total de Agendados:	3940
+  -Cantidad Agendados de alto riesgo:	1184 (30.05%)
+  -Cantidad Agendados de bajo riesgo:	2756 (69.949%)
+  -Cantidad Agendados de 18 a 30 años:	738 (18.73%)
+  -Cantidad Agendados de 31 a 50 años:	1196 (30.355%)
+  -Cantidad Agendados de 51 a 65 años:	822 (20.862%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.2) Antel Arena 1
+  -Cantidad Total de Agendados:	3940
+  -Cantidad Agendados de alto riesgo:	1166 (29.593%)
+  -Cantidad Agendados de bajo riesgo:	2774 (70.406%)
+  -Cantidad Agendados de 18 a 30 años:	732 (18.578%)
+  -Cantidad Agendados de 31 a 50 años:	1222 (31.015%)
+  -Cantidad Agendados de 51 a 65 años:	820 (20.812%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.3) Antel Arena 2
+  -Cantidad Total de Agendados:	3940
+  -Cantidad Agendados de alto riesgo:	1204 (30.558%)
+  -Cantidad Agendados de bajo riesgo:	2736 (69.441%)
+  -Cantidad Agendados de 18 a 30 años:	726 (18.426%)
+  -Cantidad Agendados de 31 a 50 años:	1190 (30.203%)
+  -Cantidad Agendados de 51 a 65 años:	820 (20.812%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  5) SALTO
+    5.1) Vac3
+  -Cantidad Total de Agendados:	11512
+  -Cantidad Agendados de alto riesgo:	3546 (30.802%)
+  -Cantidad Agendados de bajo riesgo:	7966 (69.197%)
+  -Cantidad Agendados de 18 a 30 años:	2220 (19.284%)
+  -Cantidad Agendados de 31 a 50 años:	3322 (28.856%)
+  -Cantidad Agendados de 51 a 65 años:	2424 (21.056%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
