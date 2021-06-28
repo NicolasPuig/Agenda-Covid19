@@ -23,7 +23,7 @@ Son necesarios los siguientes archivos de entrada (los cuales pueden ser creados
 - Vacunas de cada dia: entradaVacunas.txt
 - Vacunatorios de cada departamento y su respectiva capacidad: vacunatoriosReal.txt
 
-Integrantes:
+# Integrantes:
 - Paolo Mazza
 - Sebastian Mazzey
 - Nicolas Puig
