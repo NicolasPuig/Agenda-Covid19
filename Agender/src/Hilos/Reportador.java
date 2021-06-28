@@ -147,7 +147,7 @@ public class Reportador extends Thread {
         String headerDiario = "Momento;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
         String headerTotal = "Total de agendados;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
         ManejadorArchivos.escribirArchivo(PATH_CSV_CANTIDAD_POR_MOMENTO, headerDiario, false);
-        ManejadorArchivos.escribirArchivo(";" + PATH_CSV_CANTIDAD_TOTAL, headerTotal, false);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_CANTIDAD_TOTAL, ";" + headerTotal, false);
         ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_POR_MOMENTO, headerDiario, false);
         ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_TOTAL, headerTotal, false);
         ManejadorArchivos.escribirArchivo(PATH_CSV_TIEMPO_ESPERA_PROMEDIO, headerTotal, false);
