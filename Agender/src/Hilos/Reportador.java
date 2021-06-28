@@ -4,6 +4,7 @@ import static Planificador.MLQ.MLQ;
 import static Modelado.Agenda.AGENDA;
 import Modelado.DiaAgenda;
 import Modelado.Estadistica;
+import Modelado.EstadisticaConTiempo;
 import Modelado.Vacunatorio;
 import Util.ManejadorArchivos;
 import java.util.LinkedList;
@@ -17,6 +18,11 @@ import java.util.concurrent.Semaphore;
 public class Reportador extends Thread {
 
     private final static String PATH_ARCHIVOS = "src/Archivos/";
+    private final static String PATH_CSV_CANTIDAD_POR_MOMENTO = PATH_ARCHIVOS + "SalidaCSV/CantidadPorMomento.csv";
+    private final static String PATH_CSV_CANTIDAD_TOTAL = PATH_ARCHIVOS + "SalidaCSV/CantidadTotal.csv";
+    private final static String PATH_CSV_PORCENTAJE_POR_MOMENTO = PATH_ARCHIVOS + "SalidaCSV/PorcentajePorMomento.csv";
+    private final static String PATH_CSV_PORCENTAJE_TOTAL = PATH_ARCHIVOS + "SalidaCSV/PorcentajeTotal.csv";
+    private final static String PATH_CSV_TIEMPO_ESPERA_PROMEDIO = PATH_ARCHIVOS + "SalidaCSV/TiempoEsperaPromedio.csv";
 
     private final static Semaphore semReportes = new Semaphore(0);
 
@@ -35,9 +41,9 @@ public class Reportador extends Thread {
         semReportes.release();
     }
 
-    public void generarArchivoReporteTotal(int momentosTranscurridos) {
+    public void generarReporteTotal(int momentosTranscurridos) {
         Estadistica entradaTotal = MLQ.getEstadisticaTotalEntrada();
-        Estadistica salidaTotal = AGENDA.getEstadisticaTotalDeSalida();
+        EstadisticaConTiempo salidaTotal = AGENDA.getEstadisticaTotalDeSalida();
 
         String texto
                 = "------------ REPORTE TOTAL ------------"
@@ -50,9 +56,12 @@ public class Reportador extends Thread {
                 + "\n  -Dias transcurridos:\t" + momentosTranscurridos
                 + "\n  -Estado del planificador:\t" + MLQ.getEstado();
         ManejadorArchivos.escribirArchivo(PATH_ARCHIVOS + "SalidaDiarios/reporteTotal.txt", texto, false);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_CANTIDAD_TOTAL, Estadistica.csvCantidadTotal(entradaTotal, salidaTotal), true);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_TOTAL, Estadistica.csvPorcentajeTotal(entradaTotal, salidaTotal), true);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_TIEMPO_ESPERA_PROMEDIO, salidaTotal.csvTiempoEsperaPromedio(), true);
     }
 
-    private void generarArchivoReporteDiario(int momento, Map<String, LinkedList<Vacunatorio>> agendados) {
+    private void generarReporteDiario(int momento, Map<String, LinkedList<Vacunatorio>> agendados) {
         try {
             Estadistica estadisticaDiariaEntrada = MLQ.getEstadisticaDiariaEntrada();
             Estadistica estadisticaDiariaSalida = AGENDA.getEstadisticaDiariaDeSalida();
@@ -81,8 +90,8 @@ public class Reportador extends Thread {
                 numDepartamento++;
             }
             if (escribirReportesDiarios) {
-                ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), estadisticaDiariaSalida.cantidadToCSV(momento) + "\n", true);
-                ManejadorArchivos.escribirArchivo(getPathCSVPorcentajes(), Estadistica.porcentajeToCSV(estadisticaDiariaEntrada, estadisticaDiariaSalida, momento) + "\n", true);
+                ManejadorArchivos.escribirArchivo(PATH_CSV_CANTIDAD_POR_MOMENTO, estadisticaDiariaSalida.csvCantidadPorMomento(momento) + "\n", true);
+                ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_POR_MOMENTO, Estadistica.csvPorcentajePorMomento(estadisticaDiariaEntrada, estadisticaDiariaSalida, momento) + "\n", true);
                 ManejadorArchivos.escribirArchivo(getPathReporteDiario(momento), texto, false);
             }
         } catch (ArithmeticException e) {
@@ -118,7 +127,6 @@ public class Reportador extends Thread {
                         }
                         numDepartamento++;
                     }
-//                    ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), estadisticaDiariaSalida.cantidadToCSV() + "\n", true);
                     ManejadorArchivos.escribirArchivo(getPathReporteDiarioRestante(i), texto, false);
                 }
             }
@@ -135,20 +143,14 @@ public class Reportador extends Thread {
         return PATH_ARCHIVOS + "SalidaDiasRestantes/reporteDia_" + (dia < 10 ? "0" : "") + dia + ".txt";
     }
 
-    private String getPathCSVCantidad() {
-        return PATH_ARCHIVOS + "SalidaCSV/csvCantidades.csv";
-    }
-
-    private String getPathCSVPorcentajes() {
-        return PATH_ARCHIVOS + "SalidaCSV/csvPorcentajes.csv";
-    }
-
     private void agregarHeadersCSV() {
-        if (escribirReportesDiarios) {
-            String headers = "Momento;Agendados Totales;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
-            ManejadorArchivos.escribirArchivo(getPathCSVCantidad(), headers, false);
-            ManejadorArchivos.escribirArchivo(getPathCSVPorcentajes(), headers, false);
-        }
+        String headerDiario = "Momento;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
+        String headerTotal = "Total de agendados;Alto riesgo;Bajo riesgo (18-30);Bajo riesgo (31-50);Bajo riesgo (51-65)\n";
+        ManejadorArchivos.escribirArchivo(PATH_CSV_CANTIDAD_POR_MOMENTO, headerDiario, false);
+        ManejadorArchivos.escribirArchivo(";" + PATH_CSV_CANTIDAD_TOTAL, headerTotal, false);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_POR_MOMENTO, headerDiario, false);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_PORCENTAJE_TOTAL, headerTotal, false);
+        ManejadorArchivos.escribirArchivo(PATH_CSV_TIEMPO_ESPERA_PROMEDIO, headerTotal, false);
     }
 
     @Override
@@ -167,7 +169,7 @@ public class Reportador extends Thread {
                 // Los productores y arch se pueden despertar aca
                 // Creo el reporte diario
                 System.out.println("Fin del dia\nComienza escritura de reporte");
-                this.generarArchivoReporteDiario(momento, agendados);
+                this.generarReporteDiario(momento, agendados);
                 System.out.println("Termino reporte dia " + momento + " solicitudes\n");
                 // Despierto a los despachadores y agendadores
                 Despachador.releaseAll();
@@ -179,6 +181,6 @@ public class Reportador extends Thread {
         // Creo el reporte total
         System.out.println("Nada mas que reportar! Se termina el programa");
         this.generarArchivoReporteRestantes(momento);
-        this.generarArchivoReporteTotal(momento - 1);
+        this.generarReporteTotal(momento - 1);
     }
 }

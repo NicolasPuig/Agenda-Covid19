@@ -1,9 +1,9 @@
 package Hilos;
 
 import static Planificador.MLQ.MLQ;
-import Util.ManejadorArchivos;
 import Modelado.Solicitud;
-import java.util.Collection;
+import Util.Par;
+import java.util.List;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -12,14 +12,13 @@ import java.util.concurrent.Semaphore;
  */
 public class Despachador extends Thread {
 
-    private final String archivoEntrada;
     private final static Semaphore semDespachador = new Semaphore(0, true);
-
+    private final Par<List<String>, Semaphore> listaLineasEntrada;
     private static int cantidadDespachadores = 0;
 
-    public Despachador(String archivoEntrada) {
+    public Despachador(Par<List<String>, Semaphore> listaLineasEntrada) {
         super("Despachador-" + cantidadDespachadores++);
-        this.archivoEntrada = archivoEntrada;
+        this.listaLineasEntrada = listaLineasEntrada;
     }
 
     public static void releaseAll() {
@@ -33,42 +32,31 @@ public class Despachador extends Thread {
     @Override
     public void run() {
         // Leo el archivo de entrada
-        Collection<String> personas = ManejadorArchivos.leerArchivo(archivoEntrada, true);
+        List<String> solicitudesEntrantes = listaLineasEntrada.getPrimero();
+        Semaphore mutexLista = listaLineasEntrada.getSegundo();
         int momentoActual = 1;
-        for (String persona : personas) {
-            // personas = momento;CI;edad;Riesgo
-            String[] datos = persona.split(";");
-            // Mientras el momento no cambia
-            if (Integer.parseInt(datos[0]) == momentoActual) {
-                // Genero y agrego la solicitud al mlq
-                String ci = datos[1];
-                int edad = Integer.parseInt(datos[2]);
-                int riesgo = Integer.parseInt(datos[3]);
-                String departamento = datos[4];
-                try {
-                    MLQ.insertar(new Solicitud(ci, edad, riesgo, momentoActual, departamento));
-                } catch (InterruptedException e) {
-                    System.out.println(e);
+        while (true) {
+            try {
+                mutexLista.acquire();
+                String informacionSolicitud = solicitudesEntrantes.remove(0);
+                mutexLista.release();
+                String[] datos = informacionSolicitud.split(";");
+                int momento = Integer.parseInt(datos[0]);
+                Solicitud solicitud = new Solicitud(datos[1], Integer.parseInt(datos[2]), Integer.parseInt(datos[3]), momento, datos[4]);
+                if (momento != momentoActual) {
+                    Reportador.release();
+                    semDespachador.acquire();
+                    momentoActual = momento;
                 }
-            } else {
-                // Aviso que termine de procesar las solicitudes del dia
+                MLQ.insertar(solicitud);
+            } catch (IndexOutOfBoundsException ib) {
+                // No mas solicitudes, termina de despachar
+                mutexLista.release();
                 Reportador.release();
-                // Espero a que se emita el reporte y me avisen
-                semDespachador.acquireUninterruptibly();
-                momentoActual++;
-                // Proceso a la persona que me quedo pendiente
-                String ci = datos[1];
-                int edad = Integer.parseInt(datos[2]);
-                int riesgo = Integer.parseInt(datos[3]);
-                String departamento = datos[4];
-                try {
-                    MLQ.insertar(new Solicitud(ci, edad, riesgo, momentoActual, departamento));
-                } catch (InterruptedException e) {
-                    System.out.println(e);
-                }
+                return;
+            } catch (InterruptedException ex) {
+                System.out.println(ex);
             }
         }
-        // Si llego aca deje de producir
-        Reportador.release();
     }
 }

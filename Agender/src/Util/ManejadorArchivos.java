@@ -8,7 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.stream.Stream;
 
 /**
  *
@@ -26,7 +25,7 @@ public class ManejadorArchivos {
 
     public static void generarArchivosEntradaSolicitudes(String path, int cantidadMomentos, int id, int minPersonasPorMomento, int maxPersonasPorMomento, float probabilidadRiesgo) {
         String separator = ";";
-        int ci = 100000 * id;
+        int ci = 100000000 * id;
         LinkedList<String> lineas = new LinkedList<>();
         String[] departamentos = {"Tacuarembó", "Treinta y Tres", "Soriano", "San José", "Salto", "Rocha", "Rivera", "Río Negro", "Paysandú", "Montevideo", "Maldonado", "Lavalleja", "Florida", "Durazno", "Colonia", "Cerro Largo", "Canelones", "Artigas", "Flores"};
         lineas.add("Momento;CI;edad;riesgo;departamento");
@@ -65,7 +64,7 @@ public class ManejadorArchivos {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, append))) {
             bw.write(texto);
         } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + path);
+            System.out.println("Error al escribir el archivo " + path + " - VERIFIQUE QUE NO ESTE ABIERTO");
         }
     }
 
@@ -76,7 +75,7 @@ public class ManejadorArchivos {
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + path);
+            System.out.println("Error al escribir el archivo " + path + " - VERIFIQUE QUE NO ESTE ABIERTO");
         }
     }
 
@@ -87,7 +86,7 @@ public class ManejadorArchivos {
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + path);
+            System.out.println("Error al escribir el archivo " + path + " - VERIFIQUE QUE NO ESTE ABIERTO");
         }
     }
 
@@ -95,7 +94,7 @@ public class ManejadorArchivos {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, false))) {
             bw.newLine();
         } catch (IOException e) {
-            System.out.println("Error al escribir el archivo " + path);
+            System.out.println("Error al escribir el archivo " + path + " - VERIFIQUE QUE NO ESTE ABIERTO");
         }
     }
 

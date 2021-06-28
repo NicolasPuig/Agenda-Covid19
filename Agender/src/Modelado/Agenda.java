@@ -16,7 +16,7 @@ public class Agenda {
 
     private final HashMap<String, LinkedList<Vacunatorio>> vacunatoriosPorDepartamento = new HashMap<>();
     private final HashMap<String, Semaphore> semDepartamentos = new HashMap<>();
-    private final Estadistica estadisticaTotal = new EstadisticaConTiempo();
+    private final EstadisticaConTiempo estadisticaTotal = new EstadisticaConTiempo();
     private Estadistica estadisticaDiaria = new EstadisticaConTiempo();
 
     public Agenda(String pathVacunatorios) {
@@ -82,20 +82,8 @@ public class Agenda {
         return estadisticaDiaActual;
     }
 
-    public Estadistica getEstadisticaTotalDeSalida() {
+    public EstadisticaConTiempo getEstadisticaTotalDeSalida() {
         estadisticaTotal.esperarFinAnalisis();
         return estadisticaTotal;
     }
-
-//    public String emitirReporteDiasRestantes() {
-//        String texto = "";
-//        for (Map.Entry<String, LinkedList<Vacunatorio>> entry : vacunatoriosPorDepartamento.entrySet()) {
-//            String departamento = entry.getKey();
-//            LinkedList<Vacunatorio> vacunatorios = entry.getValue();
-//            texto += departamento + "\n";
-//            for (Vacunatorio vacunatorio : vacunatorios) {
-//
-//            }
-//        }
-//    }
 }

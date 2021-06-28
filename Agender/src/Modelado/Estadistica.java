@@ -84,14 +84,40 @@ public class Estadistica {
         semEstadistica.release();
     }
 
-    public String cantidadToCSV(int momento) {
-        return String.join(";", String.valueOf(momento), String.valueOf(cantAgendadosTotal), String.valueOf(cantRiesgoAlto),
-                String.valueOf(cantRiesgoBajo18_30), String.valueOf(cantRiesgoBajo31_50),
+    public static String csvCantidadTotal(Estadistica entrada, Estadistica salida) {
+        String texto = String.join(";", "Solicitudes entrantes",
+                String.valueOf(entrada.cantAgendadosTotal),
+                String.valueOf(entrada.cantRiesgoAlto),
+                String.valueOf(entrada.cantRiesgoBajo18_30),
+                String.valueOf(entrada.cantRiesgoBajo31_50),
+                String.valueOf(entrada.cantRiesgoBajo51_65));
+        return texto + "\n" + String.join(";", "Solicitudes agendadas",
+                String.valueOf(salida.cantAgendadosTotal),
+                String.valueOf(salida.cantRiesgoAlto),
+                String.valueOf(salida.cantRiesgoBajo18_30),
+                String.valueOf(salida.cantRiesgoBajo31_50),
+                String.valueOf(salida.cantRiesgoBajo51_65));
+    }
+
+    public String csvCantidadPorMomento(int momento) {
+        return String.join(";", String.valueOf(momento),
+                String.valueOf(cantRiesgoAlto),
+                String.valueOf(cantRiesgoBajo18_30),
+                String.valueOf(cantRiesgoBajo31_50),
                 String.valueOf(cantRiesgoBajo51_65));
     }
 
-    public static String porcentajeToCSV(Estadistica entrada, Estadistica salida, int momento) {
-        return String.join(";", String.valueOf(momento), String.valueOf(porcentaje(salida.cantAgendadosTotal, entrada.cantAgendadosTotal)),
+    public static String csvPorcentajePorMomento(Estadistica entrada, Estadistica salida, int momento) {
+        return String.join(";", String.valueOf(momento),
+                String.valueOf(porcentaje(salida.cantRiesgoAlto, entrada.cantRiesgoAlto)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo18_30, entrada.cantRiesgoBajo18_30)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo31_50, entrada.cantRiesgoBajo31_50)),
+                String.valueOf(porcentaje(salida.cantRiesgoBajo51_65, entrada.cantRiesgoBajo51_65)));
+    }
+
+    public static String csvPorcentajeTotal(Estadistica entrada, Estadistica salida) {
+        return String.join(";",
+                String.valueOf(porcentaje(salida.cantAgendadosTotal, entrada.cantAgendadosTotal)),
                 String.valueOf(porcentaje(salida.cantRiesgoAlto, entrada.cantRiesgoAlto)),
                 String.valueOf(porcentaje(salida.cantRiesgoBajo18_30, entrada.cantRiesgoBajo18_30)),
                 String.valueOf(porcentaje(salida.cantRiesgoBajo31_50, entrada.cantRiesgoBajo31_50)),

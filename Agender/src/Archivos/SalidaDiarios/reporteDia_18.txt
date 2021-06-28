@@ -1,0 +1,1966 @@
+------------ REPORTE DIA 18 ------------
+SOLICITUDES ENTRANTES
+  -Cantidad Total de Solicitudes: 102162, donde 102162 (100.0%) fueron agendadas
+  -El 46.091% de las solicitudes totales son de alto riesgo, donde 100.0% de ellas fueron agendadas
+  -El 53.908% de las solicitudes totales son de bajo riesgo, donde 100.0% de ellas fueron agendadas
+  -El 27.566% de las solicitudes de bajo riesgo fueron entre 18 y 30 años, donde 100.0% de ellas fueron agendadas
+  -El 41.745% de las solicitudes de bajo riesgo fueron entre 31 y 50 años, donde 100.0% de ellas fueron agendadas
+  -El 30.687% de las solicitudes de bajo riesgo fueron entre 51 y 65 años, donde 100.0% de ellas fueron agendadas
+
+SOLICITUDES AGENDADAS
+  -Cantidad Total de Agendados:	102162
+  -Cantidad Agendados de alto riesgo:	47088 (46.091%)
+  -Cantidad Agendados de bajo riesgo:	55074 (53.908%)
+  -Cantidad Agendados de 18 a 30 años:	15182 (14.86%)
+  -Cantidad Agendados de 31 a 50 años:	22991 (22.504%)
+  -Cantidad Agendados de 51 a 65 años:	16901 (16.543%)
+
+  -Tiempo de espera promedio:	0.2919383 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.270536 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.28626004 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.33460918 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.2986214 días
+
+DATOS GENERALES
+  -Solicitudes en cola de espera:	0
+  -Vacunas disponibles:	432624
+  -Vacunas ingresadas:	0
+  -Estado del planificador:	NINGUNA SOLICITUD PARA AGENDAR
+
+AGENDADO POR DEPARTAMENTO
+  1) Artigas
+    1.1) Bella Unión - Hospital ASSE 2
+  -Cantidad Total de Agendados:	3120
+  -Cantidad Agendados de alto riesgo:	1448 (46.41%)
+  -Cantidad Agendados de bajo riesgo:	1672 (53.589%)
+  -Cantidad Agendados de 18 a 30 años:	380 (12.179%)
+  -Cantidad Agendados de 31 a 50 años:	848 (27.179%)
+  -Cantidad Agendados de 51 a 65 años:	444 (14.23%)
+
+  -Tiempo de espera promedio:	2.0064104 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8301105 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.3136792 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    1.2) Artigas - Centro Tisiológico 1
+  -Cantidad Total de Agendados:	3120
+  -Cantidad Agendados de alto riesgo:	1448 (46.41%)
+  -Cantidad Agendados de bajo riesgo:	1672 (53.589%)
+  -Cantidad Agendados de 18 a 30 años:	378 (12.115%)
+  -Cantidad Agendados de 31 a 50 años:	850 (27.243%)
+  -Cantidad Agendados de 51 a 65 años:	444 (14.23%)
+
+  -Tiempo de espera promedio:	2.0076923 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8314917 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.315294 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    1.3) Artigas - Centro Tisiológico 2
+  -Cantidad Total de Agendados:	3120
+  -Cantidad Agendados de alto riesgo:	1468 (47.051%)
+  -Cantidad Agendados de bajo riesgo:	1652 (52.948%)
+  -Cantidad Agendados de 18 a 30 años:	360 (11.538%)
+  -Cantidad Agendados de 31 a 50 años:	850 (27.243%)
+  -Cantidad Agendados de 51 a 65 años:	442 (14.166%)
+
+  -Tiempo de espera promedio:	2.0070512 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8337874 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.312941 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    1.4) Bella Unión - Hospital ASSE 1
+  -Cantidad Total de Agendados:	3120
+  -Cantidad Agendados de alto riesgo:	1454 (46.602%)
+  -Cantidad Agendados de bajo riesgo:	1666 (53.397%)
+  -Cantidad Agendados de 18 a 30 años:	376 (12.051%)
+  -Cantidad Agendados de 31 a 50 años:	848 (27.179%)
+  -Cantidad Agendados de 51 a 65 años:	442 (14.166%)
+
+  -Tiempo de espera promedio:	2.0064104 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8308115 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.3136792 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+  2) San José
+    2.1) Ciudad del Plata Policlínica AMSJ 2
+  -Cantidad Total de Agendados:	1378
+  -Cantidad Agendados de alto riesgo:	646 (46.879%)
+  -Cantidad Agendados de bajo riesgo:	732 (53.12%)
+  -Cantidad Agendados de 18 a 30 años:	212 (15.384%)
+  -Cantidad Agendados de 31 a 50 años:	300 (21.77%)
+  -Cantidad Agendados de 51 a 65 años:	220 (15.965%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.2) Delta del Tigre - Comisión profomento Delta del Tigre
+  -Cantidad Total de Agendados:	1378
+  -Cantidad Agendados de alto riesgo:	646 (46.879%)
+  -Cantidad Agendados de bajo riesgo:	732 (53.12%)
+  -Cantidad Agendados de 18 a 30 años:	228 (16.545%)
+  -Cantidad Agendados de 31 a 50 años:	296 (21.48%)
+  -Cantidad Agendados de 51 a 65 años:	208 (15.094%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.3) Libertad - Hospital ASSE 1
+  -Cantidad Total de Agendados:	1378
+  -Cantidad Agendados de alto riesgo:	630 (45.718%)
+  -Cantidad Agendados de bajo riesgo:	748 (54.281%)
+  -Cantidad Agendados de 18 a 30 años:	232 (16.835%)
+  -Cantidad Agendados de 31 a 50 años:	290 (21.044%)
+  -Cantidad Agendados de 51 a 65 años:	226 (16.4%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.4) Libertad - Hospital ASSE 2
+  -Cantidad Total de Agendados:	1378
+  -Cantidad Agendados de alto riesgo:	616 (44.702%)
+  -Cantidad Agendados de bajo riesgo:	762 (55.297%)
+  -Cantidad Agendados de 18 a 30 años:	226 (16.4%)
+  -Cantidad Agendados de 31 a 50 años:	296 (21.48%)
+  -Cantidad Agendados de 51 a 65 años:	240 (17.416%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.5) San José de Mayo Centro Protección de Choferes 1
+  -Cantidad Total de Agendados:	1380
+  -Cantidad Agendados de alto riesgo:	632 (45.797%)
+  -Cantidad Agendados de bajo riesgo:	748 (54.202%)
+  -Cantidad Agendados de 18 a 30 años:	214 (15.507%)
+  -Cantidad Agendados de 31 a 50 años:	294 (21.304%)
+  -Cantidad Agendados de 51 a 65 años:	240 (17.391%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.6) San José de Mayo Centro Protección de Choferes 2
+  -Cantidad Total de Agendados:	1380
+  -Cantidad Agendados de alto riesgo:	632 (45.797%)
+  -Cantidad Agendados de bajo riesgo:	748 (54.202%)
+  -Cantidad Agendados de 18 a 30 años:	210 (15.217%)
+  -Cantidad Agendados de 31 a 50 años:	314 (22.753%)
+  -Cantidad Agendados de 51 a 65 años:	224 (16.231%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.7) San José de Mayo - Local ex Garelli
+  -Cantidad Total de Agendados:	1380
+  -Cantidad Agendados de alto riesgo:	642 (46.521%)
+  -Cantidad Agendados de bajo riesgo:	738 (53.478%)
+  -Cantidad Agendados de 18 a 30 años:	208 (15.072%)
+  -Cantidad Agendados de 31 a 50 años:	308 (22.318%)
+  -Cantidad Agendados de 51 a 65 años:	222 (16.086%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    2.8) Ciudad del Plata Policlínica AMSJ 1
+  -Cantidad Total de Agendados:	1380
+  -Cantidad Agendados de alto riesgo:	650 (47.101%)
+  -Cantidad Agendados de bajo riesgo:	730 (52.898%)
+  -Cantidad Agendados de 18 a 30 años:	200 (14.492%)
+  -Cantidad Agendados de 31 a 50 años:	292 (21.159%)
+  -Cantidad Agendados de 51 a 65 años:	238 (17.246%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  3) Colonia
+    3.1) Rosario - Hospital ASSE CP Rosario 2
+  -Cantidad Total de Agendados:	1078
+  -Cantidad Agendados de alto riesgo:	502 (46.567%)
+  -Cantidad Agendados de bajo riesgo:	576 (53.432%)
+  -Cantidad Agendados de 18 a 30 años:	156 (14.471%)
+  -Cantidad Agendados de 31 a 50 años:	250 (23.191%)
+  -Cantidad Agendados de 51 a 65 años:	170 (15.769%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.2) Nueva Palmira Centro Auxiliar ASSE
+  -Cantidad Total de Agendados:	1078
+  -Cantidad Agendados de alto riesgo:	496 (46.011%)
+  -Cantidad Agendados de bajo riesgo:	582 (53.988%)
+  -Cantidad Agendados de 18 a 30 años:	156 (14.471%)
+  -Cantidad Agendados de 31 a 50 años:	254 (23.562%)
+  -Cantidad Agendados de 51 a 65 años:	172 (15.955%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.3) Nueva Helvecia Centro Auxiliar ASSE
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	488 (45.185%)
+  -Cantidad Agendados de bajo riesgo:	592 (54.814%)
+  -Cantidad Agendados de 18 a 30 años:	162 (15.0%)
+  -Cantidad Agendados de 31 a 50 años:	260 (24.074%)
+  -Cantidad Agendados de 51 a 65 años:	170 (15.74%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.4) Tarariras Policlinica Htal. Evangélico
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	480 (44.444%)
+  -Cantidad Agendados de bajo riesgo:	600 (55.555%)
+  -Cantidad Agendados de 18 a 30 años:	164 (15.185%)
+  -Cantidad Agendados de 31 a 50 años:	246 (22.777%)
+  -Cantidad Agendados de 51 a 65 años:	190 (17.592%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.5) Juan Lacaze Sede secundaria CCOU
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	482 (44.629%)
+  -Cantidad Agendados de bajo riesgo:	598 (55.37%)
+  -Cantidad Agendados de 18 a 30 años:	158 (14.629%)
+  -Cantidad Agendados de 31 a 50 años:	248 (22.962%)
+  -Cantidad Agendados de 51 a 65 años:	192 (17.777%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.6) Colonia - Hospital Samuel Berton CHLA-EP 1
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	470 (43.518%)
+  -Cantidad Agendados de bajo riesgo:	610 (56.481%)
+  -Cantidad Agendados de 18 a 30 años:	178 (16.481%)
+  -Cantidad Agendados de 31 a 50 años:	252 (23.333%)
+  -Cantidad Agendados de 51 a 65 años:	180 (16.666%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.7) Colonia - Hospital Samuel Berton CHLA-EP 2
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	478 (44.259%)
+  -Cantidad Agendados de bajo riesgo:	602 (55.74%)
+  -Cantidad Agendados de 18 a 30 años:	154 (14.259%)
+  -Cantidad Agendados de 31 a 50 años:	256 (23.703%)
+  -Cantidad Agendados de 51 a 65 años:	192 (17.777%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.8) Carmelo - Hospital ASSE 1
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	490 (45.37%)
+  -Cantidad Agendados de bajo riesgo:	590 (54.629%)
+  -Cantidad Agendados de 18 a 30 años:	156 (14.444%)
+  -Cantidad Agendados de 31 a 50 años:	248 (22.962%)
+  -Cantidad Agendados de 51 a 65 años:	186 (17.222%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.9) Carmelo - Hospital ASSE 2
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	480 (44.444%)
+  -Cantidad Agendados de bajo riesgo:	600 (55.555%)
+  -Cantidad Agendados de 18 a 30 años:	154 (14.259%)
+  -Cantidad Agendados de 31 a 50 años:	260 (24.074%)
+  -Cantidad Agendados de 51 a 65 años:	186 (17.222%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    3.10) Rosario - Hospital ASSE CP Rosario 1
+  -Cantidad Total de Agendados:	1080
+  -Cantidad Agendados de alto riesgo:	512 (47.407%)
+  -Cantidad Agendados de bajo riesgo:	568 (52.592%)
+  -Cantidad Agendados de 18 a 30 años:	138 (12.777%)
+  -Cantidad Agendados de 31 a 50 años:	256 (23.703%)
+  -Cantidad Agendados de 51 a 65 años:	174 (16.111%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  4) Salto
+    4.1) Salto - LOCAL COMERCIAL 2
+  -Cantidad Total de Agendados:	3612
+  -Cantidad Agendados de alto riesgo:	1678 (46.456%)
+  -Cantidad Agendados de bajo riesgo:	1934 (53.543%)
+  -Cantidad Agendados de 18 a 30 años:	530 (14.673%)
+  -Cantidad Agendados de 31 a 50 años:	806 (22.314%)
+  -Cantidad Agendados de 51 a 65 años:	598 (16.555%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.2) Salto - SMQS - HOSPITAL DE AGUDOS
+  -Cantidad Total de Agendados:	3612
+  -Cantidad Agendados de alto riesgo:	1688 (46.733%)
+  -Cantidad Agendados de bajo riesgo:	1924 (53.266%)
+  -Cantidad Agendados de 18 a 30 años:	530 (14.673%)
+  -Cantidad Agendados de 31 a 50 años:	798 (22.093%)
+  -Cantidad Agendados de 51 a 65 años:	596 (16.5%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    4.3) Salto - LOCAL COMERCIAL 1
+  -Cantidad Total de Agendados:	3614
+  -Cantidad Agendados de alto riesgo:	1696 (46.928%)
+  -Cantidad Agendados de bajo riesgo:	1918 (53.071%)
+  -Cantidad Agendados de 18 a 30 años:	510 (14.111%)
+  -Cantidad Agendados de 31 a 50 años:	800 (22.136%)
+  -Cantidad Agendados de 51 a 65 años:	608 (16.823%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  5) Rocha
+    5.1) Rocha - CP Rocha CHLAEP Hospital Rocha
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	714 (46.423%)
+  -Cantidad Agendados de bajo riesgo:	824 (53.576%)
+  -Cantidad Agendados de 18 a 30 años:	216 (14.044%)
+  -Cantidad Agendados de 31 a 50 años:	364 (23.667%)
+  -Cantidad Agendados de 51 a 65 años:	244 (15.864%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.2) Rocha – Centro Cultural La Paloma
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	700 (45.513%)
+  -Cantidad Agendados de bajo riesgo:	838 (54.486%)
+  -Cantidad Agendados de 18 a 30 años:	214 (13.914%)
+  -Cantidad Agendados de 31 a 50 años:	352 (22.886%)
+  -Cantidad Agendados de 51 a 65 años:	272 (17.685%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.3) Castillos - Hospital Castillos
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	702 (45.643%)
+  -Cantidad Agendados de bajo riesgo:	836 (54.356%)
+  -Cantidad Agendados de 18 a 30 años:	232 (15.084%)
+  -Cantidad Agendados de 31 a 50 años:	350 (22.756%)
+  -Cantidad Agendados de 51 a 65 años:	254 (16.514%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.4) Chuy - Policlinica Samuel Priliac Sub CP Chuy
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	714 (46.423%)
+  -Cantidad Agendados de bajo riesgo:	824 (53.576%)
+  -Cantidad Agendados de 18 a 30 años:	220 (14.304%)
+  -Cantidad Agendados de 31 a 50 años:	362 (23.537%)
+  -Cantidad Agendados de 51 a 65 años:	242 (15.734%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.5) Chuy - Hospital Chuy
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	720 (46.814%)
+  -Cantidad Agendados de bajo riesgo:	818 (53.185%)
+  -Cantidad Agendados de 18 a 30 años:	214 (13.914%)
+  -Cantidad Agendados de 31 a 50 años:	368 (23.927%)
+  -Cantidad Agendados de 51 a 65 años:	236 (15.344%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.6) Lascano - Hospital Lascano
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	706 (45.903%)
+  -Cantidad Agendados de bajo riesgo:	832 (54.096%)
+  -Cantidad Agendados de 18 a 30 años:	218 (14.174%)
+  -Cantidad Agendados de 31 a 50 años:	356 (23.146%)
+  -Cantidad Agendados de 51 a 65 años:	258 (16.775%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    5.7) Rocha - COMERO
+  -Cantidad Total de Agendados:	1538
+  -Cantidad Agendados de alto riesgo:	692 (44.993%)
+  -Cantidad Agendados de bajo riesgo:	846 (55.006%)
+  -Cantidad Agendados de 18 a 30 años:	228 (14.824%)
+  -Cantidad Agendados de 31 a 50 años:	358 (23.276%)
+  -Cantidad Agendados de 51 a 65 años:	260 (16.905%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  6) Treinta y Tres
+    6.1) Cerro Chato Centro Social Democrático
+  -Cantidad Total de Agendados:	2698
+  -Cantidad Agendados de alto riesgo:	1238 (45.885%)
+  -Cantidad Agendados de bajo riesgo:	1460 (54.114%)
+  -Cantidad Agendados de 18 a 30 años:	428 (15.863%)
+  -Cantidad Agendados de 31 a 50 años:	602 (22.312%)
+  -Cantidad Agendados de 51 a 65 años:	430 (15.937%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    6.2) Vergara - Hospital Vergara
+  -Cantidad Total de Agendados:	2700
+  -Cantidad Agendados de alto riesgo:	1252 (46.37%)
+  -Cantidad Agendados de bajo riesgo:	1448 (53.629%)
+  -Cantidad Agendados de 18 a 30 años:	400 (14.814%)
+  -Cantidad Agendados de 31 a 50 años:	624 (23.111%)
+  -Cantidad Agendados de 51 a 65 años:	424 (15.703%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    6.3) Estadio Municipal Centro Empleados de Comercio 1
+  -Cantidad Total de Agendados:	2700
+  -Cantidad Agendados de alto riesgo:	1266 (46.888%)
+  -Cantidad Agendados de bajo riesgo:	1434 (53.111%)
+  -Cantidad Agendados de 18 a 30 años:	400 (14.814%)
+  -Cantidad Agendados de 31 a 50 años:	616 (22.814%)
+  -Cantidad Agendados de 51 a 65 años:	418 (15.481%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    6.4) Estadio Municipal Centro Empleados de Comercio 2
+  -Cantidad Total de Agendados:	2700
+  -Cantidad Agendados de alto riesgo:	1232 (45.629%)
+  -Cantidad Agendados de bajo riesgo:	1468 (54.37%)
+  -Cantidad Agendados de 18 a 30 años:	420 (15.555%)
+  -Cantidad Agendados de 31 a 50 años:	618 (22.888%)
+  -Cantidad Agendados de 51 a 65 años:	430 (15.925%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  7) Soriano
+    7.1) Mercedes - CP Mercedes CHLAEP 1
+  -Cantidad Total de Agendados:	1208
+  -Cantidad Agendados de alto riesgo:	562 (46.523%)
+  -Cantidad Agendados de bajo riesgo:	646 (53.476%)
+  -Cantidad Agendados de 18 a 30 años:	180 (14.9%)
+  -Cantidad Agendados de 31 a 50 años:	272 (22.516%)
+  -Cantidad Agendados de 51 a 65 años:	194 (16.059%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.2) Mercedes - CP Mercedes CHLAEP 2
+  -Cantidad Total de Agendados:	1208
+  -Cantidad Agendados de alto riesgo:	564 (46.688%)
+  -Cantidad Agendados de bajo riesgo:	644 (53.311%)
+  -Cantidad Agendados de 18 a 30 años:	180 (14.9%)
+  -Cantidad Agendados de 31 a 50 años:	266 (22.019%)
+  -Cantidad Agendados de 51 a 65 años:	198 (16.39%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.3) Cardona - Círculo Católico 1
+  -Cantidad Total de Agendados:	1208
+  -Cantidad Agendados de alto riesgo:	542 (44.867%)
+  -Cantidad Agendados de bajo riesgo:	666 (55.132%)
+  -Cantidad Agendados de 18 a 30 años:	202 (16.721%)
+  -Cantidad Agendados de 31 a 50 años:	264 (21.854%)
+  -Cantidad Agendados de 51 a 65 años:	200 (16.556%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.4) Cardona - Círculo Católico 2
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	558 (46.115%)
+  -Cantidad Agendados de bajo riesgo:	652 (53.884%)
+  -Cantidad Agendados de 18 a 30 años:	184 (15.206%)
+  -Cantidad Agendados de 31 a 50 años:	266 (21.983%)
+  -Cantidad Agendados de 51 a 65 años:	202 (16.694%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.5) Cardona - CAMS
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	560 (46.28%)
+  -Cantidad Agendados de bajo riesgo:	650 (53.719%)
+  -Cantidad Agendados de 18 a 30 años:	184 (15.206%)
+  -Cantidad Agendados de 31 a 50 años:	276 (22.809%)
+  -Cantidad Agendados de 51 a 65 años:	190 (15.702%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.6) Dolores - CAMS 1
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	574 (47.438%)
+  -Cantidad Agendados de bajo riesgo:	636 (52.561%)
+  -Cantidad Agendados de 18 a 30 años:	184 (15.206%)
+  -Cantidad Agendados de 31 a 50 años:	258 (21.322%)
+  -Cantidad Agendados de 51 a 65 años:	194 (16.033%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.7) Dolores - CAMS 2
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	562 (46.446%)
+  -Cantidad Agendados de bajo riesgo:	648 (53.553%)
+  -Cantidad Agendados de 18 a 30 años:	178 (14.71%)
+  -Cantidad Agendados de 31 a 50 años:	276 (22.809%)
+  -Cantidad Agendados de 51 a 65 años:	194 (16.033%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.8) Dolores - Hospital Dolores
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	562 (46.446%)
+  -Cantidad Agendados de bajo riesgo:	648 (53.553%)
+  -Cantidad Agendados de 18 a 30 años:	178 (14.71%)
+  -Cantidad Agendados de 31 a 50 años:	272 (22.479%)
+  -Cantidad Agendados de 51 a 65 años:	198 (16.363%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    7.9) UNIDAD N°24 PENSE INR
+  -Cantidad Total de Agendados:	1210
+  -Cantidad Agendados de alto riesgo:	566 (46.776%)
+  -Cantidad Agendados de bajo riesgo:	644 (53.223%)
+  -Cantidad Agendados de 18 a 30 años:	172 (14.214%)
+  -Cantidad Agendados de 31 a 50 años:	274 (22.644%)
+  -Cantidad Agendados de 51 a 65 años:	198 (16.363%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  8) Río Negro
+    8.1) Fray Bentos - Hospital ASSE 2
+  -Cantidad Total de Agendados:	2668
+  -Cantidad Agendados de alto riesgo:	1258 (47.151%)
+  -Cantidad Agendados de bajo riesgo:	1410 (52.848%)
+  -Cantidad Agendados de 18 a 30 años:	390 (14.617%)
+  -Cantidad Agendados de 31 a 50 años:	574 (21.514%)
+  -Cantidad Agendados de 51 a 65 años:	446 (16.716%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    8.2) Young - CAMY Pediatría
+  -Cantidad Total de Agendados:	3120
+  -Cantidad Agendados de alto riesgo:	1642 (52.628%)
+  -Cantidad Agendados de bajo riesgo:	1478 (47.371%)
+  -Cantidad Agendados de 18 a 30 años:	354 (11.346%)
+  -Cantidad Agendados de 31 a 50 años:	684 (21.923%)
+  -Cantidad Agendados de 51 a 65 años:	440 (14.102%)
+
+  -Tiempo de espera promedio:	1.8929487 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.7259439 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.1695907 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    8.3) Young - Hospital Young
+  -Cantidad Total de Agendados:	2670
+  -Cantidad Agendados de alto riesgo:	1282 (48.014%)
+  -Cantidad Agendados de bajo riesgo:	1388 (51.985%)
+  -Cantidad Agendados de 18 a 30 años:	402 (15.056%)
+  -Cantidad Agendados de 31 a 50 años:	570 (21.348%)
+  -Cantidad Agendados de 51 a 65 años:	416 (15.58%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    8.4) Fray Bentos - Hospital ASSE 1
+  -Cantidad Total de Agendados:	2670
+  -Cantidad Agendados de alto riesgo:	1250 (46.816%)
+  -Cantidad Agendados de bajo riesgo:	1420 (53.183%)
+  -Cantidad Agendados de 18 a 30 años:	408 (15.28%)
+  -Cantidad Agendados de 31 a 50 años:	578 (21.647%)
+  -Cantidad Agendados de 51 a 65 años:	434 (16.254%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  9) Canelones
+    9.1) Pando - Hospital Pando 1
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	388 (47.783%)
+  -Cantidad Agendados de bajo riesgo:	424 (52.216%)
+  -Cantidad Agendados de 18 a 30 años:	112 (13.793%)
+  -Cantidad Agendados de 31 a 50 años:	168 (20.689%)
+  -Cantidad Agendados de 51 a 65 años:	144 (17.733%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.2) Pando - Hospital Pando 2
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	380 (46.798%)
+  -Cantidad Agendados de bajo riesgo:	432 (53.201%)
+  -Cantidad Agendados de 18 a 30 años:	116 (14.285%)
+  -Cantidad Agendados de 31 a 50 años:	174 (21.428%)
+  -Cantidad Agendados de 51 a 65 años:	142 (17.487%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.3) San Ramón - ASSE 1
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	364 (44.827%)
+  -Cantidad Agendados de bajo riesgo:	448 (55.172%)
+  -Cantidad Agendados de 18 a 30 años:	132 (16.256%)
+  -Cantidad Agendados de 31 a 50 años:	182 (22.413%)
+  -Cantidad Agendados de 51 a 65 años:	134 (16.502%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.4) San Ramón - ASSE 2
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	376 (46.305%)
+  -Cantidad Agendados de bajo riesgo:	436 (53.694%)
+  -Cantidad Agendados de 18 a 30 años:	134 (16.502%)
+  -Cantidad Agendados de 31 a 50 años:	176 (21.674%)
+  -Cantidad Agendados de 51 a 65 años:	126 (15.517%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.5) Canelones - COMECA
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	378 (46.551%)
+  -Cantidad Agendados de bajo riesgo:	434 (53.448%)
+  -Cantidad Agendados de 18 a 30 años:	130 (16.009%)
+  -Cantidad Agendados de 31 a 50 años:	178 (21.921%)
+  -Cantidad Agendados de 51 a 65 años:	126 (15.517%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.6) Ciudad de la Costa - Centro Salud ASSE 1
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	384 (47.29%)
+  -Cantidad Agendados de bajo riesgo:	428 (52.709%)
+  -Cantidad Agendados de 18 a 30 años:	126 (15.517%)
+  -Cantidad Agendados de 31 a 50 años:	174 (21.428%)
+  -Cantidad Agendados de 51 a 65 años:	128 (15.763%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.7) Ciudad de la Costa - Centro Salud ASSE 2
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	374 (46.059%)
+  -Cantidad Agendados de bajo riesgo:	438 (53.94%)
+  -Cantidad Agendados de 18 a 30 años:	124 (15.27%)
+  -Cantidad Agendados de 31 a 50 años:	184 (22.66%)
+  -Cantidad Agendados de 51 a 65 años:	130 (16.009%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.8) Pando - CAAMEPA
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	380 (46.798%)
+  -Cantidad Agendados de bajo riesgo:	432 (53.201%)
+  -Cantidad Agendados de 18 a 30 años:	114 (14.039%)
+  -Cantidad Agendados de 31 a 50 años:	180 (22.167%)
+  -Cantidad Agendados de 51 a 65 años:	138 (16.995%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.9) Sauce - Centro Cultural Casa de Artigas
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	380 (46.798%)
+  -Cantidad Agendados de bajo riesgo:	432 (53.201%)
+  -Cantidad Agendados de 18 a 30 años:	118 (14.532%)
+  -Cantidad Agendados de 31 a 50 años:	180 (22.167%)
+  -Cantidad Agendados de 51 a 65 años:	134 (16.502%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.10) Canelones - CP Canelones 1
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	362 (44.581%)
+  -Cantidad Agendados de bajo riesgo:	450 (55.418%)
+  -Cantidad Agendados de 18 a 30 años:	120 (14.778%)
+  -Cantidad Agendados de 31 a 50 años:	184 (22.66%)
+  -Cantidad Agendados de 51 a 65 años:	146 (17.98%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.11) Canelones - CP Canelones 2
+  -Cantidad Total de Agendados:	812
+  -Cantidad Agendados de alto riesgo:	382 (47.044%)
+  -Cantidad Agendados de bajo riesgo:	430 (52.955%)
+  -Cantidad Agendados de 18 a 30 años:	126 (15.517%)
+  -Cantidad Agendados de 31 a 50 años:	172 (21.182%)
+  -Cantidad Agendados de 51 a 65 años:	132 (16.256%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.12) Polideportivo IMM Las Piedras 1
+  -Cantidad Total de Agendados:	814
+  -Cantidad Agendados de alto riesgo:	372 (45.7%)
+  -Cantidad Agendados de bajo riesgo:	442 (54.299%)
+  -Cantidad Agendados de 18 a 30 años:	124 (15.233%)
+  -Cantidad Agendados de 31 a 50 años:	184 (22.604%)
+  -Cantidad Agendados de 51 a 65 años:	134 (16.461%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    9.13) Polideportivo IMM Las Piedras 2
+  -Cantidad Total de Agendados:	814
+  -Cantidad Agendados de alto riesgo:	386 (47.42%)
+  -Cantidad Agendados de bajo riesgo:	428 (52.579%)
+  -Cantidad Agendados de 18 a 30 años:	112 (13.759%)
+  -Cantidad Agendados de 31 a 50 años:	178 (21.867%)
+  -Cantidad Agendados de 51 a 65 años:	138 (16.953%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  10) Florida
+    10.1) Florida - Hospital ASSE CP Florida CHLAEP 1
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	822 (46.335%)
+  -Cantidad Agendados de bajo riesgo:	952 (53.664%)
+  -Cantidad Agendados de 18 a 30 años:	270 (15.219%)
+  -Cantidad Agendados de 31 a 50 años:	396 (22.322%)
+  -Cantidad Agendados de 51 a 65 años:	286 (16.121%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    10.2) Florida - Hospital ASSE CP Florida CHLAEP 2
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	848 (47.801%)
+  -Cantidad Agendados de bajo riesgo:	926 (52.198%)
+  -Cantidad Agendados de 18 a 30 años:	244 (13.754%)
+  -Cantidad Agendados de 31 a 50 años:	390 (21.984%)
+  -Cantidad Agendados de 51 a 65 años:	292 (16.459%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    10.3) Florida - Policlínico COMEF
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	838 (47.237%)
+  -Cantidad Agendados de bajo riesgo:	936 (52.762%)
+  -Cantidad Agendados de 18 a 30 años:	236 (13.303%)
+  -Cantidad Agendados de 31 a 50 años:	394 (22.209%)
+  -Cantidad Agendados de 51 a 65 años:	306 (17.249%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    10.4) Sarandí Grande - Sub CP Sdi Grande - ASSE 1
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	834 (47.012%)
+  -Cantidad Agendados de bajo riesgo:	940 (52.987%)
+  -Cantidad Agendados de 18 a 30 años:	250 (14.092%)
+  -Cantidad Agendados de 31 a 50 años:	394 (22.209%)
+  -Cantidad Agendados de 51 a 65 años:	296 (16.685%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    10.5) Sarandí Grande - Sub CP Sdi Grande - ASSE 2
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	846 (47.688%)
+  -Cantidad Agendados de bajo riesgo:	928 (52.311%)
+  -Cantidad Agendados de 18 a 30 años:	250 (14.092%)
+  -Cantidad Agendados de 31 a 50 años:	384 (21.645%)
+  -Cantidad Agendados de 51 a 65 años:	294 (16.572%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    10.6) Casupá - Policlínica ASSE
+  -Cantidad Total de Agendados:	1774
+  -Cantidad Agendados de alto riesgo:	840 (47.35%)
+  -Cantidad Agendados de bajo riesgo:	934 (52.649%)
+  -Cantidad Agendados de 18 a 30 años:	256 (14.43%)
+  -Cantidad Agendados de 31 a 50 años:	380 (21.42%)
+  -Cantidad Agendados de 51 a 65 años:	298 (16.798%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  11) Cerro Largo
+    11.1) Fraile Muerto - Club Uruguay
+  -Cantidad Total de Agendados:	1778
+  -Cantidad Agendados de alto riesgo:	826 (46.456%)
+  -Cantidad Agendados de bajo riesgo:	952 (53.543%)
+  -Cantidad Agendados de 18 a 30 años:	248 (13.948%)
+  -Cantidad Agendados de 31 a 50 años:	406 (22.834%)
+  -Cantidad Agendados de 51 a 65 años:	298 (16.76%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    11.2) Melo - UTU Gimnasio 1
+  -Cantidad Total de Agendados:	1778
+  -Cantidad Agendados de alto riesgo:	818 (46.006%)
+  -Cantidad Agendados de bajo riesgo:	960 (53.993%)
+  -Cantidad Agendados de 18 a 30 años:	256 (14.398%)
+  -Cantidad Agendados de 31 a 50 años:	402 (22.609%)
+  -Cantidad Agendados de 51 a 65 años:	302 (16.985%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    11.3) Melo - UTU Gimnasio 2
+  -Cantidad Total de Agendados:	1780
+  -Cantidad Agendados de alto riesgo:	824 (46.292%)
+  -Cantidad Agendados de bajo riesgo:	956 (53.707%)
+  -Cantidad Agendados de 18 a 30 años:	252 (14.157%)
+  -Cantidad Agendados de 31 a 50 años:	396 (22.247%)
+  -Cantidad Agendados de 51 a 65 años:	308 (17.303%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    11.4) Río Branco - Plaza de Deportes 1
+  -Cantidad Total de Agendados:	1780
+  -Cantidad Agendados de alto riesgo:	832 (46.741%)
+  -Cantidad Agendados de bajo riesgo:	948 (53.258%)
+  -Cantidad Agendados de 18 a 30 años:	232 (13.033%)
+  -Cantidad Agendados de 31 a 50 años:	402 (22.584%)
+  -Cantidad Agendados de 51 a 65 años:	314 (17.64%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    11.5) Río Branco - Plaza de Deportes 2
+  -Cantidad Total de Agendados:	1780
+  -Cantidad Agendados de alto riesgo:	828 (46.516%)
+  -Cantidad Agendados de bajo riesgo:	952 (53.483%)
+  -Cantidad Agendados de 18 a 30 años:	232 (13.033%)
+  -Cantidad Agendados de 31 a 50 años:	412 (23.146%)
+  -Cantidad Agendados de 51 a 65 años:	308 (17.303%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    11.6) Aceguá Policlínica ASSE
+  -Cantidad Total de Agendados:	1780
+  -Cantidad Agendados de alto riesgo:	818 (45.955%)
+  -Cantidad Agendados de bajo riesgo:	962 (54.044%)
+  -Cantidad Agendados de 18 a 30 años:	244 (13.707%)
+  -Cantidad Agendados de 31 a 50 años:	408 (22.921%)
+  -Cantidad Agendados de 51 a 65 años:	310 (17.415%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  12) Flores
+    12.1) Trinidad - Plaza de Deportes 1
+  -Cantidad Total de Agendados:	6240
+  -Cantidad Agendados de alto riesgo:	2874 (46.057%)
+  -Cantidad Agendados de bajo riesgo:	3366 (53.942%)
+  -Cantidad Agendados de 18 a 30 años:	772 (12.371%)
+  -Cantidad Agendados de 31 a 50 años:	1722 (27.596%)
+  -Cantidad Agendados de 51 a 65 años:	872 (13.974%)
+
+  -Tiempo de espera promedio:	2.001923 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.796103 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.3472707 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    12.2) Trinidad - Plaza de Deportes 2
+  -Cantidad Total de Agendados:	6240
+  -Cantidad Agendados de alto riesgo:	2870 (45.993%)
+  -Cantidad Agendados de bajo riesgo:	3370 (54.006%)
+  -Cantidad Agendados de 18 a 30 años:	772 (12.371%)
+  -Cantidad Agendados de 31 a 50 años:	1726 (27.66%)
+  -Cantidad Agendados de 51 a 65 años:	872 (13.974%)
+
+  -Tiempo de espera promedio:	2.0025642 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.7965157 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.3476245 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+  13) Lavalleja
+    13.1) Minas - Estadio Municipal 2
+  -Cantidad Total de Agendados:	6240
+  -Cantidad Agendados de alto riesgo:	2964 (47.5%)
+  -Cantidad Agendados de bajo riesgo:	3276 (52.5%)
+  -Cantidad Agendados de 18 a 30 años:	702 (11.25%)
+  -Cantidad Agendados de 31 a 50 años:	1658 (26.57%)
+  -Cantidad Agendados de 51 a 65 años:	916 (14.679%)
+
+  -Tiempo de espera promedio:	1.9830128 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8016194 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.2907116 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+    13.2) Minas - Estadio Municipal 1
+  -Cantidad Total de Agendados:	6240
+  -Cantidad Agendados de alto riesgo:	2956 (47.371%)
+  -Cantidad Agendados de bajo riesgo:	3284 (52.628%)
+  -Cantidad Agendados de 18 a 30 años:	708 (11.346%)
+  -Cantidad Agendados de 31 a 50 años:	1660 (26.602%)
+  -Cantidad Agendados de 51 a 65 años:	916 (14.679%)
+
+  -Tiempo de espera promedio:	1.9833333 días
+  -Tiempo de espera promedio para personas con riesgo alto:	1.8010825 días
+  -Tiempo de espera promedio para personas de 18-30 años:	2.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	2.2915664 días
+  -Tiempo de espera promedio para personas de 51-65 años:	2.0 días
+
+  14) Durazno
+    14.1) Durazno - CP Durazno CHALEP 2
+  -Cantidad Total de Agendados:	2684
+  -Cantidad Agendados de alto riesgo:	1184 (44.113%)
+  -Cantidad Agendados de bajo riesgo:	1500 (55.886%)
+  -Cantidad Agendados de 18 a 30 años:	420 (15.648%)
+  -Cantidad Agendados de 31 a 50 años:	632 (23.546%)
+  -Cantidad Agendados de 51 a 65 años:	448 (16.691%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    14.2) Sarandí del Yí - Sub CP Sarandí del Yí CHLAEP 1
+  -Cantidad Total de Agendados:	2686
+  -Cantidad Agendados de alto riesgo:	1198 (44.601%)
+  -Cantidad Agendados de bajo riesgo:	1488 (55.398%)
+  -Cantidad Agendados de 18 a 30 años:	426 (15.86%)
+  -Cantidad Agendados de 31 a 50 años:	620 (23.082%)
+  -Cantidad Agendados de 51 a 65 años:	442 (16.455%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    14.3) Sarandí del Yí - Sub CP Sarandí del Yí CHLAEP 2
+  -Cantidad Total de Agendados:	2686
+  -Cantidad Agendados de alto riesgo:	1216 (45.271%)
+  -Cantidad Agendados de bajo riesgo:	1470 (54.728%)
+  -Cantidad Agendados de 18 a 30 años:	400 (14.892%)
+  -Cantidad Agendados de 31 a 50 años:	630 (23.454%)
+  -Cantidad Agendados de 51 a 65 años:	440 (16.381%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    14.4) Durazno - CP Durazno CHALEP 1
+  -Cantidad Total de Agendados:	2686
+  -Cantidad Agendados de alto riesgo:	1208 (44.973%)
+  -Cantidad Agendados de bajo riesgo:	1478 (55.026%)
+  -Cantidad Agendados de 18 a 30 años:	408 (15.189%)
+  -Cantidad Agendados de 31 a 50 años:	626 (23.306%)
+  -Cantidad Agendados de 51 a 65 años:	444 (16.53%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  15) Paysandú
+    15.1) Paysandú - CP Paysandú CHLAEP 2
+  -Cantidad Total de Agendados:	5324
+  -Cantidad Agendados de alto riesgo:	2504 (47.032%)
+  -Cantidad Agendados de bajo riesgo:	2820 (52.967%)
+  -Cantidad Agendados de 18 a 30 años:	808 (15.176%)
+  -Cantidad Agendados de 31 a 50 años:	1168 (21.938%)
+  -Cantidad Agendados de 51 a 65 años:	844 (15.852%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    15.2) Paysandú - CP Paysandú CHLAEP 1
+  -Cantidad Total de Agendados:	5324
+  -Cantidad Agendados de alto riesgo:	2534 (47.595%)
+  -Cantidad Agendados de bajo riesgo:	2790 (52.404%)
+  -Cantidad Agendados de 18 a 30 años:	796 (14.951%)
+  -Cantidad Agendados de 31 a 50 años:	1170 (21.975%)
+  -Cantidad Agendados de 51 a 65 años:	824 (15.477%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  16) Rivera
+    16.1) Minas de Corrales Hospital ASSE Minas de Corrales
+  -Cantidad Total de Agendados:	1560
+  -Cantidad Agendados de alto riesgo:	710 (45.512%)
+  -Cantidad Agendados de bajo riesgo:	850 (54.487%)
+  -Cantidad Agendados de 18 a 30 años:	248 (15.897%)
+  -Cantidad Agendados de 31 a 50 años:	342 (21.923%)
+  -Cantidad Agendados de 51 a 65 años:	260 (16.666%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.2) Rivera - Casa de la Cultura
+  -Cantidad Total de Agendados:	1560
+  -Cantidad Agendados de alto riesgo:	722 (46.282%)
+  -Cantidad Agendados de bajo riesgo:	838 (53.717%)
+  -Cantidad Agendados de 18 a 30 años:	220 (14.102%)
+  -Cantidad Agendados de 31 a 50 años:	354 (22.692%)
+  -Cantidad Agendados de 51 a 65 años:	264 (16.923%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.3) Rivera - CASMER 1
+  -Cantidad Total de Agendados:	1562
+  -Cantidad Agendados de alto riesgo:	712 (45.582%)
+  -Cantidad Agendados de bajo riesgo:	850 (54.417%)
+  -Cantidad Agendados de 18 a 30 años:	242 (15.492%)
+  -Cantidad Agendados de 31 a 50 años:	338 (21.638%)
+  -Cantidad Agendados de 51 a 65 años:	270 (17.285%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.4) Rivera - CASMER 2
+  -Cantidad Total de Agendados:	1562
+  -Cantidad Agendados de alto riesgo:	740 (47.375%)
+  -Cantidad Agendados de bajo riesgo:	822 (52.624%)
+  -Cantidad Agendados de 18 a 30 años:	222 (14.212%)
+  -Cantidad Agendados de 31 a 50 años:	338 (21.638%)
+  -Cantidad Agendados de 51 a 65 años:	262 (16.773%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.5) Rivera - COMERI
+  -Cantidad Total de Agendados:	1562
+  -Cantidad Agendados de alto riesgo:	724 (46.35%)
+  -Cantidad Agendados de bajo riesgo:	838 (53.649%)
+  -Cantidad Agendados de 18 a 30 años:	240 (15.364%)
+  -Cantidad Agendados de 31 a 50 años:	334 (21.382%)
+  -Cantidad Agendados de 51 a 65 años:	264 (16.901%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.6) Tranqueras - Policlínica ASSE
+  -Cantidad Total de Agendados:	1562
+  -Cantidad Agendados de alto riesgo:	722 (46.222%)
+  -Cantidad Agendados de bajo riesgo:	840 (53.777%)
+  -Cantidad Agendados de 18 a 30 años:	230 (14.724%)
+  -Cantidad Agendados de 31 a 50 años:	352 (22.535%)
+  -Cantidad Agendados de 51 a 65 años:	258 (16.517%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    16.7) Vichadero - Policlínica ASSE
+  -Cantidad Total de Agendados:	1562
+  -Cantidad Agendados de alto riesgo:	732 (46.862%)
+  -Cantidad Agendados de bajo riesgo:	830 (53.137%)
+  -Cantidad Agendados de 18 a 30 años:	234 (14.98%)
+  -Cantidad Agendados de 31 a 50 años:	348 (22.279%)
+  -Cantidad Agendados de 51 a 65 años:	248 (15.877%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  17) Tacuarembó
+    17.1) Tacuarembó COMPLEJO BARRIOS AMORÍN
+  -Cantidad Total de Agendados:	1786
+  -Cantidad Agendados de alto riesgo:	804 (45.016%)
+  -Cantidad Agendados de bajo riesgo:	982 (54.983%)
+  -Cantidad Agendados de 18 a 30 años:	276 (15.453%)
+  -Cantidad Agendados de 31 a 50 años:	424 (23.74%)
+  -Cantidad Agendados de 51 a 65 años:	282 (15.789%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    17.2) Tacuarembó - COMTA Clínica Fisioterapia
+  -Cantidad Total de Agendados:	1786
+  -Cantidad Agendados de alto riesgo:	802 (44.904%)
+  -Cantidad Agendados de bajo riesgo:	984 (55.095%)
+  -Cantidad Agendados de 18 a 30 años:	266 (14.893%)
+  -Cantidad Agendados de 31 a 50 años:	428 (23.964%)
+  -Cantidad Agendados de 51 a 65 años:	290 (16.237%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    17.3) COMTA - Clínica Fisioterapia
+  -Cantidad Total de Agendados:	1788
+  -Cantidad Agendados de alto riesgo:	794 (44.407%)
+  -Cantidad Agendados de bajo riesgo:	994 (55.592%)
+  -Cantidad Agendados de 18 a 30 años:	268 (14.988%)
+  -Cantidad Agendados de 31 a 50 años:	442 (24.72%)
+  -Cantidad Agendados de 51 a 65 años:	284 (15.883%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    17.4) Centro de salud San Gregorio de Polanco
+  -Cantidad Total de Agendados:	1788
+  -Cantidad Agendados de alto riesgo:	800 (44.742%)
+  -Cantidad Agendados de bajo riesgo:	988 (55.257%)
+  -Cantidad Agendados de 18 a 30 años:	276 (15.436%)
+  -Cantidad Agendados de 31 a 50 años:	422 (23.601%)
+  -Cantidad Agendados de 51 a 65 años:	290 (16.219%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    17.5) Paso de los Toros - COMTA 1
+  -Cantidad Total de Agendados:	1788
+  -Cantidad Agendados de alto riesgo:	804 (44.966%)
+  -Cantidad Agendados de bajo riesgo:	984 (55.033%)
+  -Cantidad Agendados de 18 a 30 años:	284 (15.883%)
+  -Cantidad Agendados de 31 a 50 años:	418 (23.378%)
+  -Cantidad Agendados de 51 a 65 años:	282 (15.771%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    17.6) Paso de los Toros - COMTA 2
+  -Cantidad Total de Agendados:	1788
+  -Cantidad Agendados de alto riesgo:	806 (45.078%)
+  -Cantidad Agendados de bajo riesgo:	982 (54.921%)
+  -Cantidad Agendados de 18 a 30 años:	274 (15.324%)
+  -Cantidad Agendados de 31 a 50 años:	430 (24.049%)
+  -Cantidad Agendados de 51 a 65 años:	278 (15.548%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  18) Maldonado
+    18.1) Pan de Azúcar - Hospital Pan de Azúcar 1
+  -Cantidad Total de Agendados:	2154
+  -Cantidad Agendados de alto riesgo:	948 (44.011%)
+  -Cantidad Agendados de bajo riesgo:	1206 (55.988%)
+  -Cantidad Agendados de 18 a 30 años:	332 (15.413%)
+  -Cantidad Agendados de 31 a 50 años:	486 (22.562%)
+  -Cantidad Agendados de 51 a 65 años:	388 (18.012%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    18.2) Pan de Azúcar - Hospital Pan de Azúcar 2
+  -Cantidad Total de Agendados:	2154
+  -Cantidad Agendados de alto riesgo:	950 (44.103%)
+  -Cantidad Agendados de bajo riesgo:	1204 (55.896%)
+  -Cantidad Agendados de 18 a 30 años:	332 (15.413%)
+  -Cantidad Agendados de 31 a 50 años:	492 (22.841%)
+  -Cantidad Agendados de 51 a 65 años:	380 (17.641%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    18.3) Maldonado - CEDEMCAR
+  -Cantidad Total de Agendados:	2154
+  -Cantidad Agendados de alto riesgo:	970 (45.032%)
+  -Cantidad Agendados de bajo riesgo:	1184 (54.967%)
+  -Cantidad Agendados de 18 a 30 años:	332 (15.413%)
+  -Cantidad Agendados de 31 a 50 años:	480 (22.284%)
+  -Cantidad Agendados de 51 a 65 años:	372 (17.27%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    18.4) Maldonado - CAMPUS Puesto 1
+  -Cantidad Total de Agendados:	2154
+  -Cantidad Agendados de alto riesgo:	952 (44.196%)
+  -Cantidad Agendados de bajo riesgo:	1202 (55.803%)
+  -Cantidad Agendados de 18 a 30 años:	342 (15.877%)
+  -Cantidad Agendados de 31 a 50 años:	486 (22.562%)
+  -Cantidad Agendados de 51 a 65 años:	374 (17.363%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    18.5) Maldonado - CAMPUS Puesto 2
+  -Cantidad Total de Agendados:	2154
+  -Cantidad Agendados de alto riesgo:	962 (44.661%)
+  -Cantidad Agendados de bajo riesgo:	1192 (55.338%)
+  -Cantidad Agendados de 18 a 30 años:	308 (14.298%)
+  -Cantidad Agendados de 31 a 50 años:	496 (23.026%)
+  -Cantidad Agendados de 51 a 65 años:	388 (18.012%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+  19) Montevideo
+    19.1) CASMU
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	144 (47.058%)
+  -Cantidad Agendados de bajo riesgo:	162 (52.941%)
+  -Cantidad Agendados de 18 a 30 años:	44 (14.379%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.529%)
+  -Cantidad Agendados de 51 a 65 años:	46 (15.032%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.2) Círculo Católico
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	138 (45.098%)
+  -Cantidad Agendados de bajo riesgo:	168 (54.901%)
+  -Cantidad Agendados de 18 a 30 años:	54 (17.647%)
+  -Cantidad Agendados de 31 a 50 años:	70 (22.875%)
+  -Cantidad Agendados de 51 a 65 años:	44 (14.379%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.3) COSEM Malvín
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	142 (46.405%)
+  -Cantidad Agendados de bajo riesgo:	164 (53.594%)
+  -Cantidad Agendados de 18 a 30 años:	48 (15.686%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.529%)
+  -Cantidad Agendados de 51 a 65 años:	44 (14.379%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.4) CUDAM
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	140 (45.751%)
+  -Cantidad Agendados de bajo riesgo:	166 (54.248%)
+  -Cantidad Agendados de 18 a 30 años:	52 (16.993%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.529%)
+  -Cantidad Agendados de 51 a 65 años:	42 (13.725%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.5) ED. PARQUE BATLLE - UDELAR 1
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	142 (46.405%)
+  -Cantidad Agendados de bajo riesgo:	164 (53.594%)
+  -Cantidad Agendados de 18 a 30 años:	54 (17.647%)
+  -Cantidad Agendados de 31 a 50 años:	70 (22.875%)
+  -Cantidad Agendados de 51 a 65 años:	40 (13.071%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.6) ED. PARQUE BATLLE - UDELAR 2
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	138 (45.098%)
+  -Cantidad Agendados de bajo riesgo:	168 (54.901%)
+  -Cantidad Agendados de 18 a 30 años:	56 (18.3%)
+  -Cantidad Agendados de 31 a 50 años:	66 (21.568%)
+  -Cantidad Agendados de 51 a 65 años:	46 (15.032%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.7) ED. PARQUE BATLLE - UDELAR 3
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	142 (46.405%)
+  -Cantidad Agendados de bajo riesgo:	164 (53.594%)
+  -Cantidad Agendados de 18 a 30 años:	58 (18.954%)
+  -Cantidad Agendados de 31 a 50 años:	66 (21.568%)
+  -Cantidad Agendados de 51 a 65 años:	40 (13.071%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.8) ED. PARQUE BATLLE - UDELAR 4
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	142 (46.405%)
+  -Cantidad Agendados de bajo riesgo:	164 (53.594%)
+  -Cantidad Agendados de 18 a 30 años:	54 (17.647%)
+  -Cantidad Agendados de 31 a 50 años:	68 (22.222%)
+  -Cantidad Agendados de 51 a 65 años:	42 (13.725%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.9) ED. PARQUE BATLLE - UDELAR 5
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	146 (47.712%)
+  -Cantidad Agendados de bajo riesgo:	160 (52.287%)
+  -Cantidad Agendados de 18 a 30 años:	48 (15.686%)
+  -Cantidad Agendados de 31 a 50 años:	68 (22.222%)
+  -Cantidad Agendados de 51 a 65 años:	44 (14.379%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.10) ELEPEM - MONTEVIDEO
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	146 (47.712%)
+  -Cantidad Agendados de bajo riesgo:	160 (52.287%)
+  -Cantidad Agendados de 18 a 30 años:	52 (16.993%)
+  -Cantidad Agendados de 31 a 50 años:	68 (22.222%)
+  -Cantidad Agendados de 51 a 65 años:	40 (13.071%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.11) INISA
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	146 (47.712%)
+  -Cantidad Agendados de bajo riesgo:	160 (52.287%)
+  -Cantidad Agendados de 18 a 30 años:	50 (16.339%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.915%)
+  -Cantidad Agendados de 51 a 65 años:	46 (15.032%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.12) IMM Complejo CRECE
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	136 (44.444%)
+  -Cantidad Agendados de bajo riesgo:	170 (55.555%)
+  -Cantidad Agendados de 18 a 30 años:	48 (15.686%)
+  -Cantidad Agendados de 31 a 50 años:	74 (24.183%)
+  -Cantidad Agendados de 51 a 65 años:	48 (15.686%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.13) Hospital Maciel
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	144 (47.058%)
+  -Cantidad Agendados de bajo riesgo:	162 (52.941%)
+  -Cantidad Agendados de 18 a 30 años:	42 (13.725%)
+  -Cantidad Agendados de 31 a 50 años:	70 (22.875%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.339%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.14) Hospital Militar
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	146 (47.712%)
+  -Cantidad Agendados de bajo riesgo:	160 (52.287%)
+  -Cantidad Agendados de 18 a 30 años:	44 (14.379%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.915%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.993%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.15) Hospital Britanico
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	150 (49.019%)
+  -Cantidad Agendados de bajo riesgo:	156 (50.98%)
+  -Cantidad Agendados de 18 a 30 años:	42 (13.725%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.915%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.339%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.16) Hospital de Clínicas A
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	144 (47.058%)
+  -Cantidad Agendados de bajo riesgo:	162 (52.941%)
+  -Cantidad Agendados de 18 a 30 años:	46 (15.032%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.915%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.993%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.17) Hospital de Clínicas B
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	140 (45.751%)
+  -Cantidad Agendados de bajo riesgo:	166 (54.248%)
+  -Cantidad Agendados de 18 a 30 años:	44 (14.379%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.529%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.339%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.18) Hospital de Clínicas C
+  -Cantidad Total de Agendados:	306
+  -Cantidad Agendados de alto riesgo:	146 (47.712%)
+  -Cantidad Agendados de bajo riesgo:	160 (52.287%)
+  -Cantidad Agendados de 18 a 30 años:	40 (13.071%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.915%)
+  -Cantidad Agendados de 51 a 65 años:	56 (18.3%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.19) Hospital Pasteur
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	140 (45.454%)
+  -Cantidad Agendados de bajo riesgo:	168 (54.545%)
+  -Cantidad Agendados de 18 a 30 años:	40 (12.987%)
+  -Cantidad Agendados de 31 a 50 años:	70 (22.727%)
+  -Cantidad Agendados de 51 a 65 años:	58 (18.831%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.20) Hospital Pereira Rossell
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	140 (45.454%)
+  -Cantidad Agendados de bajo riesgo:	168 (54.545%)
+  -Cantidad Agendados de 18 a 30 años:	40 (12.987%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.376%)
+  -Cantidad Agendados de 51 a 65 años:	56 (18.181%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.21) Hospital Policial
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	156 (50.649%)
+  -Cantidad Agendados de bajo riesgo:	152 (49.35%)
+  -Cantidad Agendados de 18 a 30 años:	34 (11.038%)
+  -Cantidad Agendados de 31 a 50 años:	64 (20.779%)
+  -Cantidad Agendados de 51 a 65 años:	54 (17.532%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.22) Hospital Evangélico
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	150 (48.701%)
+  -Cantidad Agendados de bajo riesgo:	158 (51.298%)
+  -Cantidad Agendados de 18 a 30 años:	32 (10.389%)
+  -Cantidad Agendados de 31 a 50 años:	68 (22.077%)
+  -Cantidad Agendados de 51 a 65 años:	58 (18.831%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.23) IMM Policlinica Zully Sánchez
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	134 (43.506%)
+  -Cantidad Agendados de bajo riesgo:	174 (56.493%)
+  -Cantidad Agendados de 18 a 30 años:	46 (14.935%)
+  -Cantidad Agendados de 31 a 50 años:	74 (24.025%)
+  -Cantidad Agendados de 51 a 65 años:	54 (17.532%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.24) Medica Uruguaya
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	154 (50.0%)
+  -Cantidad Agendados de bajo riesgo:	154 (50.0%)
+  -Cantidad Agendados de 18 a 30 años:	34 (11.038%)
+  -Cantidad Agendados de 31 a 50 años:	70 (22.727%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.233%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.25) SAI PPL
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	140 (45.454%)
+  -Cantidad Agendados de bajo riesgo:	168 (54.545%)
+  -Cantidad Agendados de 18 a 30 años:	42 (13.636%)
+  -Cantidad Agendados de 31 a 50 años:	74 (24.025%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.883%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.26) Sanatorio Casa de Galicia
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	142 (46.103%)
+  -Cantidad Agendados de bajo riesgo:	166 (53.896%)
+  -Cantidad Agendados de 18 a 30 años:	34 (11.038%)
+  -Cantidad Agendados de 31 a 50 años:	78 (25.324%)
+  -Cantidad Agendados de 51 a 65 años:	54 (17.532%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.27) SMI IMPASA
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	134 (43.506%)
+  -Cantidad Agendados de bajo riesgo:	174 (56.493%)
+  -Cantidad Agendados de 18 a 30 años:	46 (14.935%)
+  -Cantidad Agendados de 31 a 50 años:	76 (24.675%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.883%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.28) UNIVERSAL
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	130 (42.207%)
+  -Cantidad Agendados de bajo riesgo:	178 (57.792%)
+  -Cantidad Agendados de 18 a 30 años:	48 (15.584%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.376%)
+  -Cantidad Agendados de 51 a 65 años:	58 (18.831%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.29) ANTEL ARENA 1
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	150 (48.701%)
+  -Cantidad Agendados de bajo riesgo:	158 (51.298%)
+  -Cantidad Agendados de 18 a 30 años:	38 (12.337%)
+  -Cantidad Agendados de 31 a 50 años:	68 (22.077%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.883%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.30) ANTEL ARENA 2
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	152 (49.35%)
+  -Cantidad Agendados de bajo riesgo:	156 (50.649%)
+  -Cantidad Agendados de 18 a 30 años:	34 (11.038%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.376%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.233%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.31) ANTEL ARENA 3
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	154 (50.0%)
+  -Cantidad Agendados de bajo riesgo:	154 (50.0%)
+  -Cantidad Agendados de 18 a 30 años:	32 (10.389%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.376%)
+  -Cantidad Agendados de 51 a 65 años:	50 (16.233%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.32) ANTEL ARENA 4
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	134 (43.506%)
+  -Cantidad Agendados de bajo riesgo:	174 (56.493%)
+  -Cantidad Agendados de 18 a 30 años:	44 (14.285%)
+  -Cantidad Agendados de 31 a 50 años:	76 (24.675%)
+  -Cantidad Agendados de 51 a 65 años:	54 (17.532%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.33) ANTEL ARENA 5
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	142 (46.103%)
+  -Cantidad Agendados de bajo riesgo:	166 (53.896%)
+  -Cantidad Agendados de 18 a 30 años:	40 (12.987%)
+  -Cantidad Agendados de 31 a 50 años:	74 (24.025%)
+  -Cantidad Agendados de 51 a 65 años:	52 (16.883%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.34) Asociación Española
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	138 (44.805%)
+  -Cantidad Agendados de bajo riesgo:	170 (55.194%)
+  -Cantidad Agendados de 18 a 30 años:	44 (14.285%)
+  -Cantidad Agendados de 31 a 50 años:	72 (23.376%)
+  -Cantidad Agendados de 51 a 65 años:	54 (17.532%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días
+
+    19.35) Centro Salud Cerro
+  -Cantidad Total de Agendados:	308
+  -Cantidad Agendados de alto riesgo:	136 (44.155%)
+  -Cantidad Agendados de bajo riesgo:	172 (55.844%)
+  -Cantidad Agendados de 18 a 30 años:	48 (15.584%)
+  -Cantidad Agendados de 31 a 50 años:	76 (24.675%)
+  -Cantidad Agendados de 51 a 65 años:	48 (15.584%)
+
+  -Tiempo de espera promedio:	0.0 días
+  -Tiempo de espera promedio para personas con riesgo alto:	0.0 días
+  -Tiempo de espera promedio para personas de 18-30 años:	0.0 días
+  -Tiempo de espera promedio para personas de 31-50 años:	0.0 días
+  -Tiempo de espera promedio para personas de 51-65 años:	0.0 días

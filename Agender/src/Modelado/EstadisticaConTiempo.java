@@ -54,9 +54,24 @@ public class EstadisticaConTiempo extends Estadistica {
         }
     }
 
+    public String csvTiempoEsperaPromedio() {
+        float mediaTiempoEspera = cantAgendadosTotal > 0 ? tiempoEsperaTotal / cantAgendadosTotal : 0f;
+        float mediaTiempoEsperaRiesgo = cantRiesgoAlto > 0 ? tiempoEsperaRiesgoAlto / cantRiesgoAlto : 0f;
+        float mediaTiempoEspera18_30 = cantRiesgoBajo18_30 > 0 ? tiempoEsperaRiesgoBajo18_30 / cantRiesgoBajo18_30 : 0f;
+        float mediaTiempoEspera31_50 = cantRiesgoBajo31_50 > 0 ? tiempoEsperaRiesgoBajo31_50 / cantRiesgoBajo31_50 : 0f;
+        float mediaTiempoEspera51_65 = cantRiesgoBajo51_65 > 0 ? tiempoEsperaRiesgoBajo51_65 / cantRiesgoBajo51_65 : 0f;
+        return String.join(";",
+                String.valueOf(mediaTiempoEspera),
+                String.valueOf(mediaTiempoEsperaRiesgo),
+                String.valueOf(mediaTiempoEspera18_30),
+                String.valueOf(mediaTiempoEspera31_50),
+                String.valueOf(mediaTiempoEspera51_65)
+        );
+    }
+
     @Override
     public String toString() {
-        float mediaTiempoEspera = tiempoEsperaTotal / cantAgendadosTotal;
+        float mediaTiempoEspera = cantAgendadosTotal > 0 ? tiempoEsperaTotal / cantAgendadosTotal : 0f;
         float mediaTiempoEsperaRiesgo = cantRiesgoAlto > 0 ? tiempoEsperaRiesgoAlto / cantRiesgoAlto : 0f;
         float mediaTiempoEspera18_30 = cantRiesgoBajo18_30 > 0 ? tiempoEsperaRiesgoBajo18_30 / cantRiesgoBajo18_30 : 0f;
         float mediaTiempoEspera31_50 = cantRiesgoBajo31_50 > 0 ? tiempoEsperaRiesgoBajo31_50 / cantRiesgoBajo31_50 : 0f;
